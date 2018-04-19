@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfApplication8.showpifu"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+Title="showpifu" Height="400" Width="990" Loaded="Window_Loaded">
+    <Grid>
+        <StackPanel>
+            <ListBox x:Name="lstImgs" Height="350">
+                <ListBox.Template>
+                    <ControlTemplate TargetType="{x:Type ListBox}">
+                        <ScrollViewer VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Disabled">
+                            <WrapPanel Orientation="Horizontal" IsItemsHost="True">
+                            </WrapPanel>
+                        </ScrollViewer>
+                    </ControlTemplate>
+                </ListBox.Template>
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Border BorderThickness="0,0,0,0" BorderBrush="Black" Width="150" Height="100">
+                            <Button MouseMove="Image_MouseMove" MouseLeave="Image_MouseLeave" Click="Button_Click" 
+                                   Content="{Binding Path=FullPath}" ToolTip="{Binding Path=Tips}" />
+                        </Border>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </StackPanel>
+    </Grid>
+</Window>

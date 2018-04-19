@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfApplication5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="550" Width="525">
+    <Grid>
+        <ListBox>
+            <Button Content="hello" Height="100"/>
+            <Button Content="hello" Height="100"/>
+            <Button Content="hello" Height="100"/>
+            <Button Content="hello" Height="100"/>
+            <Button Content="hello" Height="100"/>
+            <Button Content="hello" Height="100"/>
+            <Button Content="hello" Height="100"/>
+            <Button Content="hello" Height="100"/>
+        </ListBox>
+    </Grid>
+</Window>
