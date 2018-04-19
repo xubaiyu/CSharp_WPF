@@ -1,0 +1,27 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero2" x:Class="ComboBox.MainWindow"
+        Title="MainWindow" Height="350" Width="525" Loaded="Window_Loaded">
+    <Window.Resources>
+
+
+        <DataTemplate x:Key="DataTemplate1">
+            <TextBlock Text="{Binding Path=FloorNo}"/>
+            
+        </DataTemplate>
+
+        <CollectionViewSource x:Key="floors" Source="{Binding alist}"/>
+
+    </Window.Resources>
+
+
+    <Grid>
+        <ComboBox x:Name ="my"  Height="50" Width="300"  
+                  ItemTemplate="{StaticResource DataTemplate1}"
+                  SelectedIndex="0"  >
+
+        </ComboBox>
+
+    </Grid>
+</Window>
