@@ -47,8 +47,6 @@ namespace ComboBox
         public int FloorNo
         { 
             get;
-            
-           
             set;
             
         }
