@@ -28,7 +28,6 @@ namespace ComboBox
             InitializeComponent();
         }
 
-
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             alist.Add(new BuildingFloorNo { FloorNo = -1 });
