@@ -28,7 +28,8 @@
                   ItemTemplate="{StaticResource DataTemplate1}"
                   SelectedIndex="0" HorizontalAlignment="Left" />
         </StackPanel>
-        <ListBox Grid.Row="1" x:Name="lstImgs" VerticalAlignment="Stretch" Margin="5,10,5,20">
+        <Border BorderThickness="2,2,2,2" Grid.Row="1" BorderBrush="Red" Margin="2,2,2,2">
+        <ListBox x:Name="lstImgs" VerticalAlignment="Stretch" Margin="5,10,5,20" BorderBrush="Green" BorderThickness="1,1,1,1">
             <ListBox.Template>
                 <ControlTemplate TargetType="{x:Type ListBox}">
                     <ScrollViewer VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Disabled">
@@ -46,7 +47,9 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-        <ListView Grid.Row="2" VerticalAlignment="Stretch" Margin="5,10,5,20" Name="listView1"  ItemsSource="{Binding}">
+        </Border>
+        <Border BorderBrush="Red" BorderThickness="2" Grid.Row="2">
+        <ListView VerticalAlignment="Stretch" Margin="5,10,5,20" Name="listView1"  ItemsSource="{Binding}">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="ID" DisplayMemberBinding="{Binding ID}" Width="50"/>
@@ -56,9 +59,6 @@
                 </GridView>
             </ListView.View>
         </ListView>
-
-
-
-
+        </Border>
     </Grid>
 </Window>
