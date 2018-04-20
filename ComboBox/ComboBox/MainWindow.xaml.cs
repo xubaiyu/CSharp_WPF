@@ -16,7 +16,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace ComboBox
+namespace BuildingFloor
 {
     /// <summary>
     /// MainWindow.xaml 的交互逻辑
@@ -24,6 +24,7 @@ namespace ComboBox
     public partial class MainWindow : Window
     {
         ObservableCollection<BuildingFloorNo> alist = new ObservableCollection<BuildingFloorNo>();
+        Dictionary<int, DataTable> floorRoomsDict = new Dictionary<int, DataTable>();
         public MainWindow()
         {
             InitializeComponent();
@@ -63,6 +64,18 @@ namespace ComboBox
             pic.Rows.Add(@"D:\GA\GACU_WPF\branches\GaNet20180417\Client\Resources\Gray\Images\ico_ballcamra_pressed.png", "10");
             pic.Rows.Add(@"D:\GA\GACU_WPF\branches\GaNet20180417\Client\Resources\Gray\Images\ico_ballcamra_pressed.png", "11");
             this.lstImgs.ItemsSource = pic.DefaultView;
+
+            floorRoomsDict.Add(-1, pic);
+
+            for (int i = 0; i < 5;i++ )
+            {
+                DataTable pic0 = new DataTable();
+                pic0.Columns.Add("FullPath");
+                pic0.Columns.Add("Tips");
+                pic0.Rows.Add(i + @"层01室", "1");
+                pic0.Rows.Add(i + @"层02室", "2");
+                floorRoomsDict.Add(i, pic0);
+            }
            /////
             int itemcount = 107;
             for (int j = 0; j < itemcount; j++)
@@ -176,16 +189,26 @@ namespace ComboBox
             ShowCurrentPageIndex();
         }
 
+        private void my_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            ComboBox floorCombox = sender as ComboBox;
+            if (null != floorCombox)
+            {
+                Console.WriteLine(floorCombox.SelectedIndex);
+                BuildingFloorNo floorNo = floorCombox.SelectedItem as BuildingFloorNo;
+                if (null != floorNo)
+                {
+                    Console.WriteLine(floorNo.FloorNo);
+                
+                  DataTable rooms = new DataTable();
+                  if(floorRoomsDict.TryGetValue(floorNo.FloorNo, out rooms))
+                  {
+                    this.lstImgs.ItemsSource = rooms.DefaultView;
+                  }
+                }
+            }
+        }
+
     }
 
-    public class BuildingFloorNo 
-    {      
-        public int FloorNo
-        { 
-            get;
-            set;
-            
-        }
-         
-    }
 }
