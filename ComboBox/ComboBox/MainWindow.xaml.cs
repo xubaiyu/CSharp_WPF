@@ -23,8 +23,12 @@ namespace BuildingFloor
     /// </summary>
     public partial class MainWindow : Window
     {
+        // 楼层
         ObservableCollection<BuildingFloorNo> alist = new ObservableCollection<BuildingFloorNo>();
+        // 楼层-户
         Dictionary<int, DataTable> floorRoomsDict = new Dictionary<int, DataTable>();
+        // 户-居民
+        Dictionary<string, DataTable> RoomResidents = new Dictionary<string, DataTable>();
         public MainWindow()
         {
             InitializeComponent();
@@ -67,6 +71,7 @@ namespace BuildingFloor
 
             floorRoomsDict.Add(-1, pic);
 
+            // 
             for (int i = 0; i < 5;i++ )
             {
                 DataTable pic0 = new DataTable();
@@ -76,6 +81,8 @@ namespace BuildingFloor
                 pic0.Rows.Add(i + @"层02室", "2");
                 floorRoomsDict.Add(i, pic0);
             }
+
+            
            /////
             int itemcount = 107;
             for (int j = 0; j < itemcount; j++)
@@ -83,7 +90,7 @@ namespace BuildingFloor
                 customers.Add(new Customer()
                 {
                     ID = j,
-                    Name = "item" + j.ToString(),
+                    Name = "姓名item" + j.ToString(),
                     Age = 10 + j
                 });
             }
