@@ -120,7 +120,7 @@ namespace BuildingFloor
 
             view.Filter += new FilterEventHandler(view_Filter);
 
-            this.listView1.DataContext = view;
+            this.personlistView.DataContext = view;
             ShowCurrentPageIndex();
            // this.tbTotalPage.Text = totalPage.ToString();
         }
@@ -155,8 +155,8 @@ namespace BuildingFloor
 
                 view.Filter += new FilterEventHandler(view_Filter);
 
-                this.listView1.DataContext = view;
-                this.listView1.ItemsSource = customers0;
+                this.personlistView.DataContext = view;
+                this.personlistView.ItemsSource = customers0;
             }
 
         }
@@ -237,6 +237,17 @@ namespace BuildingFloor
                   }
                 }
             }
+        }
+
+
+        private void personlistView_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            object o = personlistView.SelectedItem;
+            if (o == null)
+                return;
+            Customer customer = o as Customer;
+            MessageBox.Show(customer.ID + customer.Name + customer.Age);
+
         }
 
     }
