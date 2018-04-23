@@ -28,7 +28,7 @@ namespace BuildingFloor
         // 楼层-户
         Dictionary<int, DataTable> floorRoomsDict = new Dictionary<int, DataTable>();
         // 户-居民
-        Dictionary<string, DataTable> RoomResidents = new Dictionary<string, DataTable>();
+        Dictionary<string, ObservableCollection<Customer>> RoomResidents = new Dictionary<string, ObservableCollection<Customer>>();
         public MainWindow()
         {
             InitializeComponent();
@@ -52,7 +52,7 @@ namespace BuildingFloor
             alist.Add(new BuildingFloorNo { FloorNo = 4 });
             my.ItemsSource = alist;
 
-            /////
+            // 户信息
             DataTable pic = new DataTable();
             pic.Columns.Add("FullPath");
             pic.Columns.Add("Tips");
@@ -80,6 +80,20 @@ namespace BuildingFloor
                 pic0.Rows.Add(i + @"层01室", "1");
                 pic0.Rows.Add(i + @"层02室", "2");
                 floorRoomsDict.Add(i, pic0);
+                
+                ObservableCollection<Customer> customers0 = new ObservableCollection<Customer>();
+                int itemcount0 = 10;
+                for (int j = 0; j < itemcount0; j++)
+                {
+                 customers0.Add(new Customer()
+                 {
+                    ID = j,
+                    Name = i + @"层01室:"+"姓名item" + j.ToString(),
+                    Age = 10 + j
+                  });
+                }
+
+                RoomResidents.Add(i + @"层01室", customers0);
             }
 
             
@@ -129,11 +143,20 @@ namespace BuildingFloor
         {
             Button bton = sender as Button;
             string strid = bton.ToolTip as string;
-            if (strid != null)
+            string roomName = bton.Content as string;
+            if (strid != null && roomName !=null)
             {
                 int index = Convert.ToInt32(strid);
                 Console.WriteLine(index);
+                ObservableCollection<Customer> customers0 = new ObservableCollection<Customer>();
+                RoomResidents.TryGetValue(roomName, out customers0);
 
+                view.Source = customers0;
+
+                view.Filter += new FilterEventHandler(view_Filter);
+
+                this.listView1.DataContext = view;
+                this.listView1.ItemsSource = customers0;
             }
 
         }
