@@ -53,26 +53,26 @@ namespace BuildingFloor
             my.ItemsSource = alist;
 
             // 户信息
-            DataTable pic = new DataTable();
-            pic.Columns.Add("FullPath");
-            pic.Columns.Add("Tips");
-            pic.Rows.Add(@"D:\GA\GACU_WPF\branches\GaNet20180417\Client\Resources\Gray\Images\ico_ballcamra_pressed.png", "1");
-            pic.Rows.Add(@"D:\GA\GACU_WPF\branches\GaNet20180417\Client\Resources\Gray\Images\ico_ballcamra_pressed.png", "2");
-            pic.Rows.Add(@"D:\GA\GACU_WPF\branches\GaNet20180417\Client\Resources\Gray\Images\ico_ballcamra_pressed.png", "3");
-            pic.Rows.Add(@"D:\GA\GACU_WPF\branches\GaNet20180417\Client\Resources\Gray\Images\ico_ballcamra_pressed.png", "4");
-            pic.Rows.Add(@"D:\GA\GACU_WPF\branches\GaNet20180417\Client\Resources\Gray\Images\ico_ballcamra_pressed.png", "5");
-            pic.Rows.Add(@"D:\GA\GACU_WPF\branches\GaNet20180417\Client\Resources\Gray\Images\ico_ballcamra_pressed.png", "6");
-            pic.Rows.Add(@"D:\GA\GACU_WPF\branches\GaNet20180417\Client\Resources\Gray\Images\ico_ballcamra_pressed.png", "7");
-            pic.Rows.Add(@"D:\GA\GACU_WPF\branches\GaNet20180417\Client\Resources\Gray\Images\ico_ballcamra_pressed.png", "8");
-            pic.Rows.Add(@"D:\GA\GACU_WPF\branches\GaNet20180417\Client\Resources\Gray\Images\ico_ballcamra_pressed.png", "9");
-            pic.Rows.Add(@"D:\GA\GACU_WPF\branches\GaNet20180417\Client\Resources\Gray\Images\ico_ballcamra_pressed.png", "10");
-            pic.Rows.Add(@"D:\GA\GACU_WPF\branches\GaNet20180417\Client\Resources\Gray\Images\ico_ballcamra_pressed.png", "11");
-            this.lstImgs.ItemsSource = pic.DefaultView;
+            //DataTable pic = new DataTable();
+            //pic.Columns.Add("FullPath");
+            //pic.Columns.Add("Tips");
+            //pic.Rows.Add(@"D:\GA\GACU_WPF\branches\GaNet20180417\Client\Resources\Gray\Images\ico_ballcamra_pressed.png", "1");
+            //pic.Rows.Add(@"D:\GA\GACU_WPF\branches\GaNet20180417\Client\Resources\Gray\Images\ico_ballcamra_pressed.png", "2");
+            //pic.Rows.Add(@"D:\GA\GACU_WPF\branches\GaNet20180417\Client\Resources\Gray\Images\ico_ballcamra_pressed.png", "3");
+            //pic.Rows.Add(@"D:\GA\GACU_WPF\branches\GaNet20180417\Client\Resources\Gray\Images\ico_ballcamra_pressed.png", "4");
+            //pic.Rows.Add(@"D:\GA\GACU_WPF\branches\GaNet20180417\Client\Resources\Gray\Images\ico_ballcamra_pressed.png", "5");
+            //pic.Rows.Add(@"D:\GA\GACU_WPF\branches\GaNet20180417\Client\Resources\Gray\Images\ico_ballcamra_pressed.png", "6");
+            //pic.Rows.Add(@"D:\GA\GACU_WPF\branches\GaNet20180417\Client\Resources\Gray\Images\ico_ballcamra_pressed.png", "7");
+            //pic.Rows.Add(@"D:\GA\GACU_WPF\branches\GaNet20180417\Client\Resources\Gray\Images\ico_ballcamra_pressed.png", "8");
+            //pic.Rows.Add(@"D:\GA\GACU_WPF\branches\GaNet20180417\Client\Resources\Gray\Images\ico_ballcamra_pressed.png", "9");
+            //pic.Rows.Add(@"D:\GA\GACU_WPF\branches\GaNet20180417\Client\Resources\Gray\Images\ico_ballcamra_pressed.png", "10");
+            //pic.Rows.Add(@"D:\GA\GACU_WPF\branches\GaNet20180417\Client\Resources\Gray\Images\ico_ballcamra_pressed.png", "11");
+            //this.lstImgs.ItemsSource = pic.DefaultView;
 
-            floorRoomsDict.Add(-1, pic);
+            //floorRoomsDict.Add(-1, pic);
 
             // 
-            for (int i = 0; i < 5; i++)
+            for (int i = -1; i < 5; i++)
             {
                 DataTable pic0 = new DataTable();
                 pic0.Columns.Add("FullPath");
@@ -153,10 +153,10 @@ namespace BuildingFloor
 
                 view.Source = customers;
 
-                //view.Filter += new FilterEventHandler(view_Filter);
+                view.Filter += new FilterEventHandler(view_Filter);
 
                 this.personlistView.DataContext = view;
-                //this.personlistView.ItemsSource = customers;
+                this.personlistView.ItemsSource = customers;
             }
 
         }
@@ -237,6 +237,17 @@ namespace BuildingFloor
                   }
                 }
             }
+            // clear personlistView
+            ObservableCollection<Customer> customers0 = new ObservableCollection<Customer>();
+            
+
+            view.Source = customers0;
+
+            view.Filter += new FilterEventHandler(view_Filter);
+
+            this.personlistView.DataContext = view;
+            this.personlistView.ItemsSource = customers0;
+            
         }
 
 
