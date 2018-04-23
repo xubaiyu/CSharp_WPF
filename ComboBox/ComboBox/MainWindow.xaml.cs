@@ -72,7 +72,7 @@ namespace BuildingFloor
             floorRoomsDict.Add(-1, pic);
 
             // 
-            for (int i = 0; i < 5;i++ )
+            for (int i = 0; i < 5; i++)
             {
                 DataTable pic0 = new DataTable();
                 pic0.Columns.Add("FullPath");
@@ -80,17 +80,17 @@ namespace BuildingFloor
                 pic0.Rows.Add(i + @"层01室", "1");
                 pic0.Rows.Add(i + @"层02室", "2");
                 floorRoomsDict.Add(i, pic0);
-                
+
                 ObservableCollection<Customer> customers0 = new ObservableCollection<Customer>();
                 int itemcount0 = 10;
                 for (int j = 0; j < itemcount0; j++)
                 {
-                 customers0.Add(new Customer()
-                 {
-                    ID = j,
-                    Name = i + @"层01室:"+"姓名item" + j.ToString(),
-                    Age = 10 + j
-                  });
+                    customers0.Add(new Customer()
+                    {
+                        ID = j,
+                        Name = i + @"层01室:" + "姓名item" + j.ToString(),
+                        Age = 10 + j
+                    });
                 }
 
                 RoomResidents.Add(i + @"层01室", customers0);
@@ -98,30 +98,30 @@ namespace BuildingFloor
 
             
            /////
-            int itemcount = 107;
-            for (int j = 0; j < itemcount; j++)
-            {
-                customers.Add(new Customer()
-                {
-                    ID = j,
-                    Name = "姓名item" + j.ToString(),
-                    Age = 10 + j
-                });
-            }
+            //int itemcount = 107;
+            //for (int j = 0; j < itemcount; j++)
+            //{
+            //    customers.Add(new Customer()
+            //    {
+            //        ID = j,
+            //        Name = "姓名item" + j.ToString(),
+            //        Age = 10 + j
+            //    });
+            //}
 
-            // Calculate the total pages
-            totalPage = itemcount / itemPerPage;
-            if (itemcount % itemPerPage != 0)
-            {
-                totalPage += 1;
-            }
+            //// Calculate the total pages
+            //totalPage = itemcount / itemPerPage;
+            //if (itemcount % itemPerPage != 0)
+            //{
+            //    totalPage += 1;
+            //}
 
-            view.Source = customers;
+            //view.Source = customers;
 
-            view.Filter += new FilterEventHandler(view_Filter);
+            //view.Filter += new FilterEventHandler(view_Filter);
 
-            this.personlistView.DataContext = view;
-            ShowCurrentPageIndex();
+            //this.personlistView.DataContext = view;
+            //ShowCurrentPageIndex();
            // this.tbTotalPage.Text = totalPage.ToString();
         }
 
@@ -148,15 +148,15 @@ namespace BuildingFloor
             {
                 int index = Convert.ToInt32(strid);
                 Console.WriteLine(index);
-                ObservableCollection<Customer> customers0 = new ObservableCollection<Customer>();
-                RoomResidents.TryGetValue(roomName, out customers0);
+                //ObservableCollection<Customer> customers0 = new ObservableCollection<Customer>();
+                RoomResidents.TryGetValue(roomName, out customers);
 
-                view.Source = customers0;
+                view.Source = customers;
 
-                view.Filter += new FilterEventHandler(view_Filter);
+                //view.Filter += new FilterEventHandler(view_Filter);
 
                 this.personlistView.DataContext = view;
-                this.personlistView.ItemsSource = customers0;
+                //this.personlistView.ItemsSource = customers;
             }
 
         }
