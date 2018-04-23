@@ -19,16 +19,18 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="20"/>
+            <RowDefinition Height="20"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Left" Margin="5,0,0,0">
+        <TextBlock Margin="5,0,0,0" Text="建筑物基本信息:" Grid.Row="0"/>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Left" Margin="5,0,0,0">
             <TextBlock Text="请选择楼层："  />
             <ComboBox  x:Name ="my"  Height="20" Width="150"  
                   ItemTemplate="{StaticResource DataTemplate1}"
                   SelectedIndex="0" HorizontalAlignment="Left" SelectedValue="{Binding Path=FloorNo}"  SelectionChanged="my_SelectionChanged"/>
         </StackPanel>
-        <Border BorderThickness="2,2,2,2" Grid.Row="1" BorderBrush="Red" Margin="2,2,2,2">
+        <Border BorderThickness="2,2,2,2" Grid.Row="2" BorderBrush="Red" Margin="2,20,2,2">
         <ListBox x:Name="lstImgs" VerticalAlignment="Stretch" Margin="5,10,5,20" BorderBrush="Green" BorderThickness="1,1,1,1">
             <ListBox.Template>
                 <ControlTemplate TargetType="{x:Type ListBox}">
@@ -48,7 +50,7 @@
             </ListBox.ItemTemplate>
         </ListBox>
         </Border>
-        <Border BorderBrush="Red" BorderThickness="2" Grid.Row="2">
+        <Border BorderBrush="Red" BorderThickness="2" Grid.Row="3" Margin="2,20,2,2">
             <ListView VerticalAlignment="Stretch" Margin="5,10,5,20" Name="personlistView"  ItemsSource="{Binding}" MouseDoubleClick="personlistView_MouseDoubleClick">
             <ListView.View>
                 <GridView>
