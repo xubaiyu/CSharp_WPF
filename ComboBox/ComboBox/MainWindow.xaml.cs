@@ -97,6 +97,9 @@ namespace BuildingFloor
             }
 
             
+           
+
+            
            /////
             //int itemcount = 107;
             //for (int j = 0; j < itemcount; j++)
@@ -123,6 +126,7 @@ namespace BuildingFloor
             //this.personlistView.DataContext = view;
             //ShowCurrentPageIndex();
            // this.tbTotalPage.Text = totalPage.ToString();
+
         }
 
         private void Image_MouseMove(object sender, System.Windows.Input.MouseEventArgs e)
@@ -151,11 +155,11 @@ namespace BuildingFloor
                 //ObservableCollection<Customer> customers0 = new ObservableCollection<Customer>();
                 RoomResidents.TryGetValue(roomName, out customers);
 
-                view.Source = customers;
+                //view.Source = customers;
 
-                view.Filter += new FilterEventHandler(view_Filter);
+                //view.Filter += new FilterEventHandler(view_Filter);
 
-                this.personlistView.DataContext = view;
+                //this.personlistView.DataContext = view;
                 this.personlistView.ItemsSource = customers;
             }
 
