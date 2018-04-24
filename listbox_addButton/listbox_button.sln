@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApplication5", "WpfApplication5\WpfApplication5.csproj", "{4D279936-351D-417C-8636-5C3C9207874C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "listbox_button", "WpfApplication5\listbox_button.csproj", "{4D279936-351D-417C-8636-5C3C9207874C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

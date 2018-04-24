@@ -77,7 +77,11 @@
             <RowDefinition />
             <RowDefinition Height="74"/>
         </Grid.RowDefinitions>
-        <ListBox Name="alistbox" Grid.Column="0"  Grid.Row="0" AllowDrop="False" MouseDoubleClick="alistbox_MouseDoubleClick" Width="300" Style="{DynamicResource ListBoxStyle1}" ItemTemplate="{DynamicResource DataTemplate1}" ItemContainerStyle="{DynamicResource ListBoxItemStyle1}">
+        <ListBox Name="alistbox" Grid.Column="0"  Grid.Row="0" AllowDrop="False" 
+                 MouseDoubleClick="alistbox_MouseDoubleClick" 
+                 Width="300" Style="{DynamicResource ListBoxStyle1}" 
+                 ItemTemplate="{DynamicResource DataTemplate1}" 
+                 ItemContainerStyle="{DynamicResource ListBoxItemStyle1}">
             <Button Height="50">aa</Button>
             <Button Height="50">bb</Button>
             <Button Height="50">cc</Button>
