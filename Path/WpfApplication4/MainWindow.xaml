@@ -1,0 +1,45 @@
+﻿<Window x:Class="WpfApplication4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+      
+        <Path Stroke="Red" StrokeThickness="3">
+            <Path.Data>
+                <PathGeometry>
+                    <PathFigure StartPoint="5,0">
+                        <LineSegment Point="95,0"></LineSegment>
+                        <!--SweepDirection获取或设置一个值，该值指定是以 Clockwise 方向还是以 Counterclockwise 方向绘制弧-->
+                        <!--顺时针绘制还是逆时针绘制,你试下另一个值,看下效果就知道怎么回事了-->
+                        <ArcSegment Point="100,5" Size="5,5" SweepDirection="Clockwise"></ArcSegment>
+                        <LineSegment Point="100,85"></LineSegment>
+                        <ArcSegment Point="95,90" Size="5,5" SweepDirection="Clockwise"></ArcSegment>
+                        <PolyLineSegment Points="55,90 50,100 45,90 5,90"></PolyLineSegment>
+                        <ArcSegment Point="0,85" Size="5,5" SweepDirection="Clockwise"></ArcSegment>
+                        <LineSegment Point="0,5"></LineSegment>
+                        <ArcSegment Point="5,0" Size="5,5" SweepDirection="Clockwise"></ArcSegment>
+                    </PathFigure>
+                </PathGeometry>
+            </Path.Data>
+            <Path.Fill>
+                <ImageBrush ImageSource="BackgroundImg03.png"/>
+            </Path.Fill>
+           
+        </Path>
+        <Path Stroke="Red" StrokeThickness="5">
+            <Path.Data>
+                <PathGeometry>
+                    <PathFigure StartPoint="50,50">
+                        <PolyLineSegment Points="150,50 150,140 105,140 100,150 95,140 50,140 50,50"></PolyLineSegment>
+                    </PathFigure>
+                </PathGeometry>
+            </Path.Data>
+            <Path.Effect>
+                <DropShadowEffect/>
+            </Path.Effect>
+            <Path.Fill>
+                <ImageBrush ImageSource="BackgroundImg03.png"/>
+            </Path.Fill>
+        </Path>
+    </Grid>
+</Window>
