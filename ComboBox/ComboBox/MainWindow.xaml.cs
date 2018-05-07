@@ -44,12 +44,12 @@ namespace BuildingFloor
         }
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            alist.Add(new BuildingFloorNo { FloorNo = -1 });
-            alist.Add(new BuildingFloorNo { FloorNo = 1 });
-            alist.Add(new BuildingFloorNo { FloorNo = 2 });
-            alist.Add(new BuildingFloorNo { FloorNo = 3 });
-            alist.Add(new BuildingFloorNo { FloorNo = 4 });
-            my.ItemsSource = alist;
+            //alist.Add(new BuildingFloorNo { FloorNo = -1 });
+            //alist.Add(new BuildingFloorNo { FloorNo = 1 });
+            //alist.Add(new BuildingFloorNo { FloorNo = 2 });
+            //alist.Add(new BuildingFloorNo { FloorNo = 3 });
+            //alist.Add(new BuildingFloorNo { FloorNo = 4 });
+            //my.ItemsSource = alist;
 
             // 户信息
             //DataTable pic = new DataTable();
