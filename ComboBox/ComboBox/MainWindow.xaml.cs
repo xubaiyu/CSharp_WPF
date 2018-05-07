@@ -23,8 +23,7 @@ namespace BuildingFloor
     /// </summary>
     public partial class MainWindow : Window
     {
-        // 楼层
-        ObservableCollection<BuildingFloorNo> alist = new ObservableCollection<BuildingFloorNo>();
+       
         // 楼层-户
         Dictionary<int, DataTable> floorRoomsDict = new Dictionary<int, DataTable>();
         // 户-居民
@@ -77,8 +76,8 @@ namespace BuildingFloor
                 DataTable pic0 = new DataTable();
                 pic0.Columns.Add("FullPath");
                 pic0.Columns.Add("Tips");
-                pic0.Rows.Add(i + @"层01室", "1");
-                pic0.Rows.Add(i + @"层02室", "2");
+                pic0.Rows.Add(i + @"层01室", "1====");
+                pic0.Rows.Add(i + @"层02室", "2583747");
                 floorRoomsDict.Add(i, pic0);
 
                 ObservableCollection<Customer> customers0 = new ObservableCollection<Customer>();
@@ -134,6 +133,14 @@ namespace BuildingFloor
             Button image = sender as Button;
             Border border = image.Parent as Border;
             border.BorderThickness = new Thickness(2, 2, 2, 2);
+
+             Button bton = sender as Button;
+            string strid = bton.ToolTip as string;
+            string roomName = bton.Content as string;
+            if (strid != null && roomName != null)
+            {
+                bton.ToolTip = "abcdeed";
+            }
         }
 
         private void Image_MouseLeave(object sender, System.Windows.Input.MouseEventArgs e)
