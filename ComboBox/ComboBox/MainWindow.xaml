@@ -31,7 +31,7 @@
                   SelectedIndex="0" HorizontalAlignment="Left"   SelectionChanged="my_SelectionChanged"/>
         </StackPanel>
         <Border BorderThickness="2,2,2,2" Grid.Row="2" BorderBrush="Red" Margin="2,20,2,2">
-        <ListBox x:Name="lstImgs" VerticalAlignment="Stretch" Margin="5,10,5,20" BorderBrush="Green" BorderThickness="1,1,1,1">
+        <ListBox x:Name="lstImgs" VerticalAlignment="Stretch" Margin="5,10,5,20" BorderBrush="Green" BorderThickness="1,1,1,1" ItemsSource="{Binding Path=.,Mode=OneWay}">
             <ListBox.Template>
                 <ControlTemplate TargetType="{x:Type ListBox}">
                     <ScrollViewer VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Disabled">

@@ -25,6 +25,11 @@ namespace BuildingFloor
     {
         // 楼层
         private ObservableCollection<BuildingFloorNo> alist = new ObservableCollection<BuildingFloorNo>();
+        public ObservableCollection<BuildingFloorNo> AList
+        {
+            get { return alist; }
+            set { alist = value; }
+        }
         // 楼层-户
         Dictionary<int, DataTable> floorRoomsDict = new Dictionary<int, DataTable>();
         // 户-居民
@@ -40,10 +45,14 @@ namespace BuildingFloor
             get { return customers; }
             set { customers = value; }
         }
-        public ObservableCollection<BuildingFloorNo> AList
+       
+
+        DataTable rooms = new DataTable();
+        public DataTable Rooms
         {
-            get { return alist; }
-            set { alist = value; }
+            get { return rooms; }
+            set { rooms = value; }
+
         }
         int currentPageIndex = 0;
         int itemPerPage = 20;
@@ -172,7 +181,7 @@ namespace BuildingFloor
                 //view.Filter += new FilterEventHandler(view_Filter);
 
                 this.personlistView.DataContext = Customers;
-                Console.WriteLine("BBB-" + this.personlistView.DataContext.ToString());
+                //Console.WriteLine("BBB-" + this.personlistView.DataContext.ToString());
                 //this.personlistView.ItemsSource = customers;
             }
 
@@ -247,10 +256,11 @@ namespace BuildingFloor
                 {
                     Console.WriteLine(floorNo.FloorNo);
                 
-                  DataTable rooms = new DataTable();
+                  
                   if(floorRoomsDict.TryGetValue(floorNo.FloorNo, out rooms))
                   {
-                    this.lstImgs.ItemsSource = rooms.DefaultView;
+                    //this.lstImgs.ItemsSource = rooms.DefaultView;
+                      this.lstImgs.DataContext = Rooms.DefaultView;
                   }
                 }
             }
@@ -262,8 +272,8 @@ namespace BuildingFloor
 
             view.Filter += new FilterEventHandler(view_Filter);
 
-            this.personlistView.DataContext = view;
-            this.personlistView.ItemsSource = customers0;
+            this.personlistView.DataContext = customers0;
+            //this.personlistView.ItemsSource = customers0;
             
         }
 
