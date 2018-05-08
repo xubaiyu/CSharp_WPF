@@ -5,6 +5,9 @@
 # Generated files
 bin/
 obj/
+packages/
+.git/
+*.gitignore
 
 gen/
 out/
