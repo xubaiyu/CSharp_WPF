@@ -24,7 +24,7 @@ namespace BuildingFloor
     public partial class MainWindow : Window
     {
         // 楼层
-        public ObservableCollection<BuildingFloorNo> alist = new ObservableCollection<BuildingFloorNo>();
+        private ObservableCollection<BuildingFloorNo> alist = new ObservableCollection<BuildingFloorNo>();
         // 楼层-户
         Dictionary<int, DataTable> floorRoomsDict = new Dictionary<int, DataTable>();
         // 户-居民
@@ -34,7 +34,12 @@ namespace BuildingFloor
             InitializeComponent();
         }
         CollectionViewSource view = new CollectionViewSource();
-        ObservableCollection<Customer> customers = new ObservableCollection<Customer>();
+        private ObservableCollection<Customer> customers = new ObservableCollection<Customer>();
+        public ObservableCollection<Customer> Customers
+        {
+            get { return customers; }
+            set { customers = value; }
+        }
         public ObservableCollection<BuildingFloorNo> AList
         {
             get { return alist; }
@@ -166,8 +171,9 @@ namespace BuildingFloor
 
                 //view.Filter += new FilterEventHandler(view_Filter);
 
-                //this.personlistView.DataContext = view;
-                this.personlistView.ItemsSource = customers;
+                this.personlistView.DataContext = Customers;
+                Console.WriteLine("BBB-" + this.personlistView.DataContext.ToString());
+                //this.personlistView.ItemsSource = customers;
             }
 
         }
