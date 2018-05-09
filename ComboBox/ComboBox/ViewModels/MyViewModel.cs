@@ -45,11 +45,11 @@ namespace BuildingFloor.ViewModels
             ButtonClickCommand = new RelayCommand<Button>(ButtonClick_CallBack);
             SelectionChangedCommand = new RelayCommand<ComboBox>(SelectionChanged_CallBack);
 
-            alist.Add(new BuildingFloorNo { FloorNo = -1 });
-            alist.Add(new BuildingFloorNo { FloorNo = 1 });
-            alist.Add(new BuildingFloorNo { FloorNo = 2 });
-            alist.Add(new BuildingFloorNo { FloorNo = 3 });
-            alist.Add(new BuildingFloorNo { FloorNo = 4 });
+            //alist.Add(new BuildingFloorNo { FloorNo = -1 });
+            //alist.Add(new BuildingFloorNo { FloorNo = 1 });
+            //alist.Add(new BuildingFloorNo { FloorNo = 2 });
+            //alist.Add(new BuildingFloorNo { FloorNo = 3 });
+            //alist.Add(new BuildingFloorNo { FloorNo = 4 });
         }
 
         private void SelectionChanged_CallBack(ComboBox sender)

@@ -73,10 +73,10 @@
                                         <i:InvokeCommandAction Command="{Binding MouseMoveCommand}" CommandParameter="{Binding ElementName=bton }"/>
                                     </i:EventTrigger>
                                     <i:EventTrigger EventName="MouseLeave">
-                                        <cmd:EventToCommand Command="{Binding MouseLeaveCommand}" CommandParameter="{Binding ElementName=bton}"/>
+                                        <i:InvokeCommandAction Command="{Binding MouseLeaveCommand}" CommandParameter="{Binding ElementName=bton}"/>
                                     </i:EventTrigger>
                                     <i:EventTrigger EventName="Click">
-                                        <cmd:EventToCommand Command="{Binding ButtonClickCommand}" CommandParameter="{Binding ElementName=bton}"/>
+                                        <i:InvokeCommandAction Command="{Binding ButtonClickCommand}" CommandParameter="{Binding ElementName=bton}"/>
                                     </i:EventTrigger>
                                 </i:Interaction.Triggers>
                             </Button>
