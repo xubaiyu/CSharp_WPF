@@ -2,10 +2,16 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:ViewModel="clr-namespace:BuildingFloor.ViewModels"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
         Title="ResidentInfoWnd" Height="300" Width="300" WindowStartupLocation="CenterScreen" >
     <Window.DataContext>
         <ViewModel:ResidentViewModel/>
     </Window.DataContext>
+    <i:Interaction.Triggers>
+    <i:EventTrigger EventName="Close">
+        <i:InvokeCommandAction Command="{Binding closeCommand}"/>
+    </i:EventTrigger>
+    </i:Interaction.Triggers>
     <Grid>
         <DataGrid x:Name="dg" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
                   ItemsSource="{Binding Path=Residents}">

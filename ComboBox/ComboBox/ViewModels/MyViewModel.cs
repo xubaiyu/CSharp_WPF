@@ -148,6 +148,7 @@ namespace BuildingFloor.ViewModels
         private void Closed_CallBack()
         {
             //throw new NotImplementedException();
+            MyModel.Instance.UpateFloorsInfoEvent -= UpdateFloorsInfo_CallBack; 
         }
 
         private void Loaded_CallBack()
