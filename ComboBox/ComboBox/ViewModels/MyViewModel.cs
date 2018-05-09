@@ -1,4 +1,5 @@
 ﻿using BuildingFloor.Models;
+using BuildingFloor.Views;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using System;
@@ -55,7 +56,12 @@ namespace BuildingFloor.ViewModels
 
         private void MouseDoubleClick_CallBack(Customer customer)
         {
-            MessageBox.Show(customer.ID + customer.Name + customer.Age);
+            //MessageBox.Show(customer.ID + customer.Name + customer.Age);
+
+            
+            ResidentInfoWnd residentWnd = new ResidentInfoWnd();
+            ResidentModel.Instance.NotifyGetCustomer(new ObservableCollection<Customer>() { customer });
+            residentWnd.ShowDialog();
             
         }
 
