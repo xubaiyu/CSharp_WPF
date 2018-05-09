@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,13 +26,43 @@ namespace BuildingFloor.Models
             }
         }
         private ObservableCollection<BuildingFloorNo> alist = new ObservableCollection<BuildingFloorNo>();
+
+        // 楼层-户
+        public Dictionary<int, DataTable> floorRoomsDict = new Dictionary<int, DataTable>();
+
+        Dictionary<string, ObservableCollection<Customer>> RoomResidents = new Dictionary<string, ObservableCollection<Customer>>();
         public MyModel()
         {
-            alist.Add(new BuildingFloorNo { FloorNo = -10 });
-            alist.Add(new BuildingFloorNo { FloorNo = 10 });
-            alist.Add(new BuildingFloorNo { FloorNo = 20});
-            alist.Add(new BuildingFloorNo { FloorNo = 30 });
-            alist.Add(new BuildingFloorNo { FloorNo = 40 });
+            alist.Add(new BuildingFloorNo { FloorNo = -1 });
+            alist.Add(new BuildingFloorNo { FloorNo = 1 });
+            alist.Add(new BuildingFloorNo { FloorNo = 2});
+            alist.Add(new BuildingFloorNo { FloorNo = 3 });
+            alist.Add(new BuildingFloorNo { FloorNo = 4 });
+
+            // 
+            for (int i = -1; i < 5; i++)
+            {
+                DataTable pic0 = new DataTable();
+                pic0.Columns.Add("FullPath");
+                pic0.Columns.Add("Tips");
+                pic0.Rows.Add(i + @"层01室", "1");
+                pic0.Rows.Add(i + @"层02室", "2");
+                floorRoomsDict.Add(i, pic0);
+
+                ObservableCollection<Customer> customers0 = new ObservableCollection<Customer>();
+                int itemcount0 = 10;
+                for (int j = 0; j < itemcount0; j++)
+                {
+                    customers0.Add(new Customer()
+                    {
+                        ID = j,
+                        Name = i + @"层01室:" + "姓名item" + j.ToString(),
+                        Age = 10 + j
+                    });
+                }
+
+                RoomResidents.Add(i + @"层01室", customers0);
+            }
         }
     }
 }

@@ -23,7 +23,7 @@
 
 
         <DataTemplate x:Key="DataTemplate1">
-            <TextBlock Text="{Binding Path=FloorNo77}"/>
+            <TextBlock Text="{Binding Path=FloorNo,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
             
         </DataTemplate>
 
@@ -42,7 +42,7 @@
         <TextBlock Margin="5,0,0,0" Text="建筑物基本信息:" Grid.Row="0"/>
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Left" Margin="5,0,0,0">
             <TextBlock Text="请选择楼层："  />
-            <ComboBox  x:Name ="my"  Height="20" Width="150"  ItemsSource="{Binding Path=AList,UpdateSourceTrigger=PropertyChanged}"
+            <ComboBox  x:Name ="my"  Height="20" Width="150"  ItemsSource="{Binding Path=AList,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
                   ItemTemplate="{StaticResource DataTemplate1}"
                   SelectedIndex="0" HorizontalAlignment="Left">
                 <i:Interaction.Triggers>
@@ -54,7 +54,8 @@
             </ComboBox>
         </StackPanel>
         <Border BorderThickness="2,2,2,2" Grid.Row="2" BorderBrush="Red" Margin="2,20,2,2">
-        <ListBox x:Name="lstImgs" VerticalAlignment="Stretch" Margin="5,10,5,20" BorderBrush="Green" BorderThickness="1,1,1,1" ItemsSource="{Binding Path=.,Mode=OneWay}">
+        <ListBox x:Name="lstImgs" VerticalAlignment="Stretch" Margin="5,10,5,20" BorderBrush="Green" 
+                 BorderThickness="1,1,1,1" ItemsSource="{Binding Path=Rooms,Mode=OneWay}">
             <ListBox.Template>
                 <ControlTemplate TargetType="{x:Type ListBox}">
                     <ScrollViewer VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Disabled">
@@ -68,7 +69,7 @@
                     <Border BorderThickness="0,0,0,0" BorderBrush="Black" Width="150" Height="100">
                             <Button x:Name="bton" Content="{Binding Path=FullPath}" ToolTip="{Binding Path=Tips}" >
                                 <i:Interaction.Triggers>
-                                    <i:EventTrigger EventName="MouseMove">
+                                    <i:EventTrigger SourceName="bton" EventName="MouseMove">
                                         <i:InvokeCommandAction Command="{Binding MouseMoveCommand}" CommandParameter="{Binding ElementName=bton }"/>
                                     </i:EventTrigger>
                                     <i:EventTrigger EventName="MouseLeave">

@@ -44,11 +44,44 @@ namespace BuildingFloor.ViewModels
             MouseDoubleClickCommand = new RelayCommand<DataGrid>(MouseDoubleClick_CallBack);
             ButtonClickCommand = new RelayCommand<Button>(ButtonClick_CallBack);
             SelectionChangedCommand = new RelayCommand<ComboBox>(SelectionChanged_CallBack);
+
+            alist.Add(new BuildingFloorNo { FloorNo = -1 });
+            alist.Add(new BuildingFloorNo { FloorNo = 1 });
+            alist.Add(new BuildingFloorNo { FloorNo = 2 });
+            alist.Add(new BuildingFloorNo { FloorNo = 3 });
+            alist.Add(new BuildingFloorNo { FloorNo = 4 });
         }
 
-        private void SelectionChanged_CallBack(ComboBox obj)
+        private void SelectionChanged_CallBack(ComboBox sender)
         {
-            throw new NotImplementedException();
+            ComboBox floorCombox = sender as ComboBox;
+            if (null != floorCombox)
+            {
+                Console.WriteLine(floorCombox.SelectedIndex);
+                BuildingFloorNo floorNo = floorCombox.SelectedItem as BuildingFloorNo;
+                if (null != floorNo)
+                {
+                    Console.WriteLine(floorNo.FloorNo);
+
+                    DataTable roomsOfFloor = new DataTable();
+
+                    if (MyModel.Instance.floorRoomsDict.TryGetValue(floorNo.FloorNo, out roomsOfFloor))
+                    {
+                        Rooms.Clear();
+                        //Rooms = roomsOfFloor.Clone();
+                        //Rooms = roomsOfFloor;
+                        Rooms.Merge(roomsOfFloor);
+                        
+                        //this.lstImgs.ItemsSource = rooms.DefaultView;
+                        //this.lstImgs.DataContext = Rooms.DefaultView;
+                    }
+                }
+            }
+            // clear personlistView
+            ObservableCollection<Customer> customers0 = new ObservableCollection<Customer>();
+
+            //this.personlistView.DataContext = customers0;
+            //this.personlistView.ItemsSource = customers0;
         }
 
         private void MouseDoubleClick_CallBack(DataGrid obj)
@@ -91,7 +124,14 @@ namespace BuildingFloor.ViewModels
 
         private void UpdateFloorsInfo_CallBack(ObservableCollection<BuildingFloorNo> obj)
         {
-            AList = obj;
+            AList.Clear();
+            //AList = obj;
+            foreach (BuildingFloorNo no in obj)
+            {
+                AList.Add(no);
+
+            }
+ 
         }
          // 楼层
         private ObservableCollection<BuildingFloorNo> alist = new ObservableCollection<BuildingFloorNo>();

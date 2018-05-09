@@ -28,25 +28,6 @@ namespace BuildingFloor
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Button_MouseLeave(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void personlistView_MouseDoubleClick(object sender, MouseButtonEventArgs e)
-        {
-
-        }
-
-        private void my_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
     }
 
 }
