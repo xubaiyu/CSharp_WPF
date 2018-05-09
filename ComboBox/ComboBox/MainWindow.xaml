@@ -42,7 +42,7 @@
         <TextBlock Margin="5,0,0,0" Text="建筑物基本信息:" Grid.Row="0"/>
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Left" Margin="5,0,0,0">
             <TextBlock Text="请选择楼层："  />
-            <ComboBox  x:Name ="my"  Height="20" Width="150"  ItemsSource="{Binding Path=AList,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+            <ComboBox  x:Name ="my"  Height="20" Width="150"  ItemsSource="{Binding Path=AList,Mode=OneWay,UpdateSourceTrigger=PropertyChanged}"
                   ItemTemplate="{StaticResource DataTemplate1}"
                   SelectedIndex="0" HorizontalAlignment="Left">
                 <i:Interaction.Triggers>

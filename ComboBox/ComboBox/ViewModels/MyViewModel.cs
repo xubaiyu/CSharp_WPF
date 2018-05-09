@@ -8,6 +8,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 
@@ -30,7 +31,7 @@ namespace BuildingFloor.ViewModels
         public RelayCommand<Button> MouseMoveCommand { private set; get; }
 
         public RelayCommand<Button> MouseLeaveCommand { private set; get; }
-        public RelayCommand<DataGrid> MouseDoubleClickCommand { private set; get; }
+        public RelayCommand<Customer> MouseDoubleClickCommand { private set; get; }
         public RelayCommand<Button> ButtonClickCommand { private set; get; }
         public RelayCommand<ComboBox> SelectionChangedCommand { private set; get; }
 
@@ -41,7 +42,7 @@ namespace BuildingFloor.ViewModels
             ClosedCommand = new RelayCommand(Closed_CallBack);
             MouseMoveCommand = new RelayCommand<Button>(MouseMove_CallBack);
             MouseLeaveCommand = new RelayCommand<Button>(MouseLeave_CallBack);
-            MouseDoubleClickCommand = new RelayCommand<DataGrid>(MouseDoubleClick_CallBack);
+            MouseDoubleClickCommand = new RelayCommand<Customer>(MouseDoubleClick_CallBack);
             ButtonClickCommand = new RelayCommand<Button>(ButtonClick_CallBack);
             SelectionChangedCommand = new RelayCommand<ComboBox>(SelectionChanged_CallBack);
 
@@ -50,6 +51,12 @@ namespace BuildingFloor.ViewModels
             //alist.Add(new BuildingFloorNo { FloorNo = 2 });
             //alist.Add(new BuildingFloorNo { FloorNo = 3 });
             //alist.Add(new BuildingFloorNo { FloorNo = 4 });
+        }
+
+        private void MouseDoubleClick_CallBack(Customer customer)
+        {
+            MessageBox.Show(customer.ID + customer.Name + customer.Age);
+            
         }
 
         private void SelectionChanged_CallBack(ComboBox sender)
@@ -71,6 +78,8 @@ namespace BuildingFloor.ViewModels
                         //Rooms = roomsOfFloor.Clone();
                         //Rooms = roomsOfFloor;
                         rooms.Merge(roomsOfFloor);
+                        Customers.Clear();
+                        return;
                         
                         //this.lstImgs.ItemsSource = rooms.DefaultView;
                         //this.lstImgs.DataContext = Rooms.DefaultView;
@@ -84,10 +93,7 @@ namespace BuildingFloor.ViewModels
             //this.personlistView.ItemsSource = customers0;
         }
 
-        private void MouseDoubleClick_CallBack(DataGrid obj)
-        {
-            throw new NotImplementedException();
-        }
+      
 
         private void ButtonClick_CallBack(Button sender)
         {
@@ -290,134 +296,21 @@ namespace BuildingFloor.ViewModels
         //    border.BorderThickness = new Thickness(0, 0, 0, 0);
         //}
 
-        //private void Button_Click(object sender, RoutedEventArgs e)
-        //{
-        //    Button bton = sender as Button;
-        //    string strid = bton.ToolTip as string;
-        //    string roomName = bton.Content as string;
-        //    if (strid != null && roomName !=null)
-        //    {
-        //        int index = Convert.ToInt32(strid);
-        //        Console.WriteLine(index);
-        //        //ObservableCollection<Customer> customers0 = new ObservableCollection<Customer>();
-        //        RoomResidents.TryGetValue(roomName, out customers);
+      
 
-        //        //view.Source = customers;
-
-        //        //view.Filter += new FilterEventHandler(view_Filter);
-
-        //        this.personlistView.DataContext = Customers;
-        //        //Console.WriteLine("BBB-" + this.personlistView.DataContext.ToString());
-        //        //this.personlistView.ItemsSource = customers;
-        //    }
-
-        //}
-
-        //void view_Filter(object sender, FilterEventArgs e)
-        //{
-        //    int index = customers.IndexOf((Customer)e.Item);
-
-        //    if (index >= itemPerPage * currentPageIndex && index < itemPerPage * (currentPageIndex + 1))
-        //    {
-        //        e.Accepted = true;
-        //    }
-        //    else
-        //    {
-        //        e.Accepted = false;
-        //    }
-        //}
-
-        //private void btnFirst_Click(object sender, RoutedEventArgs e)
-        //{
-        //    // Display the first page
-        //    if (currentPageIndex != 0)
-        //    {
-        //        currentPageIndex = 0;
-        //        view.View.Refresh();
-        //    }
-        //    ShowCurrentPageIndex();
-        //}
-
-        //private void btnPrev_Click(object sender, RoutedEventArgs e)
-        //{
-        //    // Display previous page
-        //    if (currentPageIndex > 0)
-        //    {
-        //        currentPageIndex--;
-        //        view.View.Refresh();
-        //    }
-        //    ShowCurrentPageIndex();
-        //}
-
-        //private void btnNext_Click(object sender, RoutedEventArgs e)
-        //{
-        //    // Display next page
-        //    if (currentPageIndex < totalPage - 1)
-        //    {
-        //        currentPageIndex++;
-        //        view.View.Refresh();
-        //    }
-        //    ShowCurrentPageIndex();
-        //}
-
-        //private void btnLast_Click(object sender, RoutedEventArgs e)
-        //{
-        //    // Display the last page
-        //    if (currentPageIndex != totalPage - 1)
-        //    {
-        //        currentPageIndex = totalPage - 1;
-        //        view.View.Refresh();
-        //    }
-        //    ShowCurrentPageIndex();
-        //}
-
-        //private void my_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        //{
-        //    ComboBox floorCombox = sender as ComboBox;
-        //    if (null != floorCombox)
-        //    {
-        //        Console.WriteLine(floorCombox.SelectedIndex);
-        //        BuildingFloorNo floorNo = floorCombox.SelectedItem as BuildingFloorNo;
-        //        if (null != floorNo)
-        //        {
-        //            Console.WriteLine(floorNo.FloorNo);
-                
-                  
-        //          if(floorRoomsDict.TryGetValue(floorNo.FloorNo, out rooms))
-        //          {
-        //            //this.lstImgs.ItemsSource = rooms.DefaultView;
-        //              this.lstImgs.DataContext = Rooms.DefaultView;
-        //          }
-        //        }
-        //    }
-        //    // clear personlistView
-        //    ObservableCollection<Customer> customers0 = new ObservableCollection<Customer>();
-            
-
-        //    view.Source = customers0;
-
-        //    view.Filter += new FilterEventHandler(view_Filter);
-
-        //    this.personlistView.DataContext = customers0;
-        //    //this.personlistView.ItemsSource = customers0;
-            
-        //}
-
-
-        //private void personlistView_MouseDoubleClick(object sender, MouseButtonEventArgs e)
-        //{
-        //    object o = personlistView.SelectedItem;
-        //    if (o == null)
-        //        return;
-        //    Customer customer = o as Customer;
-        //    MessageBox.Show(customer.ID + customer.Name + customer.Age);
-
-        //}
-
-    }
-
-    public class AA
-    {
        
+
+    
+
+     
+
+
+    
+  
+
+
+       
+
     }
+
 }
