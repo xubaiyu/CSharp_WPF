@@ -67,7 +67,7 @@
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <Border BorderThickness="0,0,0,0" BorderBrush="Black" Width="150" Height="100">
-                            <Button x:Name="bton" Content="{Binding Path=FullPath}" ToolTip="{Binding Path=Tips}" >
+                            <Button x:Name="bton" Content="{Binding Path=FullPath}" ToolTip="{Binding Path=DataContext.Tips,RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type ListBox}}}" >
                                 <i:Interaction.Triggers>
                                     <i:EventTrigger EventName="MouseMove">
                                         <i:InvokeCommandAction Command="{Binding Path=DataContext.MouseMoveCommand,RelativeSource={RelativeSource Mode=FindAncestor,AncestorType={x:Type ListBox} }}" 

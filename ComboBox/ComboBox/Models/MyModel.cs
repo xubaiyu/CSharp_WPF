@@ -31,6 +31,8 @@ namespace BuildingFloor.Models
         public Dictionary<int, DataTable> floorRoomsDict = new Dictionary<int, DataTable>();
 
         public Dictionary<string, ObservableCollection<Customer>> RoomResidents = new Dictionary<string, ObservableCollection<Customer>>();
+
+        public string Tips = "77777777777";
         private MyModel()
         {
             alist.Add(new BuildingFloorNo { FloorNo = -1 });

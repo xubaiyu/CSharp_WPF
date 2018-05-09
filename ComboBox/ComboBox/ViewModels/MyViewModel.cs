@@ -108,7 +108,7 @@ namespace BuildingFloor.ViewModels
             string roomName = bton.Content as string;
             if (strid != null && roomName != null)
             {
-                int index = Convert.ToInt32(strid);
+                long index = Convert.ToInt64(strid);
                 Console.WriteLine(index);
                 ObservableCollection<Customer> customers0 = new ObservableCollection<Customer>();
                 MyModel.Instance.RoomResidents.TryGetValue(roomName, out customers0);
@@ -132,14 +132,27 @@ namespace BuildingFloor.ViewModels
             }
         }
 
-        private void MouseLeave_CallBack(Button obj)
+        private void MouseLeave_CallBack(Button sender)
         {
-            //throw new NotImplementedException();
+            Button image = sender as Button;
+            Border border = image.Parent as Border;
+            border.BorderThickness = new Thickness(0, 0, 0, 0);
         }
 
-        private void MouseMove_CallBack(Button obj)
+        private void MouseMove_CallBack(Button sender)
         {
-            //throw new NotImplementedException();
+            Button image = sender as Button;
+            Border border = image.Parent as Border;
+            border.BorderThickness = new Thickness(2, 2, 2, 2);
+
+            Button bton = sender as Button;
+            string strid = bton.ToolTip as string;
+            string roomName = bton.Content as string;
+            if (strid != null && roomName != null)
+            {
+                //bton.ToolTip = "9999999";
+                Tips = MyModel.Instance.Tips;
+            }
         }
 
        
@@ -200,6 +213,13 @@ namespace BuildingFloor.ViewModels
             get { return rooms.DefaultView; }
             //set { rooms = value; }
 
+        }
+
+        private string tips = string.Empty;
+        public string Tips
+        {
+            get { return tips; }
+            set { Set(() => Tips, ref tips, value); }
         }
       
         //private void Window_Loaded(object sender, RoutedEventArgs e)
