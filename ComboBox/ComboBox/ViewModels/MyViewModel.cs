@@ -163,21 +163,22 @@ namespace BuildingFloor.ViewModels
 
         private void UpdateFloorsInfo_CallBack(ObservableCollection<BuildingFloorNo> obj)
         {
-            AList.Clear();
-            //AList = obj;
-            foreach (BuildingFloorNo no in obj)
-            {
-                AList.Add(no);
+            AList = obj;
+            //AList.Clear();
+            ////AList = obj;
+            //foreach (BuildingFloorNo no in obj)
+            //{
+            //    AList.Add(no);
 
-            }
+            //}
  
         }
          // 楼层
-        private ObservableCollection<BuildingFloorNo> alist = new ObservableCollection<BuildingFloorNo>();
+        private ObservableCollection<BuildingFloorNo> alist = null;
         public ObservableCollection<BuildingFloorNo> AList
         {
             get { return alist; }
-            set { alist = value; }
+            set { Set(() => AList, ref alist, value); }
         }
         // 楼层-户
         Dictionary<int, DataTable> floorRoomsDict = new Dictionary<int, DataTable>();
