@@ -67,10 +67,10 @@ namespace BuildingFloor.ViewModels
 
                     if (MyModel.Instance.floorRoomsDict.TryGetValue(floorNo.FloorNo, out roomsOfFloor))
                     {
-                        Rooms.Clear();
+                        rooms.Clear();
                         //Rooms = roomsOfFloor.Clone();
                         //Rooms = roomsOfFloor;
-                        Rooms.Merge(roomsOfFloor);
+                        rooms.Merge(roomsOfFloor);
                         
                         //this.lstImgs.ItemsSource = rooms.DefaultView;
                         //this.lstImgs.DataContext = Rooms.DefaultView;
@@ -89,19 +89,45 @@ namespace BuildingFloor.ViewModels
             throw new NotImplementedException();
         }
 
-        private void ButtonClick_CallBack(Button obj)
+        private void ButtonClick_CallBack(Button sender)
         {
-            throw new NotImplementedException();
+            Button bton = sender as Button;
+            string strid = bton.ToolTip as string;
+            string roomName = bton.Content as string;
+            if (strid != null && roomName != null)
+            {
+                int index = Convert.ToInt32(strid);
+                Console.WriteLine(index);
+                ObservableCollection<Customer> customers0 = new ObservableCollection<Customer>();
+                MyModel.Instance.RoomResidents.TryGetValue(roomName, out customers0);
+                Customers.Clear();
+                if (customers0 != null)
+                {
+                    foreach (Customer o in customers0)
+                    {
+                        Customers.Add(o);
+                    }
+                }
+                
+
+                //view.Source = customers;
+
+                //view.Filter += new FilterEventHandler(view_Filter);
+
+                //this.personlistView.DataContext = Customers;
+                //Console.WriteLine("BBB-" + this.personlistView.DataContext.ToString());
+                //this.personlistView.ItemsSource = customers;
+            }
         }
 
         private void MouseLeave_CallBack(Button obj)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
 
         private void MouseMove_CallBack(Button obj)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
 
        
@@ -155,10 +181,10 @@ namespace BuildingFloor.ViewModels
        
 
         DataTable rooms = new DataTable();
-        public DataTable Rooms
+        public DataView Rooms
         {
-            get { return rooms; }
-            set { rooms = value; }
+            get { return rooms.DefaultView; }
+            //set { rooms = value; }
 
         }
       
