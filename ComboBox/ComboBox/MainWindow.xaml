@@ -16,7 +16,7 @@
             <i:InvokeCommandAction Command="{Binding LoadedCommand}"/>
         </i:EventTrigger>
         <i:EventTrigger EventName="Closed">
-            <cmd:EventToCommand Command="{Binding ClosedCommand}"/>
+            <cmd:EventToCommand Command="{Binding ClosedCommand}" PassEventArgsToCommand="True"/>
         </i:EventTrigger>
     </i:Interaction.Triggers>
     <Window.Resources>
@@ -48,7 +48,7 @@
                 <i:Interaction.Triggers>
                     <i:EventTrigger EventName="SelectionChanged">
                         <i:InvokeCommandAction Command="{Binding SelectionChangedCommand}"   
-                            CommandParameter="{Binding ElementName=my}"/>
+                            CommandParameter="{Binding ElementName=my}" />
                     </i:EventTrigger>
                 </i:Interaction.Triggers>
             </ComboBox>

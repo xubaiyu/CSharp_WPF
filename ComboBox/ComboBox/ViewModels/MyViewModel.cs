@@ -27,7 +27,7 @@ namespace BuildingFloor.ViewModels
             set { Set(() => DomyModelShow, ref domyModelShow, value); }
         }
         public RelayCommand LoadedCommand { private set; get; }
-        public RelayCommand ClosedCommand { private set; get; }
+        public RelayCommand<EventArgs> ClosedCommand { private set; get; }
 
         public RelayCommand<Button> MouseMoveCommand { private set; get; }
 
@@ -40,7 +40,7 @@ namespace BuildingFloor.ViewModels
         public MyViewModel()
         {   
             LoadedCommand = new RelayCommand(Loaded_CallBack);
-            ClosedCommand = new RelayCommand(Closed_CallBack);
+            ClosedCommand = new RelayCommand<EventArgs>(Closed_CallBack);
             MouseMoveCommand = new RelayCommand<Button>(MouseMove_CallBack);
             MouseLeaveCommand = new RelayCommand<Button>(MouseLeave_CallBack);
             MouseDoubleClickCommand = new RelayCommand<Customer>(MouseDoubleClick_CallBack);
@@ -155,10 +155,10 @@ namespace BuildingFloor.ViewModels
             }
         }
 
-       
 
-       
-        private void Closed_CallBack()
+
+
+        private void Closed_CallBack(EventArgs e)
         {
             //throw new NotImplementedException();
             MyModel.Instance.UpateFloorsInfoEvent -= UpdateFloorsInfo_CallBack; 
