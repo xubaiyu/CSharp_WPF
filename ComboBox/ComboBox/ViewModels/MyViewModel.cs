@@ -5,8 +5,10 @@ using GalaSoft.MvvmLight.Command;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Data;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -36,6 +38,8 @@ namespace BuildingFloor.ViewModels
         public RelayCommand<Button> ButtonClickCommand { private set; get; }
         public RelayCommand<ComboBox> SelectionChangedCommand { private set; get; }
 
+        public RelayCommand<DataGridAutoGeneratingColumnEventArgs> AutoGeneratingColumnCommand { private set; get; }
+
 
         public MyViewModel()
         {   
@@ -46,6 +50,7 @@ namespace BuildingFloor.ViewModels
             MouseDoubleClickCommand = new RelayCommand<Customer>(MouseDoubleClick_CallBack);
             ButtonClickCommand = new RelayCommand<Button>(ButtonClick_CallBack);
             SelectionChangedCommand = new RelayCommand<ComboBox>(SelectionChanged_CallBack);
+            AutoGeneratingColumnCommand = new RelayCommand<DataGridAutoGeneratingColumnEventArgs>(AutoGeneratingColumn_CallBack);
 
             //alist.Add(new BuildingFloorNo { FloorNo = -1 });
             //alist.Add(new BuildingFloorNo { FloorNo = 1 });
@@ -54,6 +59,52 @@ namespace BuildingFloor.ViewModels
             //alist.Add(new BuildingFloorNo { FloorNo = 4 });
         }
 
+        private void AutoGeneratingColumn_CallBack(DataGridAutoGeneratingColumnEventArgs e)
+        {
+            var displayName = GetPropertyDisplayName(e.PropertyDescriptor);
+
+            if (!string.IsNullOrEmpty(displayName))
+            {
+                e.Column.Header = displayName;
+            }
+        }
+
+        public static string GetPropertyDisplayName(object descriptor)
+        {
+            var pd = descriptor as PropertyDescriptor;
+
+            if (pd != null)
+            {
+                // Check for DisplayName attribute and set the column header accordingly
+                var displayName = pd.Attributes[typeof(DisplayNameAttribute)] as DisplayNameAttribute;
+
+                if (displayName != null && displayName != DisplayNameAttribute.Default)
+                {
+                    return displayName.DisplayName;
+                }
+
+            }
+            else
+            {
+                var pi = descriptor as PropertyInfo;
+
+                if (pi != null)
+                {
+                    // Check for DisplayName attribute and set the column header accordingly
+                    Object[] attributes = pi.GetCustomAttributes(typeof(DisplayNameAttribute), true);
+                    for (int i = 0; i < attributes.Length; ++i)
+                    {
+                        var displayName = attributes[i] as DisplayNameAttribute;
+                        if (displayName != null && displayName != DisplayNameAttribute.Default)
+                        {
+                            return displayName.DisplayName;
+                        }
+                    }
+                }
+            }
+
+            return null;
+        }
         private void MouseDoubleClick_CallBack(Customer customer)
         {
             //MessageBox.Show(customer.ID + customer.Name + customer.Age);
