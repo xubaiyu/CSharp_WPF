@@ -90,14 +90,15 @@
         </Border>
         <Border BorderBrush="Red" BorderThickness="2" Grid.Row="3" Margin="2,20,2,2">
             <DataGrid VerticalAlignment="Stretch" Margin="5,10,5,20" Name="personlistView" AutoGenerateColumns="True" AutoGeneratingColumn="personlistView_AutoGeneratingColumn"
-                      ItemsSource="{Binding Path=Customers,Mode=OneWay}" >
+                      ItemsSource="{Binding Path=Customers,Mode=OneWay}" AlternationCount="2" HeadersVisibility="Column" >
                 <i:Interaction.Triggers>
                     <i:EventTrigger EventName="MouseDoubleClick">
                         <cmd:EventToCommand Command="{Binding MouseDoubleClickCommand}"
                                            CommandParameter="{Binding ElementName=personlistView,Path=SelectedItem}"/>
                     </i:EventTrigger>
                     <i:EventTrigger EventName="AutoGeneratingColumn">
-                        <cmd:EventToCommand Command="{Binding AutoGeneratingColumnCommand}" />
+                        <cmd:EventToCommand Command="{Binding AutoGeneratingColumnCommand}"
+                                            CommandParameter="{Binding personlistView}"/>
                     </i:EventTrigger>
                 </i:Interaction.Triggers>
                 <!--<DataGrid.Columns>
