@@ -110,9 +110,13 @@ namespace BuildingFloor.ViewModels
             //MessageBox.Show(customer.ID + customer.Name + customer.Age);
 
             
-            ResidentInfoWnd residentWnd = new ResidentInfoWnd();
-            ResidentModel.Instance.NotifyGetCustomer(new ObservableCollection<Customer>() { customer });
-            residentWnd.ShowDialog();
+            if(customer != null)
+            {
+              ResidentInfoWnd residentWnd = new ResidentInfoWnd();
+              ResidentModel.Instance.NotifyGetCustomer(new ObservableCollection<Customer>() { customer });
+              residentWnd.ShowDialog();
+            }
+            
             
         }
 
