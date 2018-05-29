@@ -4,7 +4,7 @@
         Title="MainWindow" Height="350" Width="525">
     <Window.Resources>
         <ControlTemplate x:Key="ButtonControlTemplate1" TargetType="{x:Type Button}">
-            <Grid Height="78" Width="132" >
+            <Grid Height="178" Width="232" >
                 <VisualStateManager.VisualStateGroups>
                     <VisualStateGroup x:Name="CommonStates">
                         <VisualState x:Name="Normal"/>
@@ -25,14 +25,14 @@
                         <VisualState x:Name="Disabled"/>
                     </VisualStateGroup>
                  </VisualStateManager.VisualStateGroups>
-                <Image x:Name="image" Source="buildinfo_btn_normal.png"/>
+                <Image x:Name="image" Margin="0" Opacity="1" Source="buildinfo_btn_normal.png"/>
             </Grid>
         </ControlTemplate>
             
     </Window.Resources>
 
     <Grid>
-        <Button Width="100" Height="70" Template="{DynamicResource ButtonControlTemplate1}" />
+        <Button  Template="{DynamicResource ButtonControlTemplate1}" />
 
     </Grid>
 </Window>
