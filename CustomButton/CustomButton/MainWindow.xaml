@@ -43,7 +43,7 @@
 
 	<Grid>
        
-		<Button  Template="{DynamicResource ButtonControlTemplate1}" />
+		<Button Margin="400,275,0,0" Template="{DynamicResource ButtonControlTemplate1}" />
 		<Button Content="Button" Margin="0,0,442,219" Template="{DynamicResource ButtonControlTemplate2}"/>
 
 	</Grid>
