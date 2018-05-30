@@ -1,0 +1,113 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:Control="clr-namespace:ACMEControl.Controls"
+                    xmlns:converter="clr-namespace:ACMEControl.Converter"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <converter:MultiDouble2Bool x:Key="MultiDouble2Bool"/>
+    <!--垂直滚滚动条模板-->
+    <ControlTemplate x:Key="VerticalScrollBarStyle" TargetType="{x:Type ScrollBar}">
+        <Grid Width="{TemplateBinding Width}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="15" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="15" />
+            </Grid.ColumnDefinitions>
+            <Border Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" Width="15" Margin="0,-15,0,0">
+                <!--<Control:DirRepeatButton  x:Name="up" Direction="Up" Width="15" Height="15" HorizontalAlignment="Right"
+                                 IsTabStop="False" Interval="50"  Command="ScrollBar.LineUpCommand"/>-->
+            </Border>
+            <Border Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Right" Width="15" Margin="0,0,0,-15">
+                <!--<Control:DirRepeatButton  x:Name="down" Direction="Up" Width="15" Height="15" HorizontalAlignment="Left"
+                                 IsTabStop="False" Interval="50"  Command="ScrollBar.LineDownCommand"/>-->
+            </Border>
+        </Grid>
+        <!--<ControlTemplate.Triggers>
+            <DataTrigger Value="true">
+                <DataTrigger.Binding>
+                    <MultiBinding Converter="{StaticResource MultiDouble2Bool}">
+                        <Binding Path="HorizontalOffset" RelativeSource="{RelativeSource Mode=FindAncestor,AncestorType={x:Type ScrollViewer}}"/>
+                        <Binding Path="ExtentWidth" RelativeSource="{RelativeSource Mode=FindAncestor,AncestorType={x:Type ScrollViewer}}"/>
+                        <Binding Path="ViewportWidth" RelativeSource="{RelativeSource Mode=FindAncestor,AncestorType={x:Type ScrollViewer}}"/>
+                    </MultiBinding>
+                </DataTrigger.Binding>
+                <Setter TargetName="down" Property="IsEnabled" Value="false"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding HorizontalOffset,RelativeSource={RelativeSource Mode=FindAncestor,AncestorType={x:Type ScrollViewer}}}" Value="0">
+                <Setter TargetName="up" Property="IsEnabled" Value="false"/>
+            </DataTrigger>
+        </ControlTemplate.Triggers>-->
+    </ControlTemplate>
+
+    <!--水平滚滚动条模板-->
+    <ControlTemplate x:Key="HorizontalScrollBarStyle" TargetType="{x:Type ScrollBar}">
+        <Grid Width="{TemplateBinding Width}" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="15" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="15" />
+            </Grid.ColumnDefinitions>
+            <Border Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="-15,0,0,0" Width="15">
+                <Control:DirRepeatButton  x:Name="left" Direction="Left" Width="15" Height="15"
+                                 IsTabStop="False" Interval="50"  Command="ScrollBar.LineLeftCommand" HorizontalAlignment="Right"/>
+            </Border>
+            <Border Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,-15,0" Width="15">
+                <Control:DirRepeatButton  x:Name="right" Direction="Right" Width="15" Height="15"
+                                 IsTabStop="False" Interval="50"  Command="ScrollBar.LineRightCommand" HorizontalAlignment="Left"/>
+            </Border>
+        </Grid>
+        <ControlTemplate.Triggers>
+            <DataTrigger Value="true">
+                <DataTrigger.Binding>
+                    <MultiBinding Converter="{StaticResource MultiDouble2Bool}">
+                        <Binding Path="HorizontalOffset" RelativeSource="{RelativeSource Mode=FindAncestor,AncestorType={x:Type ScrollViewer}}"/>
+                        <Binding Path="ExtentWidth" RelativeSource="{RelativeSource Mode=FindAncestor,AncestorType={x:Type ScrollViewer}}"/>
+                        <Binding Path="ViewportWidth" RelativeSource="{RelativeSource Mode=FindAncestor,AncestorType={x:Type ScrollViewer}}"/>
+                    </MultiBinding>
+                </DataTrigger.Binding>
+                <Setter TargetName="right" Property="IsEnabled" Value="false"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding HorizontalOffset,RelativeSource={RelativeSource Mode=FindAncestor,AncestorType={x:Type ScrollViewer}}}" Value="0">
+                <Setter TargetName="left" Property="IsEnabled" Value="false"/>
+            </DataTrigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+    <!--ScrollBar样式-->
+    <Style x:Key="ScrollBarStyle" TargetType="{x:Type ScrollBar}" >
+        <Setter Property="SnapsToDevicePixels" Value="True" />
+        <Setter Property="OverridesDefaultStyle" Value="true" />
+        <Style.Triggers>
+            <Trigger Property="Orientation" Value="Horizontal">
+                <Setter Property="Template" Value="{StaticResource HorizontalScrollBarStyle}" />
+                <Setter Property="Height" Value="22" />
+            </Trigger>
+            <Trigger Property="Orientation" Value="Vertical">
+                <Setter Property="Template" Value="{StaticResource VerticalScrollBarStyle}" />
+                <Setter Property="Width" Value="22" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <!--ScrollViewer样式-->
+    <Style x:Key="DirScrollViewerStyle" TargetType="{x:Type ScrollViewer}" >
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ScrollViewer}">
+                    <Grid x:Name="Grid" Background="{TemplateBinding Background}">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <ScrollContentPresenter x:Name="PART_ScrollContentPresenter" CanContentScroll="{TemplateBinding CanContentScroll}" CanHorizontallyScroll="False" CanVerticallyScroll="False" ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" Grid.Column="0"  Grid.Row="0" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+                        <ScrollBar x:Name="PART_VerticalScrollBar" AutomationProperties.AutomationId="VerticalScrollBar" Cursor="Arrow" Grid.Column="1" Maximum="{TemplateBinding ScrollableHeight}" Minimum="0" Grid.Row="0" Visibility="{TemplateBinding ComputedVerticalScrollBarVisibility}" Value="{Binding VerticalOffset, Mode=OneWay, RelativeSource={RelativeSource TemplatedParent}}" ViewportSize="{TemplateBinding ViewportHeight}" Style="{StaticResource ScrollBarStyle}"/>
+                        <ScrollBar Orientation="Horizontal"  x:Name="PART_HorizontalScrollBar" AutomationProperties.AutomationId="HorizontalScrollBar" Cursor="Arrow" Grid.Column="0" Maximum="{TemplateBinding ScrollableWidth}" Minimum="0" Grid.Row="1" Visibility="{TemplateBinding ComputedHorizontalScrollBarVisibility}" Value="{Binding HorizontalOffset, Mode=OneWay, RelativeSource={RelativeSource TemplatedParent}}" ViewportSize="{TemplateBinding ViewportWidth}" Style="{StaticResource ScrollBarStyle}"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

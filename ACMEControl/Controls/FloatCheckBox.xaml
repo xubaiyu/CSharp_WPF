@@ -1,0 +1,57 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:ACMEControl.Controls">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/ACMEControl;component/ComResourceDictionary/ResoureDictionary.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+    <Style TargetType="{x:Type local:FloatCheckBox}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:FloatCheckBox}">
+                    <Grid>
+                        <Border x:Name="PART_NormalBorder" Width="53" Height="47" Background="{StaticResource NormalVisualBursh}">
+                            <Border.Style>
+                                <Style TargetType="Border">
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="true">
+                                            <Setter Property="Background" Value="{StaticResource HoverVisualBrush}"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Border.Style>
+                        </Border>
+                        <Path x:Name="path" Visibility="Collapsed" Data="F1M37.496,1.222C37.496,1.222 13.504,1.222 13.504,1.222 13.504,1.222 1.508,22 1.508,22 1.508,22 13.504,42.778 13.504,42.778 13.504,42.778 37.496,42.778 37.496,42.778 37.496,42.778 49.492,22 49.492,22 49.492,22 37.496,1.222 37.496,1.222z" Height="45.712" Width="52.983" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+                            <Path.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Path.RenderTransform>
+                            <Path.Fill>
+                                <RadialGradientBrush RadiusY="0.576">
+                                    <GradientStop Color="#0000E2FF" Offset="0.34"/>
+                                    <GradientStop Color="#FF00E2FF" Offset="1"/>
+                                </RadialGradientBrush>
+                            </Path.Fill>
+                        </Path>
+                        <Border  Height="31" Width="31" Background="{TemplateBinding IconBrush}"
+                                 OpacityMask="{TemplateBinding IconBrushMask}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <EventTrigger RoutedEvent="Checked">
+                            <BeginStoryboard x:Name="active" Storyboard="{StaticResource Storyboard}"/>
+                        </EventTrigger>
+                        <EventTrigger RoutedEvent="Unchecked">
+                            <StopStoryboard BeginStoryboardName="active"/>
+                        </EventTrigger>
+                    </ControlTemplate.Triggers>
+                    
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
+    

@@ -1,0 +1,96 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:ACMEControl.Controls">
+    <Style TargetType="{x:Type local:DirRepeatButton}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:DirRepeatButton}">
+                    <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}">
+                        <Border x:Name="PART_Bord" Background="White"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="Direction" Value="Up">
+                        </Trigger>
+                        <Trigger Property="Direction" Value="Down">
+                        </Trigger>
+                        <Trigger Property="Direction" Value="Left">
+                            <Setter TargetName="PART_Bord" Property="OpacityMask">
+                                <Setter.Value>
+                                    <VisualBrush Stretch="None">
+                                        <VisualBrush.Visual>
+                                            <Path Data="F1M7.618,1.753C7.618,1.753 7.618,13.844 7.618,13.844 7.618,13.844 1.572,7.798 1.572,7.798 1.572,7.798 7.618,1.753 7.618,1.753z" Fill="White" Height="15"  Width="9"/>
+                                        </VisualBrush.Visual>
+                                    </VisualBrush>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="Direction" Value="Right">
+                            <Setter TargetName="PART_Bord" Property="OpacityMask">
+                                <Setter.Value>
+                                    <VisualBrush Stretch="None">
+                                        <VisualBrush.Visual>
+                                            <Path Data="F1M1.382,1.753C1.382,1.753 1.382,13.844 1.382,13.844 1.382,13.844 7.428,7.798 7.428,7.798 7.428,7.798 1.382,1.753 1.382,1.753z" Fill="White" Height="15" Width="9"/>
+                                        </VisualBrush.Visual>
+                                    </VisualBrush>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="false">
+                            <Setter TargetName="PART_Bord" Property="Background" Value="#66ffffff"/>
+                        </Trigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsMouseOver" Value="true"/>
+                                <Condition Property="Direction" Value="Left"/>
+                            </MultiTrigger.Conditions>
+                            <Setter TargetName="PART_Bord" Property="OpacityMask">
+                                <Setter.Value>
+                                    <VisualBrush Stretch="None">
+                                        <VisualBrush.Visual>
+                                            <Grid>
+                                                <Path Data="F1M7.618,1.753C7.618,1.753 7.618,13.844 7.618,13.844 7.618,13.844 1.572,7.798 1.572,7.798 1.572,7.798 7.618,1.753 7.618,1.753z" Fill="White" Height="15"  Width="9" StrokeThickness="3"/>
+                                                <Path Data="F1 M7.438743,1.753 C7.438743,1.753 7.438743,13.844 7.438743,13.844 7.438743,13.844 2.0022349,7.798 2.0022349,7.798 2.0022349,7.798 7.438743,1.753 7.438743,1.753 z" Fill="#FFE7F5FF" Height="17.563"  RenderTransformOrigin="1.667,0.333">
+                                                    <Path.Effect>
+                                                        <BlurEffect/>
+                                                    </Path.Effect>
+                                                </Path>
+                                            </Grid>
+                                        </VisualBrush.Visual>
+                                    </VisualBrush>
+                                </Setter.Value>
+                            </Setter>
+                        </MultiTrigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsMouseOver" Value="true"/>
+                                <Condition Property="Direction" Value="Right"/>
+                            </MultiTrigger.Conditions>
+                            <Setter TargetName="PART_Bord" Property="OpacityMask">
+                                <Setter.Value>
+                                    <VisualBrush Stretch="None">
+                                        <VisualBrush.Visual>
+                                            <Grid>
+                                                <Path Data="F1M7.618,1.753C7.618,1.753 7.618,13.844 7.618,13.844 7.618,13.844 1.572,7.798 1.572,7.798 1.572,7.798 7.618,1.753 7.618,1.753z" Fill="White" Height="15"  Width="9" StrokeThickness="3"/>
+                                                <Path Data="F1 M7.438743,1.753 C7.438743,1.753 7.438743,13.844 7.438743,13.844 7.438743,13.844 2.0022349,7.798 2.0022349,7.798 2.0022349,7.798 7.438743,1.753 7.438743,1.753 z" Fill="#FFE7F5FF" Height="17.563"  RenderTransformOrigin="1.667,0.333">
+                                                    <Path.Effect>
+                                                        <BlurEffect/>
+                                                    </Path.Effect>
+                                                </Path>
+                                                <Grid.RenderTransform>
+                                                    <RotateTransform Angle="180"/>
+                                                </Grid.RenderTransform>
+                                            </Grid>
+                                        </VisualBrush.Visual>
+                                    </VisualBrush>
+                                </Setter.Value>
+                            </Setter>
+                        </MultiTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

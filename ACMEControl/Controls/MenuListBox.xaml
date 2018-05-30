@@ -1,0 +1,87 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:ACMEControl.Controls"
+    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+    xmlns:cmd="http://www.galasoft.ch/mvvmlight"
+    xmlns:args="clr-namespace:ACMEControl.RountedArgsConverter"
+    xmlns:cmdEx="clr-namespace:ACMEControl.Command">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/ACMEControl;component/Style/Style.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+    <args:MenuClickRoutedEventArgsToTuple x:Key="MenuClickRoutedEventArgsToTuple"/>
+    <Style TargetType="{x:Type local:MenuListBox}">
+        <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Auto"/>
+        <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto"/>
+        <Setter Property="ScrollViewer.CanContentScroll" Value="true"/>
+        <Setter Property="ScrollViewer.PanningMode" Value="Both"/>
+        <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="VirtualizingStackPanel.VirtualizationMode" Value="Recycling"/>
+        <Setter Property="VirtualizingStackPanel.IsVirtualizing" Value="True"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:MenuListBox}">
+                    <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}">
+                        <ScrollViewer VerticalAlignment="Center" CanContentScroll="True"  HorizontalAlignment="Center" Style="{StaticResource DirScrollViewerStyle}">
+                            <ItemsPresenter />
+                        </ScrollViewer>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="ItemTemplate">
+            <Setter.Value>
+                <DataTemplate>
+                    <local:MenuPopupBox x:Name="menuPopupBox" MenuPopupText="{Binding Text,Mode=OneWay,UpdateSourceTrigger=PropertyChanged}"
+                                        IconBrush="{Binding IconBrush,Mode=OneWay,UpdateSourceTrigger=PropertyChanged}"
+                                        IconBrushMask="{Binding IconBrushMask,Mode=OneWay,UpdateSourceTrigger=PropertyChanged}"
+                                        ItemsSource="{Binding MenuPopupItems,Mode=OneWay,UpdateSourceTrigger=PropertyChanged}"  IsDropDownOpen="{Binding IsDropDownOpen,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="MenuPopupItemClick">
+                                <cmd:EventToCommand Command="{Binding ItemClickCommand}" EventArgsConverter="{StaticResource MenuClickRoutedEventArgsToTuple}" EventArgsConverterParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType={x:Type local:MenuListBox}}}" PassEventArgsToCommand="True"/>
+                            </i:EventTrigger>
+                            <i:EventTrigger EventName="PreviewMouseLeftButtonDown">
+                                <cmd:EventToCommand Command="{Binding MenuPopupBoxClickCommand}" CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType={x:Type local:MenuListBox}}}"/>
+                            </i:EventTrigger>
+                            <i:EventTrigger EventName="MenuPopupSelectionChanged">
+                                <cmdEx:EventToCommand Command="{Binding MenuPopupSelectionChangedCommand}" CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType={x:Type local:MenuListBox}}}" PassEventArgsToCommand="True"/>
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                       
+                    </local:MenuPopupBox>
+                </DataTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="ItemsPanel">
+            <Setter.Value>
+                <ItemsPanelTemplate>
+                    <StackPanel IsItemsHost="True" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </ItemsPanelTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="ItemContainerStyle">
+            <Setter.Value>
+                <Style TargetType="{x:Type ListBoxItem}">
+                    <Setter Property="HorizontalContentAlignment" Value="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
+                    <Setter Property="VerticalContentAlignment" Value="{Binding VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
+                    <Setter Property="Padding" Value="0"/>
+                    <!--padding不能设，否则显示会出问题-->
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisualStyle}"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type ListBoxItem}">
+                                <Border x:Name="Bd" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" Padding="{TemplateBinding Padding}" SnapsToDevicePixels="true">
+                                    <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

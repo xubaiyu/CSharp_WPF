@@ -1,0 +1,26 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/ACMEControl;component/Controls/ComButton.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/ACMEControl;component/Controls/DirRepeatButton.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/ACMEControl;component/Controls/ToolBarButton.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/ACMEControl;component/Controls/ToolBarCheckBox.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/ACMEControl;component/Controls/LayerToggleButton.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/ACMEControl;component/Controls/MenuPopupBox.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/ACMEControl;component/Controls/MenuListBox.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/ACMEControl;component/Controls/FloatButton.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/ACMEControl;component/Controls/FloatCheckBox.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/ACMEControl;component/Controls/FloatContentControl.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/ACMEControl;component/Controls/FloatListBox.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/ACMEControl;component/Controls/BorderButton.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/ACMEControl;component/Controls/CloseButton.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/ACMEControl;component/Controls/LayerCheckBox.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/ACMEControl;component/Controls/LayerRadioButton.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/ACMEControl;component/Controls/RadarButton.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/ACMEControl;component/Controls/RadarPopupBox.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/ACMEControl;component/Controls/RadarListBox.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/ACMEControl;component/Controls/BaseWnd.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

@@ -1,0 +1,124 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+    xmlns:cmd="http://www.galasoft.ch/mvvmlight"
+    xmlns:local="clr-namespace:ACMEControl.Controls"
+    xmlns:converter="clr-namespace:ACMEControl.Converter">
+
+    <converter:MultiDouble2Thickness x:Key="MultiDouble2Thickness"/>
+    <converter:MultiThickness2Thickness x:Key="MultiThickness2Thickness"/>
+    <converter:MultiDouble2Visibility x:Key="MultiDouble2Visibility"/>
+    <converter:RadarItemCount2PopupWndHeight x:Key="RadarItemCount2PopupWndHeight"/>
+
+    <Style TargetType="{x:Type local:RadarListBox}">
+        <!--附加属性-->
+        <Setter Property="VirtualizingStackPanel.VirtualizationMode" Value="Recycling"/>
+        <Setter Property="VirtualizingStackPanel.IsVirtualizing" Value="True"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <!--控件模板-->
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:RadarListBox}">
+                    <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}">
+
+                        <ItemsPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"></ItemsPresenter>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <!--数据模板-->
+        <Setter Property="ItemTemplate">
+            <Setter.Value>
+                <DataTemplate>
+                    <Grid>
+                        <!--搜索到的摄像头点位-->
+                        <local:RadarButton x:Name="PART_BUTTON" Width="16" Height="16"
+                                           ToolTip="{Binding RadarPopupItems[0].CameraName, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"
+                                           IsOnline="{Binding RadarPopupItems[0].IsOnline, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}">
+                            <!--经纬度 计算点位的屏幕坐标(使用多值绑定)-->
+                            <local:RadarButton.Margin>
+                                <MultiBinding Converter="{StaticResource MultiDouble2Thickness}">
+                                    <Binding Path="Lat" Mode="OneWay" UpdateSourceTrigger="PropertyChanged" RelativeSource="{RelativeSource Mode=FindAncestor, AncestorType={x:Type local:RadarListBox}}"/>
+                                    <Binding Path="Lng" Mode="OneWay" UpdateSourceTrigger="PropertyChanged" RelativeSource="{RelativeSource Mode=FindAncestor,AncestorType={x:Type local:RadarListBox}}"/>
+                                    <Binding Path="Lat" Mode="OneWay" UpdateSourceTrigger="PropertyChanged"/>
+                                    <Binding Path="Lng" Mode="OneWay" UpdateSourceTrigger="PropertyChanged"/>
+                                    <Binding Path="Azimuth" Mode="OneWay" UpdateSourceTrigger="PropertyChanged" RelativeSource="{RelativeSource Mode=FindAncestor,AncestorType={x:Type local:RadarListBox}}"/>
+                                    <Binding Path="QueryDistance" Mode="OneWay" UpdateSourceTrigger="PropertyChanged" RelativeSource="{RelativeSource Mode=FindAncestor,AncestorType={x:Type local:RadarListBox}}"/>
+                                    <Binding Path="Width" Mode="OneWay" UpdateSourceTrigger="PropertyChanged" RelativeSource="{RelativeSource Mode=FindAncestor,AncestorType={x:Type local:RadarListBox}}"/>
+                                    <Binding Path="Height" Mode="OneWay" UpdateSourceTrigger="PropertyChanged" RelativeSource="{RelativeSource Mode=FindAncestor,AncestorType={x:Type local:RadarListBox}}"/>
+                                    <Binding Path="RelativeAzimuth" Mode="OneWay" UpdateSourceTrigger="PropertyChanged"/>
+                                    <Binding Path="Distance" Mode="OneWay" UpdateSourceTrigger="PropertyChanged"/>
+                                </MultiBinding>
+                            </local:RadarButton.Margin>
+                            
+                            <!--判定雷达点位是否应该显示在雷达上(使用多值绑定)-->
+                            <local:RadarButton.Visibility>
+                                <MultiBinding Converter="{StaticResource MultiDouble2Visibility}">
+                                    <Binding Path="Margin" Mode="OneWay" UpdateSourceTrigger="PropertyChanged" RelativeSource="{RelativeSource Mode=Self}"/>
+                                    <Binding Path="QueryDistance" Mode="OneWay" UpdateSourceTrigger="PropertyChanged" RelativeSource="{RelativeSource Mode=FindAncestor,AncestorType={x:Type local:RadarListBox}}"/>
+                                    <Binding Path="Distance" Mode="OneWay" UpdateSourceTrigger="PropertyChanged"/>
+                                    <Binding Path="RadarPopupItems[0].IsOnline" Mode="OneWay" UpdateSourceTrigger="PropertyChanged"/>
+                                    <Binding Path="IsShowOffline" Mode="OneWay" UpdateSourceTrigger="PropertyChanged" RelativeSource="{RelativeSource Mode=FindAncestor,AncestorType={x:Type local:RadarListBox}}"/>
+                                </MultiBinding>
+                            </local:RadarButton.Visibility>
+                           
+                            <!--点位按钮的双击事件-->
+                            <i:Interaction.Triggers>
+                                <i:EventTrigger EventName="MouseDoubleClick">
+                                    <i:InvokeCommandAction Command="{Binding ItemClickCommand}"
+                                                           CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:RadarListBox}}}"/>
+                                </i:EventTrigger>
+                                <i:EventTrigger EventName="MouseEnter">
+                                    <i:InvokeCommandAction Command="{Binding ItemMouseEnterCommand}"
+                                                           CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:RadarListBox}}}"/>
+                                </i:EventTrigger>
+                            </i:Interaction.Triggers>
+                        </local:RadarButton>
+
+                        <!--移动到摄像头点位上,弹出缩略图窗口-->
+                        <!--<Border x:Name="PART_POPUPWND" Width="93" Height="400" Visibility="Collapsed"
+                                Margin="{Binding Margin, ElementName=PART_BUTTON, Converter={StaticResource Thickness2Thickness}}" Background="Transparent" BorderThickness="0">-->
+                        <local:RadarPopupBox x:Name="PART_POPUPBOX" Visibility="Collapsed"
+                                             ItemsSource="{Binding RadarPopupItems, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"
+                                             Height="{Binding RadarPopupItems.Count, Mode=OneWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource RadarItemCount2PopupWndHeight}}">
+                            <local:RadarPopupBox.Margin>
+                                <MultiBinding Converter="{StaticResource MultiThickness2Thickness}">
+                                    <Binding Path="Margin" Mode="OneWay" UpdateSourceTrigger="PropertyChanged" ElementName="PART_BUTTON"/>
+                                    <Binding Path="Width" Mode="OneWay" UpdateSourceTrigger="PropertyChanged" RelativeSource="{RelativeSource Mode=FindAncestor,AncestorType={x:Type local:RadarListBox}}"/>
+                                    <Binding Path="Height" Mode="OneWay" UpdateSourceTrigger="PropertyChanged" RelativeSource="{RelativeSource Mode=FindAncestor,AncestorType={x:Type local:RadarListBox}}"/>
+                                    <Binding Path="Height" Mode="OneWay" UpdateSourceTrigger="PropertyChanged" ElementName="PART_POPUPBOX"/>
+                                </MultiBinding>
+                            </local:RadarPopupBox.Margin>
+                        </local:RadarPopupBox>
+                        <!--</Border>-->
+                    </Grid>
+
+                    <DataTemplate.Triggers>
+                        <!--鼠标移动点位上时,显示缩略图-->
+                        <Trigger SourceName="PART_BUTTON" Property="IsMouseOver" Value="true">
+                            <Setter TargetName="PART_POPUPBOX" Property="Visibility" Value="Visible"/>
+                        </Trigger>
+                        <Trigger SourceName="PART_POPUPBOX" Property="IsMouseOver" Value="true">
+                            <Setter TargetName="PART_POPUPBOX" Property="Visibility" Value="Visible"/>
+                        </Trigger>
+                        <Trigger SourceName="PART_BUTTON" Property="IsOnline" Value="false">
+                            <Setter TargetName="PART_POPUPBOX" Property="Visibility" Value="Collapsed"/>
+                        </Trigger>
+                    </DataTemplate.Triggers>
+                </DataTemplate>
+            </Setter.Value>
+        </Setter>
+        <!--面板模板-->
+        <Setter Property="ItemsPanel">
+            <Setter.Value>
+                <ItemsPanelTemplate>
+                    <Grid IsItemsHost="True" HorizontalAlignment="Center" VerticalAlignment="Center"></Grid>
+                </ItemsPanelTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>
