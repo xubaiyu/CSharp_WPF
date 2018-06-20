@@ -24,7 +24,7 @@ namespace CustomListBox
         {
             InitializeComponent();
             List<string> a = new List<string>();
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 2; i++)
             {
                 a.Add("abc" + i);
                 a.Add("123" + i);
