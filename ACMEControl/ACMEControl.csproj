@@ -125,6 +125,9 @@
     <Compile Include="Controls\LayerCheckBox.xaml.cs">
       <DependentUpon>LayerCheckBox.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\MyLayerRadioButton.xaml.cs">
+      <DependentUpon>MyLayerRadioButton.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\LayerRadioButton.xaml.cs">
       <DependentUpon>LayerRadioButton.xaml</DependentUpon>
     </Compile>
@@ -259,6 +262,10 @@
     <Page Include="Controls\LayerCheckBox.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\MyLayerRadioButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Controls\LayerRadioButton.xaml">
       <SubType>Designer</SubType>
