@@ -1,0 +1,15 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/ACMEControl;component/Style/DirScrollViewerStyle.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/ACMEControl;component/Style/ArrowButtonStyle.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/ACMEControl;component/Style/BackDropToggleButtonStyle.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/ACMEControl;component/Style/AreaButtonStyle.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/ACMEControl;component/Style/FocusVisualStyle.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/ACMEControl;component/Style/SystemMinButtonStyle.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/ACMEControl;component/Style/SystemMaxButtonStyle.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/ACMEControl;component/Style/SystemCloseButtonStyle.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/ACMEControl;component/Style/ButtonStyle.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/ACMEControl;component/Style/TreeViewItemStyle.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

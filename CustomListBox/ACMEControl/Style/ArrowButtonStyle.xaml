@@ -1,0 +1,18 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:Control="clr-namespace:ACMEControl.Controls">
+    <Style x:Key="ArrowButtonStyle" TargetType="{x:Type Control:BorderButton}">
+        <Setter Property="BorderData" Value="F1 M17.319,10.501 C17.319,10.501 11.318,16.502 11.318,16.502 11.107,16.713 10.863,16.869 10.602,16.972 10.209,17.249 9.7319999,17.416 9.2139999,17.416 9.2139999,17.416 0.49999994,17.416 0.49999994,17.416 0.49999994,17.416 0.49999994,0.50000001 0.49999994,0.50000001 0.49999994,0.50000001 9.2139999,0.50000001 9.2139999,0.50000001 9.8599999,0.50000001 10.445,0.75800001 10.879,1.172 11.034,1.262 11.184,1.366&#xA;11.318,1.5 11.318,1.5 17.319,7.5 17.319,7.5 18.147,8.329 18.147,9.672 17.319,10.501 z"/>
+        <Setter Property="BorderFill" Value="#2886FFFF"/>
+        <Setter Property="BorderStroke" Value="#FF2DE1EA"/>
+        <Setter Property="IconBrush" Value="White"/>
+        <Setter Property="IconMargin" Value="-2,0,0,0"/>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="true">
+                <Setter Property="BorderStroke" Value="Red"/>
+                <Setter Property="BorderFill" Value="Green"/>
+                <Setter Property="IconBrush" Value="Black"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+</ResourceDictionary>

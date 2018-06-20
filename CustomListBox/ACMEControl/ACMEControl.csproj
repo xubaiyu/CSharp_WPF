@@ -54,27 +54,26 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CommonServiceLocator, Version=2.0.2.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
-      <HintPath>..\CustomListBox\packages\CommonServiceLocator.2.0.2\lib\net40\CommonServiceLocator.dll</HintPath>
+    <Reference Include="GalaSoft.MvvmLight, Version=5.3.0.19038, Culture=neutral, PublicKeyToken=0e453835af4ee6ce, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.3.0.0\lib\net40\GalaSoft.MvvmLight.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="GalaSoft.MvvmLight, Version=5.4.1.0, Culture=neutral, PublicKeyToken=0e453835af4ee6ce, processorArchitecture=MSIL">
-      <HintPath>..\CustomListBox\packages\MvvmLightLibs.5.4.1\lib\net40\GalaSoft.MvvmLight.dll</HintPath>
+    <Reference Include="GalaSoft.MvvmLight.Extras, Version=5.3.0.19026, Culture=neutral, PublicKeyToken=f46ff315b1088208, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.3.0.0\lib\net40\GalaSoft.MvvmLight.Extras.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="GalaSoft.MvvmLight.Extras, Version=5.4.1.0, Culture=neutral, PublicKeyToken=f46ff315b1088208, processorArchitecture=MSIL">
-      <HintPath>..\CustomListBox\packages\MvvmLightLibs.5.4.1\lib\net40\GalaSoft.MvvmLight.Extras.dll</HintPath>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.Windows.Shell, Version=3.0.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\CustomListBox\packages\Microsoft.Windows.Shell.3.0.1.0\lib\net40\Microsoft.Windows.Shell.dll</HintPath>
+      <HintPath>..\packages\Microsoft.Windows.Shell.3.0.1.0\lib\net40\Microsoft.Windows.Shell.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\CustomListBox\packages\MvvmLightLibs.5.4.1\lib\net40\System.Windows.Interactivity.dll</HintPath>
+      <HintPath>..\packages\MvvmLightLibs.5.3.0.0\lib\net40\System.Windows.Interactivity.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Xml" />
@@ -90,6 +89,7 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Args\CameraTreeRoutedEventArgs.cs" />
     <Compile Include="Args\FloatListClickRoutedEventArgs.cs" />
     <Compile Include="Args\MenuClickRoutedEventArgs.cs" />
     <Compile Include="Args\MenuListClickRoutedEventArgs.cs" />
@@ -100,6 +100,12 @@
     </Compile>
     <Compile Include="Controls\BorderButton.xaml.cs">
       <DependentUpon>BorderButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CameraTreeButton.xaml.cs">
+      <DependentUpon>CameraTreeButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CameraTreeView.xaml.cs">
+      <DependentUpon>CameraTreeView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls\CloseButton.xaml.cs">
       <DependentUpon>CloseButton.xaml</DependentUpon>
@@ -162,14 +168,19 @@
     <Compile Include="Converter\MultiThickness2Thickness.cs" />
     <Compile Include="Converter\RadarItemCount2PopupWndHeight.cs" />
     <Compile Include="Converter\ResizeMode2Visibility.cs" />
+    <Compile Include="Converter\TreeViewItem2Bool.cs" />
+    <Compile Include="Entity\CameraTreeNode.cs" />
     <Compile Include="Entity\FloatItem.cs" />
     <Compile Include="Entity\MenuListItem.cs" />
     <Compile Include="Entity\MenuPopupItem.cs" />
     <Compile Include="Entity\RadarItem.cs" />
     <Compile Include="Entity\RadarPopupItem.cs" />
+    <Compile Include="Enum\CameraColor.cs" />
+    <Compile Include="Enum\CameraType.cs" />
     <Compile Include="Enum\CloseDirEnum.cs" />
     <Compile Include="Enum\DirectionEnum.cs" />
     <Compile Include="Enum\FloatControlType.cs" />
+    <Compile Include="Model\CameraTreeModel.cs" />
     <Compile Include="ResourcePath\ResourcePath.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -185,7 +196,14 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="RountedArgsConverter\MenuClickRoutedEventArgsToTuple.cs" />
+    <Compile Include="RountedEventHandle\CameraTreeRoutedEventHandle.cs" />
+    <Compile Include="RountedEventHandle\FloatListClickRoutedEventHandle.cs" />
+    <Compile Include="RountedEventHandle\MenuClickRoutedEventHandle.cs" />
+    <Compile Include="RountedEventHandle\MenuListClickRoutedEventHandle.cs" />
+    <Compile Include="RountedEventHandle\RadarListClickRoutedEventHandle.cs" />
     <Compile Include="Util\BitmapImageUtil.cs" />
+    <Compile Include="Util\NativeMethods.cs" />
+    <Compile Include="Util\RECT.cs" />
     <Compile Include="Util\SphereCalc.cs" />
     <Compile Include="Util\VisualChild.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
@@ -194,8 +212,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Fakes Include="Fakes\GalaSoft.MvvmLight.fakes" />
-    <Fakes Include="Fakes\Microsoft.Windows.Shell.fakes" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -225,6 +241,18 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Controls\BorderButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Style\ButtonStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\CameraTreeButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\CameraTreeView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -332,6 +360,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Style\TreeViewItemStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Themes\Generic.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -340,6 +372,7 @@
   <ItemGroup>
     <Resource Include="Images\noplay_vedio.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

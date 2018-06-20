@@ -4,7 +4,7 @@
         Title="MainWindow" Height="350" Width="525">
     <Window.Resources>
         <DataTemplate x:Key="DataTemplate1">
-            <Rectangle RadiusX="8"  StrokeThickness="2" Opacity="0.5" Fill="Beige" Stroke="Blue" MinHeight="40" MinWidth="80" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
+            <Rectangle  RadiusX="8"  StrokeThickness="2" Opacity="0.5" Fill="Beige" Stroke="Blue" MinHeight="40" MinWidth="80" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
         </DataTemplate>
         <ControlTemplate x:Key="ListBoxControlTemplate1" TargetType="{x:Type ListBox}">
             <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">

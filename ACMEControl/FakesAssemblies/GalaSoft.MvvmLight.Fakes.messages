@@ -1,0 +1,16 @@
+D:\demo_c#\ACMEControl\Fakes\GalaSoft.MvvmLight.fakes : warning : 无法为 GalaSoft.MvvmLight.Threading.DispatcherHelper 生成存根: 类型已密封。
+D:\demo_c#\ACMEControl\Fakes\GalaSoft.MvvmLight.fakes : warning : 无法为 GalaSoft.MvvmLight.Messaging.DialogMessage 生成存根: 类型已过时。
+D:\demo_c#\ACMEControl\Fakes\GalaSoft.MvvmLight.fakes : warning : 无法为 GalaSoft.MvvmLight.Helpers.DesignerLibrary 生成存根: 类型已密封。
+D:\demo_c#\ACMEControl\Fakes\GalaSoft.MvvmLight.fakes : warning : 无法为 GalaSoft.MvvmLight.Helpers.DesignerPlatformLibrary 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\GalaSoft.MvvmLight.fakes : warning : 无法为 GalaSoft.MvvmLight.ICleanup 生成填充码: 类型是一个接口。
+D:\demo_c#\ACMEControl\Fakes\GalaSoft.MvvmLight.fakes : warning : 无法为 GalaSoft.MvvmLight.ObservableObject+<>c__DisplayClass10_0 生成填充码: 类型不受支持，因为存在内部限制。
+D:\demo_c#\ACMEControl\Fakes\GalaSoft.MvvmLight.fakes : warning : 无法为 GalaSoft.MvvmLight.Views.IDialogService 生成填充码: 类型是一个接口。
+D:\demo_c#\ACMEControl\Fakes\GalaSoft.MvvmLight.fakes : warning : 无法为 GalaSoft.MvvmLight.Views.INavigationService 生成填充码: 类型是一个接口。
+D:\demo_c#\ACMEControl\Fakes\GalaSoft.MvvmLight.fakes : warning : 无法为 GalaSoft.MvvmLight.Messaging.DialogMessage 生成填充码: 类型已过时。
+D:\demo_c#\ACMEControl\Fakes\GalaSoft.MvvmLight.fakes : warning : 无法为 GalaSoft.MvvmLight.Messaging.IMessenger 生成填充码: 类型是一个接口。
+D:\demo_c#\ACMEControl\Fakes\GalaSoft.MvvmLight.fakes : warning : 无法为 GalaSoft.MvvmLight.Messaging.Messenger+<>c 生成填充码: 类型不受支持，因为存在内部限制。
+D:\demo_c#\ACMEControl\Fakes\GalaSoft.MvvmLight.fakes : warning : 无法为 GalaSoft.MvvmLight.Messaging.Messenger+WeakActionAndToken 生成填充码: 类型对 exported or assembly(GalaSoft.MvvmLight.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\GalaSoft.MvvmLight.fakes : warning : 无法为 GalaSoft.MvvmLight.Helpers.DesignerLibrary 生成填充码: 类型对 exported or assembly(GalaSoft.MvvmLight.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\GalaSoft.MvvmLight.fakes : warning : 无法为 GalaSoft.MvvmLight.Helpers.DesignerPlatformLibrary 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\GalaSoft.MvvmLight.fakes : warning : 无法为 GalaSoft.MvvmLight.Helpers.IExecuteWithObject 生成填充码: 类型是一个接口。
+D:\demo_c#\ACMEControl\Fakes\GalaSoft.MvvmLight.fakes : warning : 无法为 GalaSoft.MvvmLight.Helpers.IExecuteWithObjectAndResult 生成填充码: 类型是一个接口。

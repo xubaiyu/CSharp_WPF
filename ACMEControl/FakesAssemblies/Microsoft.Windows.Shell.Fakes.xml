@@ -1,0 +1,1670 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.Windows.Shell.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Windows.Shell.Fakes.ShimJumpItem">
+            <summary>Microsoft.Windows.Shell.JumpItem 的填充码类型</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimJumpItem.#ctor(Microsoft.Windows.Shell.JumpItem)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimJumpItem.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimJumpItem.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpItem.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpItem.Constructor">
+            <summary>设置 JumpItem.JumpItem() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpItem.CustomCategoryGet">
+            <summary>设置 JumpItem.get_CustomCategory() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpItem.CustomCategorySetString">
+            <summary>设置 JumpItem.set_CustomCategory(String value) 的 填充码</summary>
+        </member>
+        <member name="T:Microsoft.Windows.Shell.Fakes.ShimJumpItem.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpItem.AllInstances.CustomCategoryGet">
+            <summary>设置 JumpItem.get_CustomCategory() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpItem.AllInstances.CustomCategorySetString">
+            <summary>设置 JumpItem.set_CustomCategory(String value) 的 填充码</summary>
+        </member>
+        <member name="T:Microsoft.Windows.Shell.Fakes.ShimJumpItemsRejectedEventArgs">
+            <summary>Microsoft.Windows.Shell.JumpItemsRejectedEventArgs 的填充码类型</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimJumpItemsRejectedEventArgs.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimJumpItemsRejectedEventArgs.#ctor(Microsoft.Windows.Shell.JumpItemsRejectedEventArgs)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimJumpItemsRejectedEventArgs.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimJumpItemsRejectedEventArgs.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpItemsRejectedEventArgs.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpItemsRejectedEventArgs.Constructor">
+            <summary>设置 JumpItemsRejectedEventArgs.JumpItemsRejectedEventArgs() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpItemsRejectedEventArgs.ConstructorIListOfJumpItemIListOfJumpItemRejectionReason">
+            <summary>设置 JumpItemsRejectedEventArgs.JumpItemsRejectedEventArgs(IList`1&lt;JumpItem&gt; rejectedItems, IList`1&lt;JumpItemRejectionReason&gt; reasons) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpItemsRejectedEventArgs.RejectedItemsGet">
+            <summary>设置 JumpItemsRejectedEventArgs.get_RejectedItems() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpItemsRejectedEventArgs.RejectedItemsSetIListOfJumpItem">
+            <summary>设置 JumpItemsRejectedEventArgs.set_RejectedItems(IList`1&lt;JumpItem&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpItemsRejectedEventArgs.RejectionReasonsGet">
+            <summary>设置 JumpItemsRejectedEventArgs.get_RejectionReasons() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpItemsRejectedEventArgs.RejectionReasonsSetIListOfJumpItemRejectionReason">
+            <summary>设置 JumpItemsRejectedEventArgs.set_RejectionReasons(IList`1&lt;JumpItemRejectionReason&gt; value) 的 填充码</summary>
+        </member>
+        <member name="T:Microsoft.Windows.Shell.Fakes.ShimJumpItemsRejectedEventArgs.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpItemsRejectedEventArgs.AllInstances.RejectedItemsGet">
+            <summary>设置 JumpItemsRejectedEventArgs.get_RejectedItems() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpItemsRejectedEventArgs.AllInstances.RejectedItemsSetIListOfJumpItem">
+            <summary>设置 JumpItemsRejectedEventArgs.set_RejectedItems(IList`1&lt;JumpItem&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpItemsRejectedEventArgs.AllInstances.RejectionReasonsGet">
+            <summary>设置 JumpItemsRejectedEventArgs.get_RejectionReasons() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpItemsRejectedEventArgs.AllInstances.RejectionReasonsSetIListOfJumpItemRejectionReason">
+            <summary>设置 JumpItemsRejectedEventArgs.set_RejectionReasons(IList`1&lt;JumpItemRejectionReason&gt; value) 的 填充码</summary>
+        </member>
+        <member name="T:Microsoft.Windows.Shell.Fakes.ShimJumpItemsRemovedEventArgs">
+            <summary>Microsoft.Windows.Shell.JumpItemsRemovedEventArgs 的填充码类型</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimJumpItemsRemovedEventArgs.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimJumpItemsRemovedEventArgs.#ctor(Microsoft.Windows.Shell.JumpItemsRemovedEventArgs)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimJumpItemsRemovedEventArgs.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimJumpItemsRemovedEventArgs.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpItemsRemovedEventArgs.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpItemsRemovedEventArgs.Constructor">
+            <summary>设置 JumpItemsRemovedEventArgs.JumpItemsRemovedEventArgs() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpItemsRemovedEventArgs.ConstructorIListOfJumpItem">
+            <summary>设置 JumpItemsRemovedEventArgs.JumpItemsRemovedEventArgs(IList`1&lt;JumpItem&gt; removedItems) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpItemsRemovedEventArgs.RemovedItemsGet">
+            <summary>设置 JumpItemsRemovedEventArgs.get_RemovedItems() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpItemsRemovedEventArgs.RemovedItemsSetIListOfJumpItem">
+            <summary>设置 JumpItemsRemovedEventArgs.set_RemovedItems(IList`1&lt;JumpItem&gt; value) 的 填充码</summary>
+        </member>
+        <member name="T:Microsoft.Windows.Shell.Fakes.ShimJumpItemsRemovedEventArgs.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpItemsRemovedEventArgs.AllInstances.RemovedItemsGet">
+            <summary>设置 JumpItemsRemovedEventArgs.get_RemovedItems() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpItemsRemovedEventArgs.AllInstances.RemovedItemsSetIListOfJumpItem">
+            <summary>设置 JumpItemsRemovedEventArgs.set_RemovedItems(IList`1&lt;JumpItem&gt; value) 的 填充码</summary>
+        </member>
+        <member name="T:Microsoft.Windows.Shell.Fakes.ShimJumpList">
+            <summary>Microsoft.Windows.Shell.JumpList 的填充码类型</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimJumpList.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimJumpList.#ctor(Microsoft.Windows.Shell.JumpList)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimJumpList.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimJumpList.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimJumpList.Bind(System.ComponentModel.ISupportInitialize)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpList.AddToRecentCategoryJumpPath">
+            <summary>设置 JumpList.AddToRecentCategory(JumpPath jumpPath) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpList.AddToRecentCategoryJumpTask">
+            <summary>设置 JumpList.AddToRecentCategory(JumpTask jumpTask) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpList.AddToRecentCategoryString">
+            <summary>设置 JumpList.AddToRecentCategory(String itemPath) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpList.Apply">
+            <summary>设置 JumpList.Apply() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpList.ApplyFromApplication">
+            <summary>设置 JumpList.ApplyFromApplication() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpList.BeginInit">
+            <summary>设置 JumpList.BeginInit() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpList.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpList.Constructor">
+            <summary>设置 JumpList.JumpList() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpList.ConstructorIEnumerableOfJumpItemBooleanBoolean">
+            <summary>设置 JumpList.JumpList(IEnumerable`1&lt;JumpItem&gt; items, Boolean showFrequent, Boolean showRecent) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpList.EndInit">
+            <summary>设置 JumpList.EndInit() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpList.GetJumpItemForShellObjectObject">
+            <summary>设置 JumpList.GetJumpItemForShellObject(Object shellObject) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpList.GetJumpListApplication">
+            <summary>设置 JumpList.GetJumpList(Application application) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpList.GetShellObjectForJumpItemJumpItem">
+            <summary>设置 JumpList.GetShellObjectForJumpItem(JumpItem jumpItem) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpList.JumpItemsGet">
+            <summary>设置 JumpList.get_JumpItems() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpList.JumpItemsRejectedAddEventHandlerOfJumpItemsRejectedEventArgs">
+            <summary>设置 JumpList.add_JumpItemsRejected(EventHandler`1&lt;JumpItemsRejectedEventArgs&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpList.JumpItemsRejectedRemoveEventHandlerOfJumpItemsRejectedEventArgs">
+            <summary>设置 JumpList.remove_JumpItemsRejected(EventHandler`1&lt;JumpItemsRejectedEventArgs&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpList.JumpItemsRemovedByUserAddEventHandlerOfJumpItemsRemovedEventArgs">
+            <summary>设置 JumpList.add_JumpItemsRemovedByUser(EventHandler`1&lt;JumpItemsRemovedEventArgs&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpList.JumpItemsRemovedByUserRemoveEventHandlerOfJumpItemsRemovedEventArgs">
+            <summary>设置 JumpList.remove_JumpItemsRemovedByUser(EventHandler`1&lt;JumpItemsRemovedEventArgs&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpList.RejectEverything">
+            <summary>设置 JumpList.RejectEverything() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpList.SetJumpListApplicationJumpList">
+            <summary>设置 JumpList.SetJumpList(Application application, JumpList value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpList.ShowFrequentCategoryGet">
+            <summary>设置 JumpList.get_ShowFrequentCategory() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpList.ShowFrequentCategorySetBoolean">
+            <summary>设置 JumpList.set_ShowFrequentCategory(Boolean value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpList.ShowRecentCategoryGet">
+            <summary>设置 JumpList.get_ShowRecentCategory() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpList.ShowRecentCategorySetBoolean">
+            <summary>设置 JumpList.set_ShowRecentCategory(Boolean value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpList.StaticConstructor">
+            <summary>设置 JumpList.JumpList() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpList._ApplyList">
+            <summary>设置 JumpList._ApplyList() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpList._IsUnmodifiedGet">
+            <summary>设置 JumpList.get__IsUnmodified() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpList._RuntimeIdGet">
+            <summary>设置 JumpList.get__RuntimeId() 的 填充码</summary>
+        </member>
+        <member name="T:Microsoft.Windows.Shell.Fakes.ShimJumpList.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpList.AllInstances.Apply">
+            <summary>设置 JumpList.Apply() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpList.AllInstances.ApplyFromApplication">
+            <summary>设置 JumpList.ApplyFromApplication() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpList.AllInstances.BeginInit">
+            <summary>设置 JumpList.BeginInit() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpList.AllInstances.EndInit">
+            <summary>设置 JumpList.EndInit() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpList.AllInstances.JumpItemsGet">
+            <summary>设置 JumpList.get_JumpItems() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpList.AllInstances.JumpItemsRejectedAddEventHandlerOfJumpItemsRejectedEventArgs">
+            <summary>设置 JumpList.add_JumpItemsRejected(EventHandler`1&lt;JumpItemsRejectedEventArgs&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpList.AllInstances.JumpItemsRejectedRemoveEventHandlerOfJumpItemsRejectedEventArgs">
+            <summary>设置 JumpList.remove_JumpItemsRejected(EventHandler`1&lt;JumpItemsRejectedEventArgs&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpList.AllInstances.JumpItemsRemovedByUserAddEventHandlerOfJumpItemsRemovedEventArgs">
+            <summary>设置 JumpList.add_JumpItemsRemovedByUser(EventHandler`1&lt;JumpItemsRemovedEventArgs&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpList.AllInstances.JumpItemsRemovedByUserRemoveEventHandlerOfJumpItemsRemovedEventArgs">
+            <summary>设置 JumpList.remove_JumpItemsRemovedByUser(EventHandler`1&lt;JumpItemsRemovedEventArgs&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpList.AllInstances.RejectEverything">
+            <summary>设置 JumpList.RejectEverything() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpList.AllInstances.ShowFrequentCategoryGet">
+            <summary>设置 JumpList.get_ShowFrequentCategory() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpList.AllInstances.ShowFrequentCategorySetBoolean">
+            <summary>设置 JumpList.set_ShowFrequentCategory(Boolean value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpList.AllInstances.ShowRecentCategoryGet">
+            <summary>设置 JumpList.get_ShowRecentCategory() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpList.AllInstances.ShowRecentCategorySetBoolean">
+            <summary>设置 JumpList.set_ShowRecentCategory(Boolean value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpList.AllInstances._ApplyList">
+            <summary>设置 JumpList._ApplyList() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpList.AllInstances._IsUnmodifiedGet">
+            <summary>设置 JumpList.get__IsUnmodified() 的 填充码</summary>
+        </member>
+        <member name="T:Microsoft.Windows.Shell.Fakes.ShimJumpPath">
+            <summary>Microsoft.Windows.Shell.JumpPath 的填充码类型</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimJumpPath.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimJumpPath.#ctor(Microsoft.Windows.Shell.JumpPath)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimJumpPath.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimJumpPath.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpPath.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpPath.Constructor">
+            <summary>设置 JumpPath.JumpPath() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpPath.PathGet">
+            <summary>设置 JumpPath.get_Path() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpPath.PathSetString">
+            <summary>设置 JumpPath.set_Path(String value) 的 填充码</summary>
+        </member>
+        <member name="T:Microsoft.Windows.Shell.Fakes.ShimJumpPath.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpPath.AllInstances.PathGet">
+            <summary>设置 JumpPath.get_Path() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpPath.AllInstances.PathSetString">
+            <summary>设置 JumpPath.set_Path(String value) 的 填充码</summary>
+        </member>
+        <member name="T:Microsoft.Windows.Shell.Fakes.ShimJumpTask">
+            <summary>Microsoft.Windows.Shell.JumpTask 的填充码类型</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimJumpTask.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimJumpTask.#ctor(Microsoft.Windows.Shell.JumpTask)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimJumpTask.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimJumpTask.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpTask.ApplicationPathGet">
+            <summary>设置 JumpTask.get_ApplicationPath() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpTask.ApplicationPathSetString">
+            <summary>设置 JumpTask.set_ApplicationPath(String value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpTask.ArgumentsGet">
+            <summary>设置 JumpTask.get_Arguments() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpTask.ArgumentsSetString">
+            <summary>设置 JumpTask.set_Arguments(String value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpTask.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpTask.Constructor">
+            <summary>设置 JumpTask.JumpTask() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpTask.DescriptionGet">
+            <summary>设置 JumpTask.get_Description() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpTask.DescriptionSetString">
+            <summary>设置 JumpTask.set_Description(String value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpTask.IconResourceIndexGet">
+            <summary>设置 JumpTask.get_IconResourceIndex() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpTask.IconResourceIndexSetInt32">
+            <summary>设置 JumpTask.set_IconResourceIndex(Int32 value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpTask.IconResourcePathGet">
+            <summary>设置 JumpTask.get_IconResourcePath() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpTask.IconResourcePathSetString">
+            <summary>设置 JumpTask.set_IconResourcePath(String value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpTask.TitleGet">
+            <summary>设置 JumpTask.get_Title() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpTask.TitleSetString">
+            <summary>设置 JumpTask.set_Title(String value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpTask.WorkingDirectoryGet">
+            <summary>设置 JumpTask.get_WorkingDirectory() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpTask.WorkingDirectorySetString">
+            <summary>设置 JumpTask.set_WorkingDirectory(String value) 的 填充码</summary>
+        </member>
+        <member name="T:Microsoft.Windows.Shell.Fakes.ShimJumpTask.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpTask.AllInstances.ApplicationPathGet">
+            <summary>设置 JumpTask.get_ApplicationPath() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpTask.AllInstances.ApplicationPathSetString">
+            <summary>设置 JumpTask.set_ApplicationPath(String value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpTask.AllInstances.ArgumentsGet">
+            <summary>设置 JumpTask.get_Arguments() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpTask.AllInstances.ArgumentsSetString">
+            <summary>设置 JumpTask.set_Arguments(String value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpTask.AllInstances.DescriptionGet">
+            <summary>设置 JumpTask.get_Description() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpTask.AllInstances.DescriptionSetString">
+            <summary>设置 JumpTask.set_Description(String value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpTask.AllInstances.IconResourceIndexGet">
+            <summary>设置 JumpTask.get_IconResourceIndex() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpTask.AllInstances.IconResourceIndexSetInt32">
+            <summary>设置 JumpTask.set_IconResourceIndex(Int32 value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpTask.AllInstances.IconResourcePathGet">
+            <summary>设置 JumpTask.get_IconResourcePath() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpTask.AllInstances.IconResourcePathSetString">
+            <summary>设置 JumpTask.set_IconResourcePath(String value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpTask.AllInstances.TitleGet">
+            <summary>设置 JumpTask.get_Title() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpTask.AllInstances.TitleSetString">
+            <summary>设置 JumpTask.set_Title(String value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpTask.AllInstances.WorkingDirectoryGet">
+            <summary>设置 JumpTask.get_WorkingDirectory() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimJumpTask.AllInstances.WorkingDirectorySetString">
+            <summary>设置 JumpTask.set_WorkingDirectory(String value) 的 填充码</summary>
+        </member>
+        <member name="T:Microsoft.Windows.Shell.Fakes.ShimSystemCommands">
+            <summary>Microsoft.Windows.Shell.SystemCommands 的填充码类型</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimSystemCommands.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimSystemCommands.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimSystemCommands.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemCommands.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemCommands.CloseWindowCommandGet">
+            <summary>设置 SystemCommands.get_CloseWindowCommand() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemCommands.CloseWindowCommandSetRoutedCommand">
+            <summary>设置 SystemCommands.set_CloseWindowCommand(RoutedCommand value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemCommands.CloseWindowWindow">
+            <summary>设置 SystemCommands.CloseWindow(Window window) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemCommands.MaximizeWindowCommandGet">
+            <summary>设置 SystemCommands.get_MaximizeWindowCommand() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemCommands.MaximizeWindowCommandSetRoutedCommand">
+            <summary>设置 SystemCommands.set_MaximizeWindowCommand(RoutedCommand value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemCommands.MaximizeWindowWindow">
+            <summary>设置 SystemCommands.MaximizeWindow(Window window) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemCommands.MinimizeWindowCommandGet">
+            <summary>设置 SystemCommands.get_MinimizeWindowCommand() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemCommands.MinimizeWindowCommandSetRoutedCommand">
+            <summary>设置 SystemCommands.set_MinimizeWindowCommand(RoutedCommand value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemCommands.MinimizeWindowWindow">
+            <summary>设置 SystemCommands.MinimizeWindow(Window window) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemCommands.RestoreWindowCommandGet">
+            <summary>设置 SystemCommands.get_RestoreWindowCommand() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemCommands.RestoreWindowCommandSetRoutedCommand">
+            <summary>设置 SystemCommands.set_RestoreWindowCommand(RoutedCommand value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemCommands.RestoreWindowWindow">
+            <summary>设置 SystemCommands.RestoreWindow(Window window) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemCommands.ShowSystemMenuCommandGet">
+            <summary>设置 SystemCommands.get_ShowSystemMenuCommand() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemCommands.ShowSystemMenuCommandSetRoutedCommand">
+            <summary>设置 SystemCommands.set_ShowSystemMenuCommand(RoutedCommand value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemCommands.ShowSystemMenuPhysicalCoordinatesWindowPoint">
+            <summary>设置 SystemCommands.ShowSystemMenuPhysicalCoordinates(Window window, Point physicalScreenLocation) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemCommands.ShowSystemMenuWindowPoint">
+            <summary>设置 SystemCommands.ShowSystemMenu(Window window, Point screenLocation) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemCommands.StaticConstructor">
+            <summary>设置 SystemCommands.SystemCommands() 的 填充码</summary>
+        </member>
+        <member name="T:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2">
+            <summary>Microsoft.Windows.Shell.SystemParameters2 的填充码类型</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.#ctor(Microsoft.Windows.Shell.SystemParameters2)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.Bind(System.ComponentModel.INotifyPropertyChanged)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.Constructor">
+            <summary>设置 SystemParameters2.SystemParameters2() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.CurrentGet">
+            <summary>设置 SystemParameters2.get_Current() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.HighContrastGet">
+            <summary>设置 SystemParameters2.get_HighContrast() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.HighContrastSetBoolean">
+            <summary>设置 SystemParameters2.set_HighContrast(Boolean value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.IsGlassEnabledGet">
+            <summary>设置 SystemParameters2.get_IsGlassEnabled() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.IsGlassEnabledSetBoolean">
+            <summary>设置 SystemParameters2.set_IsGlassEnabled(Boolean value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.PropertyChangedAddPropertyChangedEventHandler">
+            <summary>设置 SystemParameters2.add_PropertyChanged(PropertyChangedEventHandler value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.PropertyChangedRemovePropertyChangedEventHandler">
+            <summary>设置 SystemParameters2.remove_PropertyChanged(PropertyChangedEventHandler value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.SmallIconSizeGet">
+            <summary>设置 SystemParameters2.get_SmallIconSize() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.SmallIconSizeSetSize">
+            <summary>设置 SystemParameters2.set_SmallIconSize(Size value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.UxThemeColorGet">
+            <summary>设置 SystemParameters2.get_UxThemeColor() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.UxThemeColorSetString">
+            <summary>设置 SystemParameters2.set_UxThemeColor(String value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.UxThemeNameGet">
+            <summary>设置 SystemParameters2.get_UxThemeName() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.UxThemeNameSetString">
+            <summary>设置 SystemParameters2.set_UxThemeName(String value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.WindowCaptionButtonsLocationGet">
+            <summary>设置 SystemParameters2.get_WindowCaptionButtonsLocation() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.WindowCaptionButtonsLocationSetRect">
+            <summary>设置 SystemParameters2.set_WindowCaptionButtonsLocation(Rect value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.WindowCaptionHeightGet">
+            <summary>设置 SystemParameters2.get_WindowCaptionHeight() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.WindowCaptionHeightSetDouble">
+            <summary>设置 SystemParameters2.set_WindowCaptionHeight(Double value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.WindowCornerRadiusGet">
+            <summary>设置 SystemParameters2.get_WindowCornerRadius() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.WindowCornerRadiusSetCornerRadius">
+            <summary>设置 SystemParameters2.set_WindowCornerRadius(CornerRadius value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.WindowGlassBrushGet">
+            <summary>设置 SystemParameters2.get_WindowGlassBrush() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.WindowGlassBrushSetSolidColorBrush">
+            <summary>设置 SystemParameters2.set_WindowGlassBrush(SolidColorBrush value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.WindowGlassColorGet">
+            <summary>设置 SystemParameters2.get_WindowGlassColor() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.WindowGlassColorSetColor">
+            <summary>设置 SystemParameters2.set_WindowGlassColor(Color value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.WindowNonClientFrameThicknessGet">
+            <summary>设置 SystemParameters2.get_WindowNonClientFrameThickness() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.WindowNonClientFrameThicknessSetThickness">
+            <summary>设置 SystemParameters2.set_WindowNonClientFrameThickness(Thickness value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.WindowResizeBorderThicknessGet">
+            <summary>设置 SystemParameters2.get_WindowResizeBorderThickness() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.WindowResizeBorderThicknessSetThickness">
+            <summary>设置 SystemParameters2.set_WindowResizeBorderThickness(Thickness value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2._InitializeCaptionButtonLocation">
+            <summary>设置 SystemParameters2._InitializeCaptionButtonLocation() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2._InitializeCaptionHeight">
+            <summary>设置 SystemParameters2._InitializeCaptionHeight() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2._InitializeGlassColor">
+            <summary>设置 SystemParameters2._InitializeGlassColor() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2._InitializeHighContrast">
+            <summary>设置 SystemParameters2._InitializeHighContrast() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2._InitializeIsGlassEnabled">
+            <summary>设置 SystemParameters2._InitializeIsGlassEnabled() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2._InitializeSmallIconSize">
+            <summary>设置 SystemParameters2._InitializeSmallIconSize() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2._InitializeThemeInfo">
+            <summary>设置 SystemParameters2._InitializeThemeInfo() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2._InitializeWindowCornerRadius">
+            <summary>设置 SystemParameters2._InitializeWindowCornerRadius() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2._InitializeWindowNonClientFrameThickness">
+            <summary>设置 SystemParameters2._InitializeWindowNonClientFrameThickness() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2._InitializeWindowResizeBorderThickness">
+            <summary>设置 SystemParameters2._InitializeWindowResizeBorderThickness() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2._LegacyInitializeCaptionButtonLocation">
+            <summary>设置 SystemParameters2._LegacyInitializeCaptionButtonLocation() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2._NotifyPropertyChangedString">
+            <summary>设置 SystemParameters2._NotifyPropertyChanged(String propertyName) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2._UpdateCaptionButtonLocationIntPtrIntPtr">
+            <summary>设置 SystemParameters2._UpdateCaptionButtonLocation(IntPtr wParam, IntPtr lParam) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2._UpdateCaptionHeightIntPtrIntPtr">
+            <summary>设置 SystemParameters2._UpdateCaptionHeight(IntPtr wParam, IntPtr lParam) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2._UpdateGlassColorIntPtrIntPtr">
+            <summary>设置 SystemParameters2._UpdateGlassColor(IntPtr wParam, IntPtr lParam) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2._UpdateHighContrastIntPtrIntPtr">
+            <summary>设置 SystemParameters2._UpdateHighContrast(IntPtr wParam, IntPtr lParam) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2._UpdateIsGlassEnabledIntPtrIntPtr">
+            <summary>设置 SystemParameters2._UpdateIsGlassEnabled(IntPtr wParam, IntPtr lParam) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2._UpdateSmallIconSizeIntPtrIntPtr">
+            <summary>设置 SystemParameters2._UpdateSmallIconSize(IntPtr wParam, IntPtr lParam) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2._UpdateThemeInfoIntPtrIntPtr">
+            <summary>设置 SystemParameters2._UpdateThemeInfo(IntPtr wParam, IntPtr lParam) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2._UpdateWindowCornerRadiusIntPtrIntPtr">
+            <summary>设置 SystemParameters2._UpdateWindowCornerRadius(IntPtr wParam, IntPtr lParam) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2._UpdateWindowNonClientFrameThicknessIntPtrIntPtr">
+            <summary>设置 SystemParameters2._UpdateWindowNonClientFrameThickness(IntPtr wParam, IntPtr lParam) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2._UpdateWindowResizeBorderThicknessIntPtrIntPtr">
+            <summary>设置 SystemParameters2._UpdateWindowResizeBorderThickness(IntPtr wParam, IntPtr lParam) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2._ctorb__7ObjectEventArgs">
+            <summary>设置 SystemParameters2.&lt;.ctor&gt;b__7(Object sender, EventArgs e) 的 填充码</summary>
+        </member>
+        <member name="T:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances.HighContrastGet">
+            <summary>设置 SystemParameters2.get_HighContrast() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances.HighContrastSetBoolean">
+            <summary>设置 SystemParameters2.set_HighContrast(Boolean value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances.IsGlassEnabledGet">
+            <summary>设置 SystemParameters2.get_IsGlassEnabled() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances.IsGlassEnabledSetBoolean">
+            <summary>设置 SystemParameters2.set_IsGlassEnabled(Boolean value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances.PropertyChangedAddPropertyChangedEventHandler">
+            <summary>设置 SystemParameters2.add_PropertyChanged(PropertyChangedEventHandler value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances.PropertyChangedRemovePropertyChangedEventHandler">
+            <summary>设置 SystemParameters2.remove_PropertyChanged(PropertyChangedEventHandler value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances.SmallIconSizeGet">
+            <summary>设置 SystemParameters2.get_SmallIconSize() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances.SmallIconSizeSetSize">
+            <summary>设置 SystemParameters2.set_SmallIconSize(Size value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances.UxThemeColorGet">
+            <summary>设置 SystemParameters2.get_UxThemeColor() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances.UxThemeColorSetString">
+            <summary>设置 SystemParameters2.set_UxThemeColor(String value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances.UxThemeNameGet">
+            <summary>设置 SystemParameters2.get_UxThemeName() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances.UxThemeNameSetString">
+            <summary>设置 SystemParameters2.set_UxThemeName(String value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances.WindowCaptionButtonsLocationGet">
+            <summary>设置 SystemParameters2.get_WindowCaptionButtonsLocation() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances.WindowCaptionButtonsLocationSetRect">
+            <summary>设置 SystemParameters2.set_WindowCaptionButtonsLocation(Rect value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances.WindowCaptionHeightGet">
+            <summary>设置 SystemParameters2.get_WindowCaptionHeight() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances.WindowCaptionHeightSetDouble">
+            <summary>设置 SystemParameters2.set_WindowCaptionHeight(Double value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances.WindowCornerRadiusGet">
+            <summary>设置 SystemParameters2.get_WindowCornerRadius() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances.WindowCornerRadiusSetCornerRadius">
+            <summary>设置 SystemParameters2.set_WindowCornerRadius(CornerRadius value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances.WindowGlassBrushGet">
+            <summary>设置 SystemParameters2.get_WindowGlassBrush() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances.WindowGlassBrushSetSolidColorBrush">
+            <summary>设置 SystemParameters2.set_WindowGlassBrush(SolidColorBrush value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances.WindowGlassColorGet">
+            <summary>设置 SystemParameters2.get_WindowGlassColor() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances.WindowGlassColorSetColor">
+            <summary>设置 SystemParameters2.set_WindowGlassColor(Color value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances.WindowNonClientFrameThicknessGet">
+            <summary>设置 SystemParameters2.get_WindowNonClientFrameThickness() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances.WindowNonClientFrameThicknessSetThickness">
+            <summary>设置 SystemParameters2.set_WindowNonClientFrameThickness(Thickness value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances.WindowResizeBorderThicknessGet">
+            <summary>设置 SystemParameters2.get_WindowResizeBorderThickness() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances.WindowResizeBorderThicknessSetThickness">
+            <summary>设置 SystemParameters2.set_WindowResizeBorderThickness(Thickness value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances._InitializeCaptionButtonLocation">
+            <summary>设置 SystemParameters2._InitializeCaptionButtonLocation() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances._InitializeCaptionHeight">
+            <summary>设置 SystemParameters2._InitializeCaptionHeight() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances._InitializeGlassColor">
+            <summary>设置 SystemParameters2._InitializeGlassColor() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances._InitializeHighContrast">
+            <summary>设置 SystemParameters2._InitializeHighContrast() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances._InitializeIsGlassEnabled">
+            <summary>设置 SystemParameters2._InitializeIsGlassEnabled() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances._InitializeSmallIconSize">
+            <summary>设置 SystemParameters2._InitializeSmallIconSize() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances._InitializeThemeInfo">
+            <summary>设置 SystemParameters2._InitializeThemeInfo() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances._InitializeWindowCornerRadius">
+            <summary>设置 SystemParameters2._InitializeWindowCornerRadius() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances._InitializeWindowNonClientFrameThickness">
+            <summary>设置 SystemParameters2._InitializeWindowNonClientFrameThickness() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances._InitializeWindowResizeBorderThickness">
+            <summary>设置 SystemParameters2._InitializeWindowResizeBorderThickness() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances._LegacyInitializeCaptionButtonLocation">
+            <summary>设置 SystemParameters2._LegacyInitializeCaptionButtonLocation() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances._NotifyPropertyChangedString">
+            <summary>设置 SystemParameters2._NotifyPropertyChanged(String propertyName) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances._UpdateCaptionButtonLocationIntPtrIntPtr">
+            <summary>设置 SystemParameters2._UpdateCaptionButtonLocation(IntPtr wParam, IntPtr lParam) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances._UpdateCaptionHeightIntPtrIntPtr">
+            <summary>设置 SystemParameters2._UpdateCaptionHeight(IntPtr wParam, IntPtr lParam) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances._UpdateGlassColorIntPtrIntPtr">
+            <summary>设置 SystemParameters2._UpdateGlassColor(IntPtr wParam, IntPtr lParam) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances._UpdateHighContrastIntPtrIntPtr">
+            <summary>设置 SystemParameters2._UpdateHighContrast(IntPtr wParam, IntPtr lParam) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances._UpdateIsGlassEnabledIntPtrIntPtr">
+            <summary>设置 SystemParameters2._UpdateIsGlassEnabled(IntPtr wParam, IntPtr lParam) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances._UpdateSmallIconSizeIntPtrIntPtr">
+            <summary>设置 SystemParameters2._UpdateSmallIconSize(IntPtr wParam, IntPtr lParam) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances._UpdateThemeInfoIntPtrIntPtr">
+            <summary>设置 SystemParameters2._UpdateThemeInfo(IntPtr wParam, IntPtr lParam) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances._UpdateWindowCornerRadiusIntPtrIntPtr">
+            <summary>设置 SystemParameters2._UpdateWindowCornerRadius(IntPtr wParam, IntPtr lParam) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances._UpdateWindowNonClientFrameThicknessIntPtrIntPtr">
+            <summary>设置 SystemParameters2._UpdateWindowNonClientFrameThickness(IntPtr wParam, IntPtr lParam) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances._UpdateWindowResizeBorderThicknessIntPtrIntPtr">
+            <summary>设置 SystemParameters2._UpdateWindowResizeBorderThickness(IntPtr wParam, IntPtr lParam) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimSystemParameters2.AllInstances._ctorb__7ObjectEventArgs">
+            <summary>设置 SystemParameters2.&lt;.ctor&gt;b__7(Object sender, EventArgs e) 的 填充码</summary>
+        </member>
+        <member name="T:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo">
+            <summary>Microsoft.Windows.Shell.TaskbarItemInfo 的填充码类型</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.#ctor(Microsoft.Windows.Shell.TaskbarItemInfo)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.Constructor">
+            <summary>设置 TaskbarItemInfo.TaskbarItemInfo() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.CreateInstanceCore">
+            <summary>设置 TaskbarItemInfo.CreateInstanceCore() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.DescriptionGet">
+            <summary>设置 TaskbarItemInfo.get_Description() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.DescriptionSetString">
+            <summary>设置 TaskbarItemInfo.set_Description(String value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.GetTaskbarItemInfoWindow">
+            <summary>设置 TaskbarItemInfo.GetTaskbarItemInfo(Window window) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.OverlayGet">
+            <summary>设置 TaskbarItemInfo.get_Overlay() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.OverlaySetImageSource">
+            <summary>设置 TaskbarItemInfo.set_Overlay(ImageSource value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.ProgressStateGet">
+            <summary>设置 TaskbarItemInfo.get_ProgressState() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.ProgressStateSetTaskbarItemProgressState">
+            <summary>设置 TaskbarItemInfo.set_ProgressState(TaskbarItemProgressState value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.ProgressValueGet">
+            <summary>设置 TaskbarItemInfo.get_ProgressValue() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.ProgressValueSetDouble">
+            <summary>设置 TaskbarItemInfo.set_ProgressValue(Double value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.SetTaskbarItemInfoWindowTaskbarItemInfo">
+            <summary>设置 TaskbarItemInfo.SetTaskbarItemInfo(Window window, TaskbarItemInfo value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.StaticConstructor">
+            <summary>设置 TaskbarItemInfo.TaskbarItemInfo() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.ThumbButtonInfosGet">
+            <summary>设置 TaskbarItemInfo.get_ThumbButtonInfos() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.ThumbButtonInfosSetThumbButtonInfoCollection">
+            <summary>设置 TaskbarItemInfo.set_ThumbButtonInfos(ThumbButtonInfoCollection value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.ThumbnailClipMarginGet">
+            <summary>设置 TaskbarItemInfo.get_ThumbnailClipMargin() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.ThumbnailClipMarginSetThickness">
+            <summary>设置 TaskbarItemInfo.set_ThumbnailClipMargin(Thickness value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo._CoerceProgressStateTaskbarItemProgressState">
+            <summary>设置 TaskbarItemInfo._CoerceProgressState(TaskbarItemProgressState value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo._CoerceProgressValueDouble">
+            <summary>设置 TaskbarItemInfo._CoerceProgressValue(Double progressValue) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo._CoerceTaskbarItemInfoValueDependencyObjectObject">
+            <summary>设置 TaskbarItemInfo._CoerceTaskbarItemInfoValue(DependencyObject d, Object value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo._CoerceThumbnailClipMarginThickness">
+            <summary>设置 TaskbarItemInfo._CoerceThumbnailClipMargin(Thickness margin) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo._DetachWindow">
+            <summary>设置 TaskbarItemInfo._DetachWindow() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo._GetHICONFromImageSourceImageSourceSize">
+            <summary>设置 TaskbarItemInfo._GetHICONFromImageSource(ImageSource image, Size dimensions) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo._OnDescriptionChanged">
+            <summary>设置 TaskbarItemInfo._OnDescriptionChanged() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo._OnIsAttachedChangedBoolean">
+            <summary>设置 TaskbarItemInfo._OnIsAttachedChanged(Boolean attached) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo._OnOverlayChanged">
+            <summary>设置 TaskbarItemInfo._OnOverlayChanged() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo._OnProgressStateChanged">
+            <summary>设置 TaskbarItemInfo._OnProgressStateChanged() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo._OnProgressValueChanged">
+            <summary>设置 TaskbarItemInfo._OnProgressValueChanged() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo._OnTaskbarItemInfoChangedDependencyObjectDependencyPropertyChangedEventArgs">
+            <summary>设置 TaskbarItemInfo._OnTaskbarItemInfoChanged(DependencyObject d, DependencyPropertyChangedEventArgs e) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo._OnThumbButtonsChanged">
+            <summary>设置 TaskbarItemInfo._OnThumbButtonsChanged() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo._OnThumbnailClipMarginChanged">
+            <summary>设置 TaskbarItemInfo._OnThumbnailClipMarginChanged() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo._OnWindowSourceInitializedObjectEventArgs">
+            <summary>设置 TaskbarItemInfo._OnWindowSourceInitialized(Object sender, EventArgs e) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo._SetWindowWindow">
+            <summary>设置 TaskbarItemInfo._SetWindow(Window window) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo._WndProcIntPtrInt32IntPtrIntPtrBooleanRef">
+            <summary>设置 TaskbarItemInfo._WndProc(IntPtr hwnd, Int32 uMsg, IntPtr wParam, IntPtr lParam, Boolean&amp; handled) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo._cctorb__3DependencyObjectDependencyPropertyChangedEventArgs">
+            <summary>设置 TaskbarItemInfo.&lt;.cctor&gt;b__3(DependencyObject d, DependencyPropertyChangedEventArgs e) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo._cctorb__4DependencyObjectObject">
+            <summary>设置 TaskbarItemInfo.&lt;.cctor&gt;b__4(DependencyObject d, Object e) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo._cctorb__5DependencyObjectDependencyPropertyChangedEventArgs">
+            <summary>设置 TaskbarItemInfo.&lt;.cctor&gt;b__5(DependencyObject d, DependencyPropertyChangedEventArgs e) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo._cctorb__6DependencyObjectObject">
+            <summary>设置 TaskbarItemInfo.&lt;.cctor&gt;b__6(DependencyObject d, Object e) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo._cctorb__7DependencyObjectDependencyPropertyChangedEventArgs">
+            <summary>设置 TaskbarItemInfo.&lt;.cctor&gt;b__7(DependencyObject d, DependencyPropertyChangedEventArgs e) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo._cctorb__8DependencyObjectDependencyPropertyChangedEventArgs">
+            <summary>设置 TaskbarItemInfo.&lt;.cctor&gt;b__8(DependencyObject d, DependencyPropertyChangedEventArgs e) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo._cctorb__9DependencyObjectDependencyPropertyChangedEventArgs">
+            <summary>设置 TaskbarItemInfo.&lt;.cctor&gt;b__9(DependencyObject d, DependencyPropertyChangedEventArgs e) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo._cctorb__aDependencyObjectObject">
+            <summary>设置 TaskbarItemInfo.&lt;.cctor&gt;b__a(DependencyObject d, Object e) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo._cctorb__bDependencyObjectDependencyPropertyChangedEventArgs">
+            <summary>设置 TaskbarItemInfo.&lt;.cctor&gt;b__b(DependencyObject d, DependencyPropertyChangedEventArgs e) 的 填充码</summary>
+        </member>
+        <member name="T:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.AllInstances.CreateInstanceCore">
+            <summary>设置 TaskbarItemInfo.CreateInstanceCore() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.AllInstances.DescriptionGet">
+            <summary>设置 TaskbarItemInfo.get_Description() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.AllInstances.DescriptionSetString">
+            <summary>设置 TaskbarItemInfo.set_Description(String value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.AllInstances.OverlayGet">
+            <summary>设置 TaskbarItemInfo.get_Overlay() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.AllInstances.OverlaySetImageSource">
+            <summary>设置 TaskbarItemInfo.set_Overlay(ImageSource value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.AllInstances.ProgressStateGet">
+            <summary>设置 TaskbarItemInfo.get_ProgressState() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.AllInstances.ProgressStateSetTaskbarItemProgressState">
+            <summary>设置 TaskbarItemInfo.set_ProgressState(TaskbarItemProgressState value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.AllInstances.ProgressValueGet">
+            <summary>设置 TaskbarItemInfo.get_ProgressValue() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.AllInstances.ProgressValueSetDouble">
+            <summary>设置 TaskbarItemInfo.set_ProgressValue(Double value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.AllInstances.ThumbButtonInfosGet">
+            <summary>设置 TaskbarItemInfo.get_ThumbButtonInfos() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.AllInstances.ThumbButtonInfosSetThumbButtonInfoCollection">
+            <summary>设置 TaskbarItemInfo.set_ThumbButtonInfos(ThumbButtonInfoCollection value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.AllInstances.ThumbnailClipMarginGet">
+            <summary>设置 TaskbarItemInfo.get_ThumbnailClipMargin() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.AllInstances.ThumbnailClipMarginSetThickness">
+            <summary>设置 TaskbarItemInfo.set_ThumbnailClipMargin(Thickness value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.AllInstances._DetachWindow">
+            <summary>设置 TaskbarItemInfo._DetachWindow() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.AllInstances._GetHICONFromImageSourceImageSourceSize">
+            <summary>设置 TaskbarItemInfo._GetHICONFromImageSource(ImageSource image, Size dimensions) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.AllInstances._OnDescriptionChanged">
+            <summary>设置 TaskbarItemInfo._OnDescriptionChanged() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.AllInstances._OnIsAttachedChangedBoolean">
+            <summary>设置 TaskbarItemInfo._OnIsAttachedChanged(Boolean attached) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.AllInstances._OnOverlayChanged">
+            <summary>设置 TaskbarItemInfo._OnOverlayChanged() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.AllInstances._OnProgressStateChanged">
+            <summary>设置 TaskbarItemInfo._OnProgressStateChanged() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.AllInstances._OnProgressValueChanged">
+            <summary>设置 TaskbarItemInfo._OnProgressValueChanged() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.AllInstances._OnThumbButtonsChanged">
+            <summary>设置 TaskbarItemInfo._OnThumbButtonsChanged() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.AllInstances._OnThumbnailClipMarginChanged">
+            <summary>设置 TaskbarItemInfo._OnThumbnailClipMarginChanged() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.AllInstances._OnWindowSourceInitializedObjectEventArgs">
+            <summary>设置 TaskbarItemInfo._OnWindowSourceInitialized(Object sender, EventArgs e) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.AllInstances._SetWindowWindow">
+            <summary>设置 TaskbarItemInfo._SetWindow(Window window) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimTaskbarItemInfo.AllInstances._WndProcIntPtrInt32IntPtrIntPtrBooleanRef">
+            <summary>设置 TaskbarItemInfo._WndProc(IntPtr hwnd, Int32 uMsg, IntPtr wParam, IntPtr lParam, Boolean&amp; handled) 的 填充码</summary>
+        </member>
+        <member name="T:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo">
+            <summary>Microsoft.Windows.Shell.ThumbButtonInfo 的填充码类型</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.#ctor(Microsoft.Windows.Shell.ThumbButtonInfo)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.Bind(System.Windows.Input.ICommandSource)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.ClickAddEventHandler">
+            <summary>设置 ThumbButtonInfo.add_Click(EventHandler value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.ClickRemoveEventHandler">
+            <summary>设置 ThumbButtonInfo.remove_Click(EventHandler value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.CommandGet">
+            <summary>设置 ThumbButtonInfo.get_Command() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.CommandParameterGet">
+            <summary>设置 ThumbButtonInfo.get_CommandParameter() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.CommandParameterSetObject">
+            <summary>设置 ThumbButtonInfo.set_CommandParameter(Object value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.CommandSetICommand">
+            <summary>设置 ThumbButtonInfo.set_Command(ICommand value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.CommandTargetGet">
+            <summary>设置 ThumbButtonInfo.get_CommandTarget() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.CommandTargetSetIInputElement">
+            <summary>设置 ThumbButtonInfo.set_CommandTarget(IInputElement value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.Constructor">
+            <summary>设置 ThumbButtonInfo.ThumbButtonInfo() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.CreateInstanceCore">
+            <summary>设置 ThumbButtonInfo.CreateInstanceCore() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.DescriptionGet">
+            <summary>设置 ThumbButtonInfo.get_Description() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.DescriptionSetString">
+            <summary>设置 ThumbButtonInfo.set_Description(String value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.DismissWhenClickedGet">
+            <summary>设置 ThumbButtonInfo.get_DismissWhenClicked() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.DismissWhenClickedSetBoolean">
+            <summary>设置 ThumbButtonInfo.set_DismissWhenClicked(Boolean value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.ImageSourceGet">
+            <summary>设置 ThumbButtonInfo.get_ImageSource() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.ImageSourceSetImageSource">
+            <summary>设置 ThumbButtonInfo.set_ImageSource(ImageSource value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.InvokeClick">
+            <summary>设置 ThumbButtonInfo.InvokeClick() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.IsBackgroundVisibleGet">
+            <summary>设置 ThumbButtonInfo.get_IsBackgroundVisible() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.IsBackgroundVisibleSetBoolean">
+            <summary>设置 ThumbButtonInfo.set_IsBackgroundVisible(Boolean value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.IsEnabledGet">
+            <summary>设置 ThumbButtonInfo.get_IsEnabled() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.IsEnabledSetBoolean">
+            <summary>设置 ThumbButtonInfo.set_IsEnabled(Boolean value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.IsInteractiveGet">
+            <summary>设置 ThumbButtonInfo.get_IsInteractive() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.IsInteractiveSetBoolean">
+            <summary>设置 ThumbButtonInfo.set_IsInteractive(Boolean value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.StaticConstructor">
+            <summary>设置 ThumbButtonInfo.ThumbButtonInfo() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.VisibilityGet">
+            <summary>设置 ThumbButtonInfo.get_Visibility() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.VisibilitySetVisibility">
+            <summary>设置 ThumbButtonInfo.set_Visibility(Visibility value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo._CanExecuteGet">
+            <summary>设置 ThumbButtonInfo.get__CanExecute() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo._CanExecuteSetBoolean">
+            <summary>设置 ThumbButtonInfo.set__CanExecute(Boolean value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo._CoerceDescriptionDependencyObjectObject">
+            <summary>设置 ThumbButtonInfo._CoerceDescription(DependencyObject d, Object value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo._CoerceIsEnabledValueObject">
+            <summary>设置 ThumbButtonInfo._CoerceIsEnabledValue(Object value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo._HookCommandICommand">
+            <summary>设置 ThumbButtonInfo._HookCommand(ICommand command) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo._InvokeCommand">
+            <summary>设置 ThumbButtonInfo._InvokeCommand() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo._OnCommandChangedDependencyPropertyChangedEventArgs">
+            <summary>设置 ThumbButtonInfo._OnCommandChanged(DependencyPropertyChangedEventArgs e) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo._UnhookCommandICommand">
+            <summary>设置 ThumbButtonInfo._UnhookCommand(ICommand command) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo._UpdateCanExecute">
+            <summary>设置 ThumbButtonInfo._UpdateCanExecute() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.__HookCommandb__0ObjectEventArgs">
+            <summary>设置 ThumbButtonInfo.&lt;_HookCommand&gt;b__0(Object sender, EventArgs e) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo._cctorb__1DependencyObjectObject">
+            <summary>设置 ThumbButtonInfo.&lt;.cctor&gt;b__1(DependencyObject d, Object e) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo._cctorb__2DependencyObjectDependencyPropertyChangedEventArgs">
+            <summary>设置 ThumbButtonInfo.&lt;.cctor&gt;b__2(DependencyObject d, DependencyPropertyChangedEventArgs e) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo._cctorb__3DependencyObjectDependencyPropertyChangedEventArgs">
+            <summary>设置 ThumbButtonInfo.&lt;.cctor&gt;b__3(DependencyObject d, DependencyPropertyChangedEventArgs e) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo._cctorb__4DependencyObjectDependencyPropertyChangedEventArgs">
+            <summary>设置 ThumbButtonInfo.&lt;.cctor&gt;b__4(DependencyObject d, DependencyPropertyChangedEventArgs e) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo._cctorb__5DependencyObjectDependencyPropertyChangedEventArgs">
+            <summary>设置 ThumbButtonInfo.&lt;.cctor&gt;b__5(DependencyObject d, DependencyPropertyChangedEventArgs e) 的 填充码</summary>
+        </member>
+        <member name="T:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.AllInstances.ClickAddEventHandler">
+            <summary>设置 ThumbButtonInfo.add_Click(EventHandler value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.AllInstances.ClickRemoveEventHandler">
+            <summary>设置 ThumbButtonInfo.remove_Click(EventHandler value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.AllInstances.CommandGet">
+            <summary>设置 ThumbButtonInfo.get_Command() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.AllInstances.CommandParameterGet">
+            <summary>设置 ThumbButtonInfo.get_CommandParameter() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.AllInstances.CommandParameterSetObject">
+            <summary>设置 ThumbButtonInfo.set_CommandParameter(Object value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.AllInstances.CommandSetICommand">
+            <summary>设置 ThumbButtonInfo.set_Command(ICommand value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.AllInstances.CommandTargetGet">
+            <summary>设置 ThumbButtonInfo.get_CommandTarget() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.AllInstances.CommandTargetSetIInputElement">
+            <summary>设置 ThumbButtonInfo.set_CommandTarget(IInputElement value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.AllInstances.CreateInstanceCore">
+            <summary>设置 ThumbButtonInfo.CreateInstanceCore() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.AllInstances.DescriptionGet">
+            <summary>设置 ThumbButtonInfo.get_Description() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.AllInstances.DescriptionSetString">
+            <summary>设置 ThumbButtonInfo.set_Description(String value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.AllInstances.DismissWhenClickedGet">
+            <summary>设置 ThumbButtonInfo.get_DismissWhenClicked() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.AllInstances.DismissWhenClickedSetBoolean">
+            <summary>设置 ThumbButtonInfo.set_DismissWhenClicked(Boolean value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.AllInstances.ImageSourceGet">
+            <summary>设置 ThumbButtonInfo.get_ImageSource() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.AllInstances.ImageSourceSetImageSource">
+            <summary>设置 ThumbButtonInfo.set_ImageSource(ImageSource value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.AllInstances.InvokeClick">
+            <summary>设置 ThumbButtonInfo.InvokeClick() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.AllInstances.IsBackgroundVisibleGet">
+            <summary>设置 ThumbButtonInfo.get_IsBackgroundVisible() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.AllInstances.IsBackgroundVisibleSetBoolean">
+            <summary>设置 ThumbButtonInfo.set_IsBackgroundVisible(Boolean value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.AllInstances.IsEnabledGet">
+            <summary>设置 ThumbButtonInfo.get_IsEnabled() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.AllInstances.IsEnabledSetBoolean">
+            <summary>设置 ThumbButtonInfo.set_IsEnabled(Boolean value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.AllInstances.IsInteractiveGet">
+            <summary>设置 ThumbButtonInfo.get_IsInteractive() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.AllInstances.IsInteractiveSetBoolean">
+            <summary>设置 ThumbButtonInfo.set_IsInteractive(Boolean value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.AllInstances.VisibilityGet">
+            <summary>设置 ThumbButtonInfo.get_Visibility() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.AllInstances.VisibilitySetVisibility">
+            <summary>设置 ThumbButtonInfo.set_Visibility(Visibility value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.AllInstances._CanExecuteGet">
+            <summary>设置 ThumbButtonInfo.get__CanExecute() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.AllInstances._CanExecuteSetBoolean">
+            <summary>设置 ThumbButtonInfo.set__CanExecute(Boolean value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.AllInstances._CoerceIsEnabledValueObject">
+            <summary>设置 ThumbButtonInfo._CoerceIsEnabledValue(Object value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.AllInstances._HookCommandICommand">
+            <summary>设置 ThumbButtonInfo._HookCommand(ICommand command) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.AllInstances._InvokeCommand">
+            <summary>设置 ThumbButtonInfo._InvokeCommand() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.AllInstances._OnCommandChangedDependencyPropertyChangedEventArgs">
+            <summary>设置 ThumbButtonInfo._OnCommandChanged(DependencyPropertyChangedEventArgs e) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.AllInstances._UnhookCommandICommand">
+            <summary>设置 ThumbButtonInfo._UnhookCommand(ICommand command) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.AllInstances._UpdateCanExecute">
+            <summary>设置 ThumbButtonInfo._UpdateCanExecute() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfo.AllInstances.__HookCommandb__0ObjectEventArgs">
+            <summary>设置 ThumbButtonInfo.&lt;_HookCommand&gt;b__0(Object sender, EventArgs e) 的 填充码</summary>
+        </member>
+        <member name="T:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfoCollection">
+            <summary>Microsoft.Windows.Shell.ThumbButtonInfoCollection 的填充码类型</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfoCollection.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfoCollection.#ctor(Microsoft.Windows.Shell.ThumbButtonInfoCollection)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfoCollection.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfoCollection.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfoCollection.Bind(System.Windows.Media.Animation.IAnimatable)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfoCollection.Bind(System.Collections.Specialized.INotifyCollectionChanged)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfoCollection.Bind(System.ComponentModel.INotifyPropertyChanged)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfoCollection.Bind(System.Collections.ICollection)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfoCollection.Bind(System.Collections.IEnumerable)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfoCollection.Bind(System.Collections.IList)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfoCollection.Bind(System.Collections.Generic.ICollection{Microsoft.Windows.Shell.ThumbButtonInfo})">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfoCollection.Bind(System.Collections.Generic.IEnumerable{Microsoft.Windows.Shell.ThumbButtonInfo})">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfoCollection.Bind(System.Collections.Generic.IList{Microsoft.Windows.Shell.ThumbButtonInfo})">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfoCollection.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfoCollection.Constructor">
+            <summary>设置 ThumbButtonInfoCollection.ThumbButtonInfoCollection() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfoCollection.CreateInstanceCore">
+            <summary>设置 ThumbButtonInfoCollection.CreateInstanceCore() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfoCollection.EmptyGet">
+            <summary>设置 ThumbButtonInfoCollection.get_Empty() 的 填充码</summary>
+        </member>
+        <member name="T:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfoCollection.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimThumbButtonInfoCollection.AllInstances.CreateInstanceCore">
+            <summary>设置 ThumbButtonInfoCollection.CreateInstanceCore() 的 填充码</summary>
+        </member>
+        <member name="T:Microsoft.Windows.Shell.Fakes.ShimWindowChrome">
+            <summary>Microsoft.Windows.Shell.WindowChrome 的填充码类型</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimWindowChrome.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimWindowChrome.#ctor(Microsoft.Windows.Shell.WindowChrome)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimWindowChrome.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.ShimWindowChrome.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimWindowChrome.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimWindowChrome.CaptionHeightGet">
+            <summary>设置 WindowChrome.get_CaptionHeight() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimWindowChrome.CaptionHeightSetDouble">
+            <summary>设置 WindowChrome.set_CaptionHeight(Double value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimWindowChrome.Constructor">
+            <summary>设置 WindowChrome.WindowChrome() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimWindowChrome.CornerRadiusGet">
+            <summary>设置 WindowChrome.get_CornerRadius() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimWindowChrome.CornerRadiusSetCornerRadius">
+            <summary>设置 WindowChrome.set_CornerRadius(CornerRadius value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimWindowChrome.CreateInstanceCore">
+            <summary>设置 WindowChrome.CreateInstanceCore() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimWindowChrome.GetIsHitTestVisibleInChromeIInputElement">
+            <summary>设置 WindowChrome.GetIsHitTestVisibleInChrome(IInputElement inputElement) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimWindowChrome.GetWindowChromeWindow">
+            <summary>设置 WindowChrome.GetWindowChrome(Window window) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimWindowChrome.GlassFrameCompleteThicknessGet">
+            <summary>设置 WindowChrome.get_GlassFrameCompleteThickness() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimWindowChrome.GlassFrameThicknessGet">
+            <summary>设置 WindowChrome.get_GlassFrameThickness() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimWindowChrome.GlassFrameThicknessSetThickness">
+            <summary>设置 WindowChrome.set_GlassFrameThickness(Thickness value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimWindowChrome.PropertyChangedThatRequiresRepaintAddEventHandler">
+            <summary>设置 WindowChrome.add_PropertyChangedThatRequiresRepaint(EventHandler value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimWindowChrome.PropertyChangedThatRequiresRepaintRemoveEventHandler">
+            <summary>设置 WindowChrome.remove_PropertyChangedThatRequiresRepaint(EventHandler value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimWindowChrome.ResizeBorderThicknessGet">
+            <summary>设置 WindowChrome.get_ResizeBorderThickness() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimWindowChrome.ResizeBorderThicknessSetThickness">
+            <summary>设置 WindowChrome.set_ResizeBorderThickness(Thickness value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimWindowChrome.SetIsHitTestVisibleInChromeIInputElementBoolean">
+            <summary>设置 WindowChrome.SetIsHitTestVisibleInChrome(IInputElement inputElement, Boolean hitTestVisible) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimWindowChrome.SetWindowChromeWindowWindowChrome">
+            <summary>设置 WindowChrome.SetWindowChrome(Window window, WindowChrome chrome) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimWindowChrome.StaticConstructor">
+            <summary>设置 WindowChrome.WindowChrome() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimWindowChrome._CoerceGlassFrameThicknessThickness">
+            <summary>设置 WindowChrome._CoerceGlassFrameThickness(Thickness thickness) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimWindowChrome._OnChromeChangedDependencyObjectDependencyPropertyChangedEventArgs">
+            <summary>设置 WindowChrome._OnChromeChanged(DependencyObject d, DependencyPropertyChangedEventArgs e) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimWindowChrome._OnPropertyChangedThatRequiresRepaint">
+            <summary>设置 WindowChrome._OnPropertyChangedThatRequiresRepaint() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimWindowChrome._cctorb__6DependencyObjectDependencyPropertyChangedEventArgs">
+            <summary>设置 WindowChrome.&lt;.cctor&gt;b__6(DependencyObject d, DependencyPropertyChangedEventArgs e) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimWindowChrome._cctorb__7Object">
+            <summary>设置 WindowChrome.&lt;.cctor&gt;b__7(Object value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimWindowChrome._cctorb__8Object">
+            <summary>设置 WindowChrome.&lt;.cctor&gt;b__8(Object value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimWindowChrome._cctorb__9DependencyObjectDependencyPropertyChangedEventArgs">
+            <summary>设置 WindowChrome.&lt;.cctor&gt;b__9(DependencyObject d, DependencyPropertyChangedEventArgs e) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimWindowChrome._cctorb__aDependencyObjectObject">
+            <summary>设置 WindowChrome.&lt;.cctor&gt;b__a(DependencyObject d, Object o) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimWindowChrome._cctorb__bDependencyObjectDependencyPropertyChangedEventArgs">
+            <summary>设置 WindowChrome.&lt;.cctor&gt;b__b(DependencyObject d, DependencyPropertyChangedEventArgs e) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimWindowChrome._cctorb__cObject">
+            <summary>设置 WindowChrome.&lt;.cctor&gt;b__c(Object value) 的 填充码</summary>
+        </member>
+        <member name="T:Microsoft.Windows.Shell.Fakes.ShimWindowChrome.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimWindowChrome.AllInstances.CaptionHeightGet">
+            <summary>设置 WindowChrome.get_CaptionHeight() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimWindowChrome.AllInstances.CaptionHeightSetDouble">
+            <summary>设置 WindowChrome.set_CaptionHeight(Double value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimWindowChrome.AllInstances.CornerRadiusGet">
+            <summary>设置 WindowChrome.get_CornerRadius() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimWindowChrome.AllInstances.CornerRadiusSetCornerRadius">
+            <summary>设置 WindowChrome.set_CornerRadius(CornerRadius value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimWindowChrome.AllInstances.CreateInstanceCore">
+            <summary>设置 WindowChrome.CreateInstanceCore() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimWindowChrome.AllInstances.GlassFrameThicknessGet">
+            <summary>设置 WindowChrome.get_GlassFrameThickness() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimWindowChrome.AllInstances.GlassFrameThicknessSetThickness">
+            <summary>设置 WindowChrome.set_GlassFrameThickness(Thickness value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimWindowChrome.AllInstances.PropertyChangedThatRequiresRepaintAddEventHandler">
+            <summary>设置 WindowChrome.add_PropertyChangedThatRequiresRepaint(EventHandler value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimWindowChrome.AllInstances.PropertyChangedThatRequiresRepaintRemoveEventHandler">
+            <summary>设置 WindowChrome.remove_PropertyChangedThatRequiresRepaint(EventHandler value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimWindowChrome.AllInstances.ResizeBorderThicknessGet">
+            <summary>设置 WindowChrome.get_ResizeBorderThickness() 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimWindowChrome.AllInstances.ResizeBorderThicknessSetThickness">
+            <summary>设置 WindowChrome.set_ResizeBorderThickness(Thickness value) 的 填充码</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.ShimWindowChrome.AllInstances._OnPropertyChangedThatRequiresRepaint">
+            <summary>设置 WindowChrome._OnPropertyChangedThatRequiresRepaint() 的 填充码</summary>
+        </member>
+        <member name="T:Microsoft.Windows.Shell.Fakes.StubJumpPath">
+            <summary>Microsoft.Windows.Shell.JumpPath 的存根类型</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.StubJumpPath.#ctor">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.StubJumpPath.InitializeStub">
+            <summary>初始化 type StubJumpPath 的新实例</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.StubJumpPath.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.StubJumpPath.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.StubJumpPath.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+        <member name="T:Microsoft.Windows.Shell.Fakes.StubJumpTask">
+            <summary>Microsoft.Windows.Shell.JumpTask 的存根类型</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.StubJumpTask.#ctor">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.StubJumpTask.InitializeStub">
+            <summary>初始化 type StubJumpTask 的新实例</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.StubJumpTask.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.StubJumpTask.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.StubJumpTask.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+        <member name="T:Microsoft.Windows.Shell.Fakes.StubThumbButtonInfoCollection">
+            <summary>Microsoft.Windows.Shell.ThumbButtonInfoCollection 的存根类型</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.StubThumbButtonInfoCollection.#ctor">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.StubThumbButtonInfoCollection.CloneCore(System.Windows.Freezable)">
+            <summary>设置 FreezableCollection`1.CloneCore(Freezable source) 的 存根</summary>
+        </member>
+        <member name="F:Microsoft.Windows.Shell.Fakes.StubThumbButtonInfoCollection.CloneCoreFreezable">
+            <summary>设置 FreezableCollection`1.CloneCore(Freezable source) 的 stub</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.StubThumbButtonInfoCollection.CloneCurrentValueCore(System.Windows.Freezable)">
+            <summary>设置 FreezableCollection`1.CloneCurrentValueCore(Freezable source) 的 存根</summary>
+        </member>
+        <member name="F:Microsoft.Windows.Shell.Fakes.StubThumbButtonInfoCollection.CloneCurrentValueCoreFreezable">
+            <summary>设置 FreezableCollection`1.CloneCurrentValueCore(Freezable source) 的 stub</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.StubThumbButtonInfoCollection.CreateInstanceCore">
+            <summary>设置 ThumbButtonInfoCollection.CreateInstanceCore() 的 存根</summary>
+        </member>
+        <member name="F:Microsoft.Windows.Shell.Fakes.StubThumbButtonInfoCollection.CreateInstanceCore01">
+            <summary>设置 ThumbButtonInfoCollection.CreateInstanceCore() 的 stub</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.StubThumbButtonInfoCollection.FreezeCore(System.Boolean)">
+            <summary>设置 FreezableCollection`1.FreezeCore(Boolean isChecking) 的 存根</summary>
+        </member>
+        <member name="F:Microsoft.Windows.Shell.Fakes.StubThumbButtonInfoCollection.FreezeCoreBoolean">
+            <summary>设置 FreezableCollection`1.FreezeCore(Boolean isChecking) 的 stub</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.StubThumbButtonInfoCollection.GetAsFrozenCore(System.Windows.Freezable)">
+            <summary>设置 FreezableCollection`1.GetAsFrozenCore(Freezable source) 的 存根</summary>
+        </member>
+        <member name="F:Microsoft.Windows.Shell.Fakes.StubThumbButtonInfoCollection.GetAsFrozenCoreFreezable">
+            <summary>设置 FreezableCollection`1.GetAsFrozenCore(Freezable source) 的 stub</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.StubThumbButtonInfoCollection.GetCurrentValueAsFrozenCore(System.Windows.Freezable)">
+            <summary>设置 FreezableCollection`1.GetCurrentValueAsFrozenCore(Freezable source) 的 存根</summary>
+        </member>
+        <member name="F:Microsoft.Windows.Shell.Fakes.StubThumbButtonInfoCollection.GetCurrentValueAsFrozenCoreFreezable">
+            <summary>设置 FreezableCollection`1.GetCurrentValueAsFrozenCore(Freezable source) 的 stub</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.StubThumbButtonInfoCollection.InitializeStub">
+            <summary>初始化 type StubThumbButtonInfoCollection 的新实例</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.StubThumbButtonInfoCollection.OnChanged">
+            <summary>设置 Freezable.OnChanged() 的 存根</summary>
+        </member>
+        <member name="F:Microsoft.Windows.Shell.Fakes.StubThumbButtonInfoCollection.OnChanged01">
+            <summary>设置 Freezable.OnChanged() 的 stub</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.StubThumbButtonInfoCollection.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>设置 Freezable.OnPropertyChanged(DependencyPropertyChangedEventArgs e) 的 存根</summary>
+        </member>
+        <member name="F:Microsoft.Windows.Shell.Fakes.StubThumbButtonInfoCollection.OnPropertyChangedDependencyPropertyChangedEventArgs">
+            <summary>设置 Freezable.OnPropertyChanged(DependencyPropertyChangedEventArgs e) 的 stub</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.StubThumbButtonInfoCollection.ShouldSerializeProperty(System.Windows.DependencyProperty)">
+            <summary>设置 DependencyObject.ShouldSerializeProperty(DependencyProperty dp) 的 存根</summary>
+        </member>
+        <member name="F:Microsoft.Windows.Shell.Fakes.StubThumbButtonInfoCollection.ShouldSerializePropertyDependencyProperty">
+            <summary>设置 DependencyObject.ShouldSerializeProperty(DependencyProperty dp) 的 stub</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.StubThumbButtonInfoCollection.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.StubThumbButtonInfoCollection.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.StubThumbButtonInfoCollection.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+        <member name="T:Microsoft.Windows.Shell.Fakes.StubWindowChrome">
+            <summary>Microsoft.Windows.Shell.WindowChrome 的存根类型</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.StubWindowChrome.#ctor">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.StubWindowChrome.CloneCore(System.Windows.Freezable)">
+            <summary>设置 Freezable.CloneCore(Freezable sourceFreezable) 的 存根</summary>
+        </member>
+        <member name="F:Microsoft.Windows.Shell.Fakes.StubWindowChrome.CloneCoreFreezable">
+            <summary>设置 Freezable.CloneCore(Freezable sourceFreezable) 的 stub</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.StubWindowChrome.CloneCurrentValueCore(System.Windows.Freezable)">
+            <summary>设置 Freezable.CloneCurrentValueCore(Freezable sourceFreezable) 的 存根</summary>
+        </member>
+        <member name="F:Microsoft.Windows.Shell.Fakes.StubWindowChrome.CloneCurrentValueCoreFreezable">
+            <summary>设置 Freezable.CloneCurrentValueCore(Freezable sourceFreezable) 的 stub</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.StubWindowChrome.CreateInstanceCore">
+            <summary>设置 WindowChrome.CreateInstanceCore() 的 存根</summary>
+        </member>
+        <member name="F:Microsoft.Windows.Shell.Fakes.StubWindowChrome.CreateInstanceCore01">
+            <summary>设置 WindowChrome.CreateInstanceCore() 的 stub</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.StubWindowChrome.FreezeCore(System.Boolean)">
+            <summary>设置 Freezable.FreezeCore(Boolean isChecking) 的 存根</summary>
+        </member>
+        <member name="F:Microsoft.Windows.Shell.Fakes.StubWindowChrome.FreezeCoreBoolean">
+            <summary>设置 Freezable.FreezeCore(Boolean isChecking) 的 stub</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.StubWindowChrome.GetAsFrozenCore(System.Windows.Freezable)">
+            <summary>设置 Freezable.GetAsFrozenCore(Freezable sourceFreezable) 的 存根</summary>
+        </member>
+        <member name="F:Microsoft.Windows.Shell.Fakes.StubWindowChrome.GetAsFrozenCoreFreezable">
+            <summary>设置 Freezable.GetAsFrozenCore(Freezable sourceFreezable) 的 stub</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.StubWindowChrome.GetCurrentValueAsFrozenCore(System.Windows.Freezable)">
+            <summary>设置 Freezable.GetCurrentValueAsFrozenCore(Freezable sourceFreezable) 的 存根</summary>
+        </member>
+        <member name="F:Microsoft.Windows.Shell.Fakes.StubWindowChrome.GetCurrentValueAsFrozenCoreFreezable">
+            <summary>设置 Freezable.GetCurrentValueAsFrozenCore(Freezable sourceFreezable) 的 stub</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.StubWindowChrome.InitializeStub">
+            <summary>初始化 type StubWindowChrome 的新实例</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.StubWindowChrome.OnChanged">
+            <summary>设置 Freezable.OnChanged() 的 存根</summary>
+        </member>
+        <member name="F:Microsoft.Windows.Shell.Fakes.StubWindowChrome.OnChanged01">
+            <summary>设置 Freezable.OnChanged() 的 stub</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.StubWindowChrome.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>设置 Freezable.OnPropertyChanged(DependencyPropertyChangedEventArgs e) 的 存根</summary>
+        </member>
+        <member name="F:Microsoft.Windows.Shell.Fakes.StubWindowChrome.OnPropertyChangedDependencyPropertyChangedEventArgs">
+            <summary>设置 Freezable.OnPropertyChanged(DependencyPropertyChangedEventArgs e) 的 stub</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Shell.Fakes.StubWindowChrome.ShouldSerializeProperty(System.Windows.DependencyProperty)">
+            <summary>设置 DependencyObject.ShouldSerializeProperty(DependencyProperty dp) 的 存根</summary>
+        </member>
+        <member name="F:Microsoft.Windows.Shell.Fakes.StubWindowChrome.ShouldSerializePropertyDependencyProperty">
+            <summary>设置 DependencyObject.ShouldSerializeProperty(DependencyProperty dp) 的 stub</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.StubWindowChrome.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.StubWindowChrome.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:Microsoft.Windows.Shell.Fakes.StubWindowChrome.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+    </members>
+</doc>

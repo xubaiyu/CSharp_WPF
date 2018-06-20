@@ -1,0 +1,300 @@
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Microsoft.Windows.Shell.JumpItem 生成存根: 类型没有系列可见的构造函数。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Microsoft.Windows.Shell.JumpItemRejectionReason 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Microsoft.Windows.Shell.JumpItemsRejectedEventArgs 生成存根: 类型已密封。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Microsoft.Windows.Shell.JumpItemsRemovedEventArgs 生成存根: 类型已密封。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Microsoft.Windows.Shell.JumpList 生成存根: 类型已密封。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.IID 生成存根: 类型已密封。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.CLSID 生成存根: 类型已密封。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.Assert 生成存根: 类型已密封。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.DoubleUtilities 生成存根: 类型已密封。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.DpiHelper 生成存根: 类型已密封。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.Win32Error 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.Facility 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.HRESULT 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.MessageWindow 生成存根: 类型已密封。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.Win32Value 生成存根: 类型已密封。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.HCF 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.BI 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.RGN 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.CombineRgnResult 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.OLECMDEXECOPT 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.OLECMDF 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.OLECMDID 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.READYSTATE 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.DOGIF 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.DWM_SIT 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.ErrorModes 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.HT 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.GCLP 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.GWL 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SM 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SPI 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SPIF 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.STATE_SYSTEM 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.StockObject 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.CS 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.WS 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.WM 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.WS_EX 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.DeviceCap 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.FO 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.FOF 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.MF 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.WINDOWTHEMEATTRIBUTETYPE 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.DWMFLIP3D 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.DWMNCRP 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.DWMWA 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.WTNCA 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SWP 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SW 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SC 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.Status 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.MOUSEEVENTF 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.MSGFLT 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.MSGFLTINFO 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.INPUT_TYPE 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.NIM 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SHARD 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SLGP 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.NIF 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.NIIF 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.AC 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.ULW 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.WVR 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SafeFindHandle 生成存根: 类型已密封。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SafeDC 生成存根: 类型已密封。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SafeHBITMAP 生成存根: 类型已密封。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SafeGdiplusStartupToken 生成存根: 类型已密封。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SafeConnectionPointCookie 生成存根: 类型已密封。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.BLENDFUNCTION 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.HIGHCONTRAST 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.RGBQUAD 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.BITMAPINFOHEADER 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.BITMAPINFO 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.CHANGEFILTERSTRUCT 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.CREATESTRUCT 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SHFILEOPSTRUCT 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.TITLEBARINFO 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.TITLEBARINFOEX 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.NOTIFYICONDATA 生成存根: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.PROPVARIANT 生成存根: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SHARDAPPIDINFO 生成存根: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SHARDAPPIDINFOIDLIST 生成存根: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SHARDAPPIDINFOLINK 生成存根: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.LOGFONT 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.MINMAXINFO 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.NONCLIENTMETRICS 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.WTA_OPTIONS 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.MARGINS 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.MONITORINFO 生成存根: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.POINT 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.RefPOINT 生成存根: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.RECT 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.RefRECT 生成存根: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SIZE 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.StartupOutput 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.StartupInput 生成存根: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.WIN32_FIND_DATAW 生成存根: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.WINDOWPLACEMENT 生成存根: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.WINDOWPOS 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.WNDCLASSEX 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.MOUSEINPUT 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.INPUT 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.UNSIGNED_RATIO 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.DWM_TIMING_INFO 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.WndProc 生成存根: 类型已密封。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.WndProcHook 生成存根: 类型已密封。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.MessageHandler 生成存根: 类型已密封。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.NativeMethods 生成存根: 类型已密封。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SIATTRIBFLAGS 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.APPDOCLISTTYPE 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.STPF 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.TBPF 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.THB 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.THBF 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.GPS 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.KDC 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SFGAO 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SHCONTF 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SHGDN 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SICHINT 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SIGDN 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.STR_GPS 生成存根: 类型已密封。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.THUMBBUTTON 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.PKEY 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.IEnumIDList 生成存根: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.IEnumObjects 生成存根: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.IObjectArray 生成存根: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.IObjectCollection 生成存根: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.IPropertyStore 生成存根: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.IShellFolder 生成存根: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.IShellItem 生成存根: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.IShellItemArray 生成存根: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.IShellItem2 生成存根: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.IShellLinkW 生成存根: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.ITaskbarList 生成存根: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.ITaskbarList2 生成存根: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.IApplicationDestinations 生成存根: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.IApplicationDocumentLists 生成存根: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.ICustomDestinationList 生成存根: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.IObjectWithAppUserModelId 生成存根: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.IObjectWithProgId 生成存根: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.ITaskbarList3 生成存根: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.ITaskbarList4 生成存根: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.ManagedIStream 生成存根: 类型已密封。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.Utility 生成存根: 类型已密封。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.Verify 生成存根: 类型已密封。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Microsoft.Windows.Shell.SystemCommands 生成存根: 类型已密封。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Microsoft.Windows.Shell.SystemParameters2 生成存根: 类型没有系列可见的构造函数。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Microsoft.Windows.Shell.TaskbarItemProgressState 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Microsoft.Windows.Shell.TaskbarItemInfo 生成存根: 类型已密封。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Microsoft.Windows.Shell.ThumbButtonInfo 生成存根: 类型已密封。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Microsoft.Windows.Shell.WindowChromeWorker 生成存根: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Microsoft.Windows.Shell.JumpItemRejectionReason 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Microsoft.Windows.Shell.JumpList+_RejectedJumpItemPair 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Microsoft.Windows.Shell.JumpList+_ShellObjectPair 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.IID 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.CLSID 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.Assert 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.DoubleUtilities 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.DpiHelper 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.Win32Error 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.Facility 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.HRESULT 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.MessageWindow 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.Win32Value 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.HCF 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.BI 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.RGN 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.CombineRgnResult 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.OLECMDEXECOPT 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.OLECMDF 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.OLECMDID 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.READYSTATE 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.DOGIF 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.DWM_SIT 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.ErrorModes 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.HT 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.GCLP 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.GWL 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SM 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SPI 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SPIF 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.STATE_SYSTEM 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.StockObject 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.CS 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.WS 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.WM 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.WS_EX 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.DeviceCap 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.FO 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.FOF 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.MF 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.WINDOWTHEMEATTRIBUTETYPE 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.DWMFLIP3D 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.DWMNCRP 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.DWMWA 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.WTNCA 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SWP 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SW 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SC 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.Status 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.MOUSEEVENTF 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.MSGFLT 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.MSGFLTINFO 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.INPUT_TYPE 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.NIM 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SHARD 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SLGP 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.NIF 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.NIIF 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.AC 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.ULW 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.WVR 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SafeFindHandle 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SafeDC 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SafeHBITMAP 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SafeGdiplusStartupToken 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SafeConnectionPointCookie 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.BLENDFUNCTION 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.HIGHCONTRAST 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.RGBQUAD 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.BITMAPINFOHEADER 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.BITMAPINFO 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.CHANGEFILTERSTRUCT 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.CREATESTRUCT 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SHFILEOPSTRUCT 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.TITLEBARINFO 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.TITLEBARINFOEX 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.NOTIFYICONDATA 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.PROPVARIANT 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SHARDAPPIDINFO 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SHARDAPPIDINFOIDLIST 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SHARDAPPIDINFOLINK 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.LOGFONT 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.MINMAXINFO 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.NONCLIENTMETRICS 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.WTA_OPTIONS 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.MARGINS 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.MONITORINFO 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.POINT 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.RefPOINT 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.RECT 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.RefRECT 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SIZE 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.StartupOutput 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.StartupInput 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.WIN32_FIND_DATAW 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.WINDOWPLACEMENT 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.WINDOWPOS 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.WNDCLASSEX 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.MOUSEINPUT 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.INPUT 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.UNSIGNED_RATIO 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.DWM_TIMING_INFO 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.WndProc 生成填充码: 类型是一个委托。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.WndProcHook 生成填充码: 类型是一个委托。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.MessageHandler 生成填充码: 类型是一个委托。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.NativeMethods 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SIATTRIBFLAGS 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.APPDOCLISTTYPE 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.STPF 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.TBPF 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.THB 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.THBF 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.GPS 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.KDC 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SFGAO 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SHCONTF 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SHGDN 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SICHINT 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.SIGDN 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.STR_GPS 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.THUMBBUTTON 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.PKEY 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.IEnumIDList 生成填充码: 类型是一个接口。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.IEnumObjects 生成填充码: 类型是一个接口。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.IObjectArray 生成填充码: 类型是一个接口。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.IObjectCollection 生成填充码: 类型是一个接口。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.IPropertyStore 生成填充码: 类型是一个接口。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.IShellFolder 生成填充码: 类型是一个接口。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.IShellItem 生成填充码: 类型是一个接口。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.IShellItemArray 生成填充码: 类型是一个接口。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.IShellItem2 生成填充码: 类型是一个接口。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.IShellLinkW 生成填充码: 类型是一个接口。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.ITaskbarList 生成填充码: 类型是一个接口。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.ITaskbarList2 生成填充码: 类型是一个接口。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.IApplicationDestinations 生成填充码: 类型是一个接口。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.IApplicationDocumentLists 生成填充码: 类型是一个接口。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.ICustomDestinationList 生成填充码: 类型是一个接口。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.IObjectWithAppUserModelId 生成填充码: 类型是一个接口。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.IObjectWithProgId 生成填充码: 类型是一个接口。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.ITaskbarList3 生成填充码: 类型是一个接口。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.ITaskbarList4 生成填充码: 类型是一个接口。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.ManagedIStream 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.Utility 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Standard.Verify 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Microsoft.Windows.Shell.SystemParameters2+_SystemMetricUpdate 生成填充码: 类型是一个委托。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Microsoft.Windows.Shell.TaskbarItemProgressState 生成填充码: 类型是一个枚举。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Microsoft.Windows.Shell.WindowChrome+_SystemParameterBoundProperty 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\Microsoft.Windows.Shell.fakes : warning : 无法为 Microsoft.Windows.Shell.WindowChromeWorker 生成填充码: 类型对 exported or assembly(Microsoft.Windows.Shell.Fakes) 不可见。

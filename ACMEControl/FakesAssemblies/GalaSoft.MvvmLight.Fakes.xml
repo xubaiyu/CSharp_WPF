@@ -1,0 +1,2066 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GalaSoft.MvvmLight.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:GalaSoft.MvvmLight.Command.Fakes.ShimRelayCommand">
+            <summary>GalaSoft.MvvmLight.Command.RelayCommand 的填充码类型</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Command.Fakes.ShimRelayCommand.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Command.Fakes.ShimRelayCommand.#ctor(GalaSoft.MvvmLight.Command.RelayCommand)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Command.Fakes.ShimRelayCommand.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Command.Fakes.ShimRelayCommand.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Command.Fakes.ShimRelayCommand.Bind(System.Windows.Input.ICommand)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Command.Fakes.ShimRelayCommand.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Command.Fakes.ShimRelayCommand.CanExecuteChangedAddEventHandler">
+            <summary>设置 RelayCommand.add_CanExecuteChanged(EventHandler value) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Command.Fakes.ShimRelayCommand.CanExecuteChangedRemoveEventHandler">
+            <summary>设置 RelayCommand.remove_CanExecuteChanged(EventHandler value) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Command.Fakes.ShimRelayCommand.CanExecuteObject">
+            <summary>设置 RelayCommand.CanExecute(Object parameter) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Command.Fakes.ShimRelayCommand.ConstructorActionBoolean">
+            <summary>设置 RelayCommand.RelayCommand(Action execute, Boolean keepTargetAlive) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Command.Fakes.ShimRelayCommand.ConstructorActionFuncOfBooleanBoolean">
+            <summary>设置 RelayCommand.RelayCommand(Action execute, Func`1&lt;Boolean&gt; canExecute, Boolean keepTargetAlive) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Command.Fakes.ShimRelayCommand.ExecuteObject">
+            <summary>设置 RelayCommand.Execute(Object parameter) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Command.Fakes.ShimRelayCommand.RaiseCanExecuteChanged">
+            <summary>设置 RelayCommand.RaiseCanExecuteChanged() 的 填充码</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Command.Fakes.ShimRelayCommand.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Command.Fakes.ShimRelayCommand.AllInstances.CanExecuteChangedAddEventHandler">
+            <summary>设置 RelayCommand.add_CanExecuteChanged(EventHandler value) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Command.Fakes.ShimRelayCommand.AllInstances.CanExecuteChangedRemoveEventHandler">
+            <summary>设置 RelayCommand.remove_CanExecuteChanged(EventHandler value) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Command.Fakes.ShimRelayCommand.AllInstances.CanExecuteObject">
+            <summary>设置 RelayCommand.CanExecute(Object parameter) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Command.Fakes.ShimRelayCommand.AllInstances.ExecuteObject">
+            <summary>设置 RelayCommand.Execute(Object parameter) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Command.Fakes.ShimRelayCommand.AllInstances.RaiseCanExecuteChanged">
+            <summary>设置 RelayCommand.RaiseCanExecuteChanged() 的 填充码</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Command.Fakes.ShimRelayCommand`1">
+            <summary>GalaSoft.MvvmLight.Command.RelayCommand`1 的填充码类型</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Command.Fakes.ShimRelayCommand`1.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Command.Fakes.ShimRelayCommand`1.#ctor(GalaSoft.MvvmLight.Command.RelayCommand{`0})">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Command.Fakes.ShimRelayCommand`1.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Command.Fakes.ShimRelayCommand`1.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Command.Fakes.ShimRelayCommand`1.Bind(System.Windows.Input.ICommand)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Command.Fakes.ShimRelayCommand`1.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Command.Fakes.ShimRelayCommand`1.CanExecuteChangedAddEventHandler">
+            <summary>设置 RelayCommand`1.add_CanExecuteChanged(EventHandler value) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Command.Fakes.ShimRelayCommand`1.CanExecuteChangedRemoveEventHandler">
+            <summary>设置 RelayCommand`1.remove_CanExecuteChanged(EventHandler value) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Command.Fakes.ShimRelayCommand`1.CanExecuteObject">
+            <summary>设置 RelayCommand`1.CanExecute(Object parameter) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Command.Fakes.ShimRelayCommand`1.ConstructorActionOfT0Boolean">
+            <summary>设置 RelayCommand`1.RelayCommand`1(Action`1&lt;!0&gt; execute, Boolean keepTargetAlive) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Command.Fakes.ShimRelayCommand`1.ConstructorActionOfT0FuncOfT0BooleanBoolean">
+            <summary>设置 RelayCommand`1.RelayCommand`1(Action`1&lt;!0&gt; execute, Func`2&lt;!0,Boolean&gt; canExecute, Boolean keepTargetAlive) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Command.Fakes.ShimRelayCommand`1.ExecuteObject">
+            <summary>设置 RelayCommand`1.Execute(Object parameter) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Command.Fakes.ShimRelayCommand`1.RaiseCanExecuteChanged">
+            <summary>设置 RelayCommand`1.RaiseCanExecuteChanged() 的 填充码</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Command.Fakes.ShimRelayCommand`1.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Command.Fakes.ShimRelayCommand`1.AllInstances.CanExecuteChangedAddEventHandler">
+            <summary>设置 RelayCommand`1.add_CanExecuteChanged(EventHandler value) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Command.Fakes.ShimRelayCommand`1.AllInstances.CanExecuteChangedRemoveEventHandler">
+            <summary>设置 RelayCommand`1.remove_CanExecuteChanged(EventHandler value) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Command.Fakes.ShimRelayCommand`1.AllInstances.CanExecuteObject">
+            <summary>设置 RelayCommand`1.CanExecute(Object parameter) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Command.Fakes.ShimRelayCommand`1.AllInstances.ExecuteObject">
+            <summary>设置 RelayCommand`1.Execute(Object parameter) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Command.Fakes.ShimRelayCommand`1.AllInstances.RaiseCanExecuteChanged">
+            <summary>设置 RelayCommand`1.RaiseCanExecuteChanged() 的 填充码</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Command.Fakes.StubRelayCommand">
+            <summary>GalaSoft.MvvmLight.Command.RelayCommand 的存根类型</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Command.Fakes.StubRelayCommand.#ctor(System.Action,System.Boolean)">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Command.Fakes.StubRelayCommand.#ctor(System.Action,System.Func{System.Boolean},System.Boolean)">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Command.Fakes.StubRelayCommand.Execute(System.Object)">
+            <summary>设置 RelayCommand.Execute(Object parameter) 的 存根</summary>
+        </member>
+        <member name="F:GalaSoft.MvvmLight.Command.Fakes.StubRelayCommand.ExecuteObject">
+            <summary>设置 RelayCommand.Execute(Object parameter) 的 stub</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Command.Fakes.StubRelayCommand.InitializeStub">
+            <summary>初始化 type StubRelayCommand 的新实例</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Command.Fakes.StubRelayCommand.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Command.Fakes.StubRelayCommand.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Command.Fakes.StubRelayCommand.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Command.Fakes.StubRelayCommand`1">
+            <summary>GalaSoft.MvvmLight.Command.RelayCommand`1 的存根类型</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Command.Fakes.StubRelayCommand`1.#ctor(System.Action{`0},System.Boolean)">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Command.Fakes.StubRelayCommand`1.#ctor(System.Action{`0},System.Func{`0,System.Boolean},System.Boolean)">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Command.Fakes.StubRelayCommand`1.Execute(System.Object)">
+            <summary>设置 RelayCommand`1.Execute(Object parameter) 的 存根</summary>
+        </member>
+        <member name="F:GalaSoft.MvvmLight.Command.Fakes.StubRelayCommand`1.ExecuteObject">
+            <summary>设置 RelayCommand`1.Execute(Object parameter) 的 stub</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Command.Fakes.StubRelayCommand`1.InitializeStub">
+            <summary>初始化 type StubRelayCommand 的新实例</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Command.Fakes.StubRelayCommand`1.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Command.Fakes.StubRelayCommand`1.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Command.Fakes.StubRelayCommand`1.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Fakes.ShimObservableObject">
+            <summary>GalaSoft.MvvmLight.ObservableObject 的填充码类型</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.ShimObservableObject.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.ShimObservableObject.#ctor(GalaSoft.MvvmLight.ObservableObject)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.ShimObservableObject.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.ShimObservableObject.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.ShimObservableObject.Bind(System.ComponentModel.INotifyPropertyChanged)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.ShimObservableObject.GetPropertyNameOf1ExpressionOfFuncOfM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Linq.Expressions.Expression{System.Func{``0}},System.String})">
+            <summary>设置 ObservableObject.GetPropertyName(Expression`1&lt;Func`1&lt;!!0&gt;&gt; propertyExpression) 的 填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.ShimObservableObject.RaisePropertyChangedOf1ExpressionOfFuncOfM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.Linq.Expressions.Expression{System.Func{``0}}})">
+            <summary>设置 ObservableObject.RaisePropertyChanged(Expression`1&lt;Func`1&lt;!!0&gt;&gt; propertyExpression) 的 填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.ShimObservableObject.RaisePropertyChangingOf1ExpressionOfFuncOfM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.Linq.Expressions.Expression{System.Func{``0}}})">
+            <summary>设置 ObservableObject.RaisePropertyChanging(Expression`1&lt;Func`1&lt;!!0&gt;&gt; propertyExpression) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Fakes.ShimObservableObject.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Fakes.ShimObservableObject.Constructor">
+            <summary>设置 ObservableObject.ObservableObject() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Fakes.ShimObservableObject.PropertyChangedAddPropertyChangedEventHandler">
+            <summary>设置 ObservableObject.add_PropertyChanged(PropertyChangedEventHandler value) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Fakes.ShimObservableObject.PropertyChangedHandlerGet">
+            <summary>设置 ObservableObject.get_PropertyChangedHandler() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Fakes.ShimObservableObject.PropertyChangedRemovePropertyChangedEventHandler">
+            <summary>设置 ObservableObject.remove_PropertyChanged(PropertyChangedEventHandler value) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Fakes.ShimObservableObject.PropertyChangingAddPropertyChangingEventHandler">
+            <summary>设置 ObservableObject.add_PropertyChanging(PropertyChangingEventHandler value) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Fakes.ShimObservableObject.PropertyChangingHandlerGet">
+            <summary>设置 ObservableObject.get_PropertyChangingHandler() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Fakes.ShimObservableObject.PropertyChangingRemovePropertyChangingEventHandler">
+            <summary>设置 ObservableObject.remove_PropertyChanging(PropertyChangingEventHandler value) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Fakes.ShimObservableObject.RaisePropertyChangedString">
+            <summary>设置 ObservableObject.RaisePropertyChanged(String propertyName) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Fakes.ShimObservableObject.RaisePropertyChangingString">
+            <summary>设置 ObservableObject.RaisePropertyChanging(String propertyName) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Fakes.ShimObservableObject.VerifyPropertyNameString">
+            <summary>设置 ObservableObject.VerifyPropertyName(String propertyName) 的 填充码</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Fakes.ShimObservableObject.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.ShimObservableObject.AllInstances.RaisePropertyChangedOf1ExpressionOfFuncOfM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{GalaSoft.MvvmLight.ObservableObject,System.Linq.Expressions.Expression{System.Func{``0}}})">
+            <summary>设置 ObservableObject.RaisePropertyChanged(Expression`1&lt;Func`1&lt;!!0&gt;&gt; propertyExpression) 的 填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.ShimObservableObject.AllInstances.RaisePropertyChangingOf1ExpressionOfFuncOfM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{GalaSoft.MvvmLight.ObservableObject,System.Linq.Expressions.Expression{System.Func{``0}}})">
+            <summary>设置 ObservableObject.RaisePropertyChanging(Expression`1&lt;Func`1&lt;!!0&gt;&gt; propertyExpression) 的 填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.ShimObservableObject.AllInstances.SetOf1ExpressionOfFuncOfM0M0RefM0``1(Microsoft.QualityTools.Testing.Fakes.Delegates.GalaSoftMvvmLightDelegates.Ref2Func5{GalaSoft.MvvmLight.ObservableObject,System.Linq.Expressions.Expression{System.Func{``0}},``0,``0,System.Boolean})">
+            <summary>设置 ObservableObject.Set(Expression`1&lt;Func`1&lt;!!0&gt;&gt; propertyExpression, !!0&amp; field, !!0 newValue) 的 填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.ShimObservableObject.AllInstances.SetOf1StringM0RefM0``1(Microsoft.QualityTools.Testing.Fakes.Delegates.GalaSoftMvvmLightDelegates.Ref2Func5{GalaSoft.MvvmLight.ObservableObject,System.String,``0,``0,System.Boolean})">
+            <summary>设置 ObservableObject.Set(String propertyName, !!0&amp; field, !!0 newValue) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Fakes.ShimObservableObject.AllInstances.PropertyChangedAddPropertyChangedEventHandler">
+            <summary>设置 ObservableObject.add_PropertyChanged(PropertyChangedEventHandler value) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Fakes.ShimObservableObject.AllInstances.PropertyChangedHandlerGet">
+            <summary>设置 ObservableObject.get_PropertyChangedHandler() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Fakes.ShimObservableObject.AllInstances.PropertyChangedRemovePropertyChangedEventHandler">
+            <summary>设置 ObservableObject.remove_PropertyChanged(PropertyChangedEventHandler value) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Fakes.ShimObservableObject.AllInstances.PropertyChangingAddPropertyChangingEventHandler">
+            <summary>设置 ObservableObject.add_PropertyChanging(PropertyChangingEventHandler value) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Fakes.ShimObservableObject.AllInstances.PropertyChangingHandlerGet">
+            <summary>设置 ObservableObject.get_PropertyChangingHandler() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Fakes.ShimObservableObject.AllInstances.PropertyChangingRemovePropertyChangingEventHandler">
+            <summary>设置 ObservableObject.remove_PropertyChanging(PropertyChangingEventHandler value) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Fakes.ShimObservableObject.AllInstances.RaisePropertyChangedString">
+            <summary>设置 ObservableObject.RaisePropertyChanged(String propertyName) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Fakes.ShimObservableObject.AllInstances.RaisePropertyChangingString">
+            <summary>设置 ObservableObject.RaisePropertyChanging(String propertyName) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Fakes.ShimObservableObject.AllInstances.VerifyPropertyNameString">
+            <summary>设置 ObservableObject.VerifyPropertyName(String propertyName) 的 填充码</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Fakes.ShimViewModelBase">
+            <summary>GalaSoft.MvvmLight.ViewModelBase 的填充码类型</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.ShimViewModelBase.#ctor(GalaSoft.MvvmLight.ViewModelBase)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.ShimViewModelBase.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.ShimViewModelBase.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.ShimViewModelBase.Bind(GalaSoft.MvvmLight.ICleanup)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.ShimViewModelBase.Bind(System.ComponentModel.INotifyPropertyChanged)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.ShimViewModelBase.BroadcastOf1M0M0String``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{``0,``0,System.String})">
+            <summary>设置 ViewModelBase.Broadcast(!!0 oldValue, !!0 newValue, String propertyName) 的 填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.ShimViewModelBase.RaisePropertyChangedOf1ExpressionOfFuncOfM0M0M0Boolean``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.Linq.Expressions.Expression{System.Func{``0}},``0,``0,System.Boolean})">
+            <summary>设置 ViewModelBase.RaisePropertyChanged(Expression`1&lt;Func`1&lt;!!0&gt;&gt; propertyExpression, !!0 oldValue, !!0 newValue, Boolean broadcast) 的 填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.ShimViewModelBase.RaisePropertyChangedOf1StringM0M0Boolean``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.String,``0,``0,System.Boolean})">
+            <summary>设置 ViewModelBase.RaisePropertyChanged(String propertyName, !!0 oldValue, !!0 newValue, Boolean broadcast) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Fakes.ShimViewModelBase.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Fakes.ShimViewModelBase.Cleanup">
+            <summary>设置 ViewModelBase.Cleanup() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Fakes.ShimViewModelBase.Constructor">
+            <summary>设置 ViewModelBase.ViewModelBase() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Fakes.ShimViewModelBase.ConstructorIMessenger">
+            <summary>设置 ViewModelBase.ViewModelBase(IMessenger messenger) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Fakes.ShimViewModelBase.IsInDesignModeGet">
+            <summary>设置 ViewModelBase.get_IsInDesignMode() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Fakes.ShimViewModelBase.IsInDesignModeStaticGet">
+            <summary>设置 ViewModelBase.get_IsInDesignModeStatic() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Fakes.ShimViewModelBase.MessengerInstanceGet">
+            <summary>设置 ViewModelBase.get_MessengerInstance() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Fakes.ShimViewModelBase.MessengerInstanceSetIMessenger">
+            <summary>设置 ViewModelBase.set_MessengerInstance(IMessenger value) 的 填充码</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Fakes.ShimViewModelBase.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.ShimViewModelBase.AllInstances.BroadcastOf1M0M0String``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{GalaSoft.MvvmLight.ViewModelBase,``0,``0,System.String})">
+            <summary>设置 ViewModelBase.Broadcast(!!0 oldValue, !!0 newValue, String propertyName) 的 填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.ShimViewModelBase.AllInstances.RaisePropertyChangedOf1ExpressionOfFuncOfM0M0M0Boolean``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{GalaSoft.MvvmLight.ViewModelBase,System.Linq.Expressions.Expression{System.Func{``0}},``0,``0,System.Boolean})">
+            <summary>设置 ViewModelBase.RaisePropertyChanged(Expression`1&lt;Func`1&lt;!!0&gt;&gt; propertyExpression, !!0 oldValue, !!0 newValue, Boolean broadcast) 的 填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.ShimViewModelBase.AllInstances.RaisePropertyChangedOf1StringM0M0Boolean``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{GalaSoft.MvvmLight.ViewModelBase,System.String,``0,``0,System.Boolean})">
+            <summary>设置 ViewModelBase.RaisePropertyChanged(String propertyName, !!0 oldValue, !!0 newValue, Boolean broadcast) 的 填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.ShimViewModelBase.AllInstances.SetOf1ExpressionOfFuncOfM0M0RefM0Boolean``1(Microsoft.QualityTools.Testing.Fakes.Delegates.GalaSoftMvvmLightDelegates.Ref2Func6{GalaSoft.MvvmLight.ViewModelBase,System.Linq.Expressions.Expression{System.Func{``0}},``0,``0,System.Boolean,System.Boolean})">
+            <summary>设置 ViewModelBase.Set(Expression`1&lt;Func`1&lt;!!0&gt;&gt; propertyExpression, !!0&amp; field, !!0 newValue, Boolean broadcast) 的 填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.ShimViewModelBase.AllInstances.SetOf1StringM0RefM0Boolean``1(Microsoft.QualityTools.Testing.Fakes.Delegates.GalaSoftMvvmLightDelegates.Ref2Func6{GalaSoft.MvvmLight.ViewModelBase,System.String,``0,``0,System.Boolean,System.Boolean})">
+            <summary>设置 ViewModelBase.Set(String propertyName, !!0&amp; field, !!0 newValue, Boolean broadcast) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Fakes.ShimViewModelBase.AllInstances.Cleanup">
+            <summary>设置 ViewModelBase.Cleanup() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Fakes.ShimViewModelBase.AllInstances.IsInDesignModeGet">
+            <summary>设置 ViewModelBase.get_IsInDesignMode() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Fakes.ShimViewModelBase.AllInstances.MessengerInstanceGet">
+            <summary>设置 ViewModelBase.get_MessengerInstance() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Fakes.ShimViewModelBase.AllInstances.MessengerInstanceSetIMessenger">
+            <summary>设置 ViewModelBase.set_MessengerInstance(IMessenger value) 的 填充码</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Fakes.StubICleanup">
+            <summary>GalaSoft.MvvmLight.ICleanup 的存根类型</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.StubICleanup.#ctor">
+            <summary>初始化 type StubICleanup 的新实例</summary>
+        </member>
+        <member name="F:GalaSoft.MvvmLight.Fakes.StubICleanup.Cleanup">
+            <summary>设置 ICleanup.Cleanup() 的 stub</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.StubICleanup.gsml::GalaSoft#MvvmLight#ICleanup#Cleanup">
+            <summary>设置 ICleanup.Cleanup() 的 存根</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Fakes.StubObservableObject">
+            <summary>GalaSoft.MvvmLight.ObservableObject 的存根类型</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.StubObservableObject.#ctor">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.StubObservableObject.InitializeStub">
+            <summary>初始化 type StubObservableObject 的新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.StubObservableObject.RaisePropertyChanged``1(System.Linq.Expressions.Expression{System.Func{``0}})">
+            <summary>设置 ObservableObject.RaisePropertyChanged(Expression`1&lt;Func`1&lt;!!0&gt;&gt; propertyExpression) 的 存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.StubObservableObject.RaisePropertyChanged(System.String)">
+            <summary>设置 ObservableObject.RaisePropertyChanged(String propertyName) 的 存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.StubObservableObject.RaisePropertyChangedOf1ExpressionOfFuncOfM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.Linq.Expressions.Expression{System.Func{``0}}})">
+            <summary>设置 RaisePropertyChanged(Expression`1&lt;Func`1&lt;!!0&gt;&gt; propertyExpression) 的存根</summary>
+        </member>
+        <member name="F:GalaSoft.MvvmLight.Fakes.StubObservableObject.RaisePropertyChangedString">
+            <summary>设置 ObservableObject.RaisePropertyChanged(String propertyName) 的 stub</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.StubObservableObject.RaisePropertyChanging``1(System.Linq.Expressions.Expression{System.Func{``0}})">
+            <summary>设置 ObservableObject.RaisePropertyChanging(Expression`1&lt;Func`1&lt;!!0&gt;&gt; propertyExpression) 的 存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.StubObservableObject.RaisePropertyChanging(System.String)">
+            <summary>设置 ObservableObject.RaisePropertyChanging(String propertyName) 的 存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.StubObservableObject.RaisePropertyChangingOf1ExpressionOfFuncOfM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.Linq.Expressions.Expression{System.Func{``0}}})">
+            <summary>设置 RaisePropertyChanging(Expression`1&lt;Func`1&lt;!!0&gt;&gt; propertyExpression) 的存根</summary>
+        </member>
+        <member name="F:GalaSoft.MvvmLight.Fakes.StubObservableObject.RaisePropertyChangingString">
+            <summary>设置 ObservableObject.RaisePropertyChanging(String propertyName) 的 stub</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Fakes.StubObservableObject.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Fakes.StubObservableObject.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Fakes.StubObservableObject.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Fakes.StubViewModelBase">
+            <summary>GalaSoft.MvvmLight.ViewModelBase 的存根类型</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.StubViewModelBase.#ctor">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.StubViewModelBase.#ctor(GalaSoft.MvvmLight.Messaging.IMessenger)">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.StubViewModelBase.Broadcast``1(``0,``0,System.String)">
+            <summary>设置 ViewModelBase.Broadcast(!!0 oldValue, !!0 newValue, String propertyName) 的 存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.StubViewModelBase.BroadcastOf1M0M0String``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{``0,``0,System.String})">
+            <summary>设置 Broadcast(!!0 oldValue, !!0 newValue, String propertyName) 的存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.StubViewModelBase.Cleanup">
+            <summary>设置 ViewModelBase.Cleanup() 的 存根</summary>
+        </member>
+        <member name="F:GalaSoft.MvvmLight.Fakes.StubViewModelBase.Cleanup01">
+            <summary>设置 ViewModelBase.Cleanup() 的 stub</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.StubViewModelBase.InitializeStub">
+            <summary>初始化 type StubViewModelBase 的新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.StubViewModelBase.RaisePropertyChanged``1(System.Linq.Expressions.Expression{System.Func{``0}})">
+            <summary>设置 ObservableObject.RaisePropertyChanged(Expression`1&lt;Func`1&lt;!!0&gt;&gt; propertyExpression) 的 存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.StubViewModelBase.RaisePropertyChanged(System.String)">
+            <summary>设置 ObservableObject.RaisePropertyChanged(String propertyName) 的 存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.StubViewModelBase.RaisePropertyChanged``1(System.Linq.Expressions.Expression{System.Func{``0}},``0,``0,System.Boolean)">
+            <summary>设置 ViewModelBase.RaisePropertyChanged(Expression`1&lt;Func`1&lt;!!0&gt;&gt; propertyExpression, !!0 oldValue, !!0 newValue, Boolean broadcast) 的 存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.StubViewModelBase.RaisePropertyChanged``1(System.String,``0,``0,System.Boolean)">
+            <summary>设置 ViewModelBase.RaisePropertyChanged(String propertyName, !!0 oldValue, !!0 newValue, Boolean broadcast) 的 存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.StubViewModelBase.RaisePropertyChangedOf1ExpressionOfFuncOfM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.Linq.Expressions.Expression{System.Func{``0}}})">
+            <summary>设置 RaisePropertyChanged(Expression`1&lt;Func`1&lt;!!0&gt;&gt; propertyExpression) 的存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.StubViewModelBase.RaisePropertyChangedOf1ExpressionOfFuncOfM0M0M0Boolean``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.Linq.Expressions.Expression{System.Func{``0}},``0,``0,System.Boolean})">
+            <summary>设置 RaisePropertyChanged(Expression`1&lt;Func`1&lt;!!0&gt;&gt; propertyExpression, !!0 oldValue, !!0 newValue, Boolean broadcast) 的存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.StubViewModelBase.RaisePropertyChangedOf1StringM0M0Boolean``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.String,``0,``0,System.Boolean})">
+            <summary>设置 RaisePropertyChanged(String propertyName, !!0 oldValue, !!0 newValue, Boolean broadcast) 的存根</summary>
+        </member>
+        <member name="F:GalaSoft.MvvmLight.Fakes.StubViewModelBase.RaisePropertyChangedString">
+            <summary>设置 ObservableObject.RaisePropertyChanged(String propertyName) 的 stub</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.StubViewModelBase.RaisePropertyChanging``1(System.Linq.Expressions.Expression{System.Func{``0}})">
+            <summary>设置 ObservableObject.RaisePropertyChanging(Expression`1&lt;Func`1&lt;!!0&gt;&gt; propertyExpression) 的 存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.StubViewModelBase.RaisePropertyChanging(System.String)">
+            <summary>设置 ObservableObject.RaisePropertyChanging(String propertyName) 的 存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Fakes.StubViewModelBase.RaisePropertyChangingOf1ExpressionOfFuncOfM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.Linq.Expressions.Expression{System.Func{``0}}})">
+            <summary>设置 RaisePropertyChanging(Expression`1&lt;Func`1&lt;!!0&gt;&gt; propertyExpression) 的存根</summary>
+        </member>
+        <member name="F:GalaSoft.MvvmLight.Fakes.StubViewModelBase.RaisePropertyChangingString">
+            <summary>设置 ObservableObject.RaisePropertyChanging(String propertyName) 的 stub</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Fakes.StubViewModelBase.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Fakes.StubViewModelBase.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Fakes.StubViewModelBase.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction">
+            <summary>GalaSoft.MvvmLight.Helpers.WeakAction 的填充码类型</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction.#ctor(GalaSoft.MvvmLight.Helpers.WeakAction)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction.ActionReferenceGet">
+            <summary>设置 WeakAction.get_ActionReference() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction.ActionReferenceSetWeakReference">
+            <summary>设置 WeakAction.set_ActionReference(WeakReference value) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction.ActionTargetGet">
+            <summary>设置 WeakAction.get_ActionTarget() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction.Constructor">
+            <summary>设置 WeakAction.WeakAction() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction.ConstructorActionBoolean">
+            <summary>设置 WeakAction.WeakAction(Action action, Boolean keepTargetAlive) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction.ConstructorObjectActionBoolean">
+            <summary>设置 WeakAction.WeakAction(Object target, Action action, Boolean keepTargetAlive) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction.Execute">
+            <summary>设置 WeakAction.Execute() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction.IsAliveGet">
+            <summary>设置 WeakAction.get_IsAlive() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction.IsStaticGet">
+            <summary>设置 WeakAction.get_IsStatic() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction.LiveReferenceGet">
+            <summary>设置 WeakAction.get_LiveReference() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction.LiveReferenceSetObject">
+            <summary>设置 WeakAction.set_LiveReference(Object value) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction.MarkForDeletion">
+            <summary>设置 WeakAction.MarkForDeletion() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction.MethodGet">
+            <summary>设置 WeakAction.get_Method() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction.MethodNameGet">
+            <summary>设置 WeakAction.get_MethodName() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction.MethodSetMethodInfo">
+            <summary>设置 WeakAction.set_Method(MethodInfo value) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction.ReferenceGet">
+            <summary>设置 WeakAction.get_Reference() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction.ReferenceSetWeakReference">
+            <summary>设置 WeakAction.set_Reference(WeakReference value) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction.TargetGet">
+            <summary>设置 WeakAction.get_Target() 的 填充码</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction.AllInstances.ActionReferenceGet">
+            <summary>设置 WeakAction.get_ActionReference() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction.AllInstances.ActionReferenceSetWeakReference">
+            <summary>设置 WeakAction.set_ActionReference(WeakReference value) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction.AllInstances.ActionTargetGet">
+            <summary>设置 WeakAction.get_ActionTarget() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction.AllInstances.Execute">
+            <summary>设置 WeakAction.Execute() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction.AllInstances.IsAliveGet">
+            <summary>设置 WeakAction.get_IsAlive() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction.AllInstances.IsStaticGet">
+            <summary>设置 WeakAction.get_IsStatic() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction.AllInstances.LiveReferenceGet">
+            <summary>设置 WeakAction.get_LiveReference() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction.AllInstances.LiveReferenceSetObject">
+            <summary>设置 WeakAction.set_LiveReference(Object value) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction.AllInstances.MarkForDeletion">
+            <summary>设置 WeakAction.MarkForDeletion() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction.AllInstances.MethodGet">
+            <summary>设置 WeakAction.get_Method() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction.AllInstances.MethodNameGet">
+            <summary>设置 WeakAction.get_MethodName() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction.AllInstances.MethodSetMethodInfo">
+            <summary>设置 WeakAction.set_Method(MethodInfo value) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction.AllInstances.ReferenceGet">
+            <summary>设置 WeakAction.get_Reference() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction.AllInstances.ReferenceSetWeakReference">
+            <summary>设置 WeakAction.set_Reference(WeakReference value) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction.AllInstances.TargetGet">
+            <summary>设置 WeakAction.get_Target() 的 填充码</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction`1">
+            <summary>GalaSoft.MvvmLight.Helpers.WeakAction`1 的填充码类型</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction`1.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction`1.#ctor(GalaSoft.MvvmLight.Helpers.WeakAction{`0})">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction`1.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction`1.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction`1.Bind(GalaSoft.MvvmLight.Helpers.IExecuteWithObject)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction`1.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction`1.ConstructorActionOfT0Boolean">
+            <summary>设置 WeakAction`1.WeakAction`1(Action`1&lt;!0&gt; action, Boolean keepTargetAlive) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction`1.ConstructorObjectActionOfT0Boolean">
+            <summary>设置 WeakAction`1.WeakAction`1(Object target, Action`1&lt;!0&gt; action, Boolean keepTargetAlive) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction`1.Execute">
+            <summary>设置 WeakAction`1.Execute() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction`1.ExecuteT0">
+            <summary>设置 WeakAction`1.Execute(!0 parameter) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction`1.ExecuteWithObjectObject">
+            <summary>设置 WeakAction`1.ExecuteWithObject(Object parameter) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction`1.IsAliveGet">
+            <summary>设置 WeakAction`1.get_IsAlive() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction`1.MarkForDeletion">
+            <summary>设置 WeakAction`1.MarkForDeletion() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction`1.MethodNameGet">
+            <summary>设置 WeakAction`1.get_MethodName() 的 填充码</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction`1.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction`1.AllInstances.Execute">
+            <summary>设置 WeakAction`1.Execute() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction`1.AllInstances.ExecuteT0">
+            <summary>设置 WeakAction`1.Execute(!0 parameter) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction`1.AllInstances.ExecuteWithObjectObject">
+            <summary>设置 WeakAction`1.ExecuteWithObject(Object parameter) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction`1.AllInstances.IsAliveGet">
+            <summary>设置 WeakAction`1.get_IsAlive() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction`1.AllInstances.MarkForDeletion">
+            <summary>设置 WeakAction`1.MarkForDeletion() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakAction`1.AllInstances.MethodNameGet">
+            <summary>设置 WeakAction`1.get_MethodName() 的 填充码</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`1">
+            <summary>GalaSoft.MvvmLight.Helpers.WeakFunc`1 的填充码类型</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`1.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`1.#ctor(GalaSoft.MvvmLight.Helpers.WeakFunc{`0})">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`1.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`1.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`1.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`1.Constructor">
+            <summary>设置 WeakFunc`1.WeakFunc`1() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`1.ConstructorFuncOfT0Boolean">
+            <summary>设置 WeakFunc`1.WeakFunc`1(Func`1&lt;!0&gt; func, Boolean keepTargetAlive) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`1.ConstructorObjectFuncOfT0Boolean">
+            <summary>设置 WeakFunc`1.WeakFunc`1(Object target, Func`1&lt;!0&gt; func, Boolean keepTargetAlive) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`1.Execute">
+            <summary>设置 WeakFunc`1.Execute() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`1.FuncReferenceGet">
+            <summary>设置 WeakFunc`1.get_FuncReference() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`1.FuncReferenceSetWeakReference">
+            <summary>设置 WeakFunc`1.set_FuncReference(WeakReference value) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`1.FuncTargetGet">
+            <summary>设置 WeakFunc`1.get_FuncTarget() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`1.IsAliveGet">
+            <summary>设置 WeakFunc`1.get_IsAlive() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`1.IsStaticGet">
+            <summary>设置 WeakFunc`1.get_IsStatic() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`1.LiveReferenceGet">
+            <summary>设置 WeakFunc`1.get_LiveReference() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`1.LiveReferenceSetObject">
+            <summary>设置 WeakFunc`1.set_LiveReference(Object value) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`1.MarkForDeletion">
+            <summary>设置 WeakFunc`1.MarkForDeletion() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`1.MethodGet">
+            <summary>设置 WeakFunc`1.get_Method() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`1.MethodNameGet">
+            <summary>设置 WeakFunc`1.get_MethodName() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`1.MethodSetMethodInfo">
+            <summary>设置 WeakFunc`1.set_Method(MethodInfo value) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`1.ReferenceGet">
+            <summary>设置 WeakFunc`1.get_Reference() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`1.ReferenceSetWeakReference">
+            <summary>设置 WeakFunc`1.set_Reference(WeakReference value) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`1.TargetGet">
+            <summary>设置 WeakFunc`1.get_Target() 的 填充码</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`1.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`1.AllInstances.Execute">
+            <summary>设置 WeakFunc`1.Execute() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`1.AllInstances.FuncReferenceGet">
+            <summary>设置 WeakFunc`1.get_FuncReference() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`1.AllInstances.FuncReferenceSetWeakReference">
+            <summary>设置 WeakFunc`1.set_FuncReference(WeakReference value) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`1.AllInstances.FuncTargetGet">
+            <summary>设置 WeakFunc`1.get_FuncTarget() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`1.AllInstances.IsAliveGet">
+            <summary>设置 WeakFunc`1.get_IsAlive() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`1.AllInstances.IsStaticGet">
+            <summary>设置 WeakFunc`1.get_IsStatic() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`1.AllInstances.LiveReferenceGet">
+            <summary>设置 WeakFunc`1.get_LiveReference() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`1.AllInstances.LiveReferenceSetObject">
+            <summary>设置 WeakFunc`1.set_LiveReference(Object value) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`1.AllInstances.MarkForDeletion">
+            <summary>设置 WeakFunc`1.MarkForDeletion() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`1.AllInstances.MethodGet">
+            <summary>设置 WeakFunc`1.get_Method() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`1.AllInstances.MethodNameGet">
+            <summary>设置 WeakFunc`1.get_MethodName() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`1.AllInstances.MethodSetMethodInfo">
+            <summary>设置 WeakFunc`1.set_Method(MethodInfo value) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`1.AllInstances.ReferenceGet">
+            <summary>设置 WeakFunc`1.get_Reference() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`1.AllInstances.ReferenceSetWeakReference">
+            <summary>设置 WeakFunc`1.set_Reference(WeakReference value) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`1.AllInstances.TargetGet">
+            <summary>设置 WeakFunc`1.get_Target() 的 填充码</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`2">
+            <summary>GalaSoft.MvvmLight.Helpers.WeakFunc`2 的填充码类型</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`2.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`2.#ctor(GalaSoft.MvvmLight.Helpers.WeakFunc{`0,`1})">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`2.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`2.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`2.Bind(GalaSoft.MvvmLight.Helpers.IExecuteWithObjectAndResult)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`2.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`2.ConstructorFuncOfT0T1Boolean">
+            <summary>设置 WeakFunc`2.WeakFunc`2(Func`2&lt;!0,!1&gt; func, Boolean keepTargetAlive) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`2.ConstructorObjectFuncOfT0T1Boolean">
+            <summary>设置 WeakFunc`2.WeakFunc`2(Object target, Func`2&lt;!0,!1&gt; func, Boolean keepTargetAlive) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`2.Execute">
+            <summary>设置 WeakFunc`2.Execute() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`2.ExecuteT0">
+            <summary>设置 WeakFunc`2.Execute(!0 parameter) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`2.ExecuteWithObjectObject">
+            <summary>设置 WeakFunc`2.ExecuteWithObject(Object parameter) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`2.IsAliveGet">
+            <summary>设置 WeakFunc`2.get_IsAlive() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`2.MarkForDeletion">
+            <summary>设置 WeakFunc`2.MarkForDeletion() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`2.MethodNameGet">
+            <summary>设置 WeakFunc`2.get_MethodName() 的 填充码</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`2.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`2.AllInstances.Execute">
+            <summary>设置 WeakFunc`2.Execute() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`2.AllInstances.ExecuteT0">
+            <summary>设置 WeakFunc`2.Execute(!0 parameter) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`2.AllInstances.ExecuteWithObjectObject">
+            <summary>设置 WeakFunc`2.ExecuteWithObject(Object parameter) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`2.AllInstances.IsAliveGet">
+            <summary>设置 WeakFunc`2.get_IsAlive() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`2.AllInstances.MarkForDeletion">
+            <summary>设置 WeakFunc`2.MarkForDeletion() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.ShimWeakFunc`2.AllInstances.MethodNameGet">
+            <summary>设置 WeakFunc`2.get_MethodName() 的 填充码</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Helpers.Fakes.StubIExecuteWithObject">
+            <summary>GalaSoft.MvvmLight.Helpers.IExecuteWithObject 的存根类型</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Helpers.Fakes.StubIExecuteWithObject.#ctor">
+            <summary>初始化 type StubIExecuteWithObject 的新实例</summary>
+        </member>
+        <member name="F:GalaSoft.MvvmLight.Helpers.Fakes.StubIExecuteWithObject.ExecuteWithObjectObject">
+            <summary>设置 IExecuteWithObject.ExecuteWithObject(Object parameter) 的 stub</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Helpers.Fakes.StubIExecuteWithObject.gsml::GalaSoft#MvvmLight#Helpers#IExecuteWithObject#ExecuteWithObject(System.Object)">
+            <summary>设置 IExecuteWithObject.ExecuteWithObject(Object parameter) 的 存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Helpers.Fakes.StubIExecuteWithObject.gsml::GalaSoft#MvvmLight#Helpers#IExecuteWithObject#MarkForDeletion">
+            <summary>设置 IExecuteWithObject.MarkForDeletion() 的 存根</summary>
+        </member>
+        <member name="F:GalaSoft.MvvmLight.Helpers.Fakes.StubIExecuteWithObject.MarkForDeletion">
+            <summary>设置 IExecuteWithObject.MarkForDeletion() 的 stub</summary>
+        </member>
+        <member name="F:GalaSoft.MvvmLight.Helpers.Fakes.StubIExecuteWithObject.TargetGet">
+            <summary>设置 IExecuteWithObject.get_Target() 的 stub</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.StubIExecuteWithObject.gsml::GalaSoft#MvvmLight#Helpers#IExecuteWithObject#Target">
+            <summary>设置 IExecuteWithObject.get_Target() 的 stub</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Helpers.Fakes.StubIExecuteWithObjectAndResult">
+            <summary>GalaSoft.MvvmLight.Helpers.IExecuteWithObjectAndResult 的存根类型</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Helpers.Fakes.StubIExecuteWithObjectAndResult.#ctor">
+            <summary>初始化 type StubIExecuteWithObjectAndResult 的新实例</summary>
+        </member>
+        <member name="F:GalaSoft.MvvmLight.Helpers.Fakes.StubIExecuteWithObjectAndResult.ExecuteWithObjectObject">
+            <summary>设置 IExecuteWithObjectAndResult.ExecuteWithObject(Object parameter) 的 stub</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Helpers.Fakes.StubIExecuteWithObjectAndResult.gsml::GalaSoft#MvvmLight#Helpers#IExecuteWithObjectAndResult#ExecuteWithObject(System.Object)">
+            <summary>设置 IExecuteWithObjectAndResult.ExecuteWithObject(Object parameter) 的 存根</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakAction">
+            <summary>GalaSoft.MvvmLight.Helpers.WeakAction 的存根类型</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakAction.#ctor">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakAction.#ctor(System.Action,System.Boolean)">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakAction.#ctor(System.Object,System.Action,System.Boolean)">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakAction.InitializeStub">
+            <summary>初始化 type StubWeakAction 的新实例</summary>
+        </member>
+        <member name="F:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakAction.IsAliveGet">
+            <summary>设置 WeakAction.get_IsAlive() 的 stub</summary>
+        </member>
+        <member name="F:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakAction.MethodNameGet">
+            <summary>设置 WeakAction.get_MethodName() 的 stub</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakAction.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakAction.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakAction.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakAction.IsAlive">
+            <summary>设置 WeakAction.get_IsAlive() 的 stub</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakAction.MethodName">
+            <summary>设置 WeakAction.get_MethodName() 的 stub</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakAction`1">
+            <summary>GalaSoft.MvvmLight.Helpers.WeakAction`1 的存根类型</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakAction`1.#ctor(System.Action{`0},System.Boolean)">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakAction`1.#ctor(System.Object,System.Action{`0},System.Boolean)">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakAction`1.InitializeStub">
+            <summary>初始化 type StubWeakAction 的新实例</summary>
+        </member>
+        <member name="F:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakAction`1.IsAliveGet">
+            <summary>设置 WeakAction`1.get_IsAlive() 的 stub</summary>
+        </member>
+        <member name="F:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakAction`1.MethodNameGet">
+            <summary>设置 WeakAction`1.get_MethodName() 的 stub</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakAction`1.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakAction`1.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakAction`1.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakAction`1.IsAlive">
+            <summary>设置 WeakAction`1.get_IsAlive() 的 stub</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakAction`1.MethodName">
+            <summary>设置 WeakAction`1.get_MethodName() 的 stub</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakFunc`1">
+            <summary>GalaSoft.MvvmLight.Helpers.WeakFunc`1 的存根类型</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakFunc`1.#ctor">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakFunc`1.#ctor(System.Func{`0},System.Boolean)">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakFunc`1.#ctor(System.Object,System.Func{`0},System.Boolean)">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakFunc`1.InitializeStub">
+            <summary>初始化 type StubWeakFunc 的新实例</summary>
+        </member>
+        <member name="F:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakFunc`1.IsAliveGet">
+            <summary>设置 WeakFunc`1.get_IsAlive() 的 stub</summary>
+        </member>
+        <member name="F:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakFunc`1.MethodNameGet">
+            <summary>设置 WeakFunc`1.get_MethodName() 的 stub</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakFunc`1.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakFunc`1.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakFunc`1.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakFunc`1.IsAlive">
+            <summary>设置 WeakFunc`1.get_IsAlive() 的 stub</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakFunc`1.MethodName">
+            <summary>设置 WeakFunc`1.get_MethodName() 的 stub</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakFunc`2">
+            <summary>GalaSoft.MvvmLight.Helpers.WeakFunc`2 的存根类型</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakFunc`2.#ctor(System.Func{`0,`1},System.Boolean)">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakFunc`2.#ctor(System.Object,System.Func{`0,`1},System.Boolean)">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakFunc`2.InitializeStub">
+            <summary>初始化 type StubWeakFunc 的新实例</summary>
+        </member>
+        <member name="F:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakFunc`2.IsAliveGet">
+            <summary>设置 WeakFunc`2.get_IsAlive() 的 stub</summary>
+        </member>
+        <member name="F:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakFunc`2.MethodNameGet">
+            <summary>设置 WeakFunc`2.get_MethodName() 的 stub</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakFunc`2.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakFunc`2.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakFunc`2.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakFunc`2.IsAlive">
+            <summary>设置 WeakFunc`2.get_IsAlive() 的 stub</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Helpers.Fakes.StubWeakFunc`2.MethodName">
+            <summary>设置 WeakFunc`2.get_MethodName() 的 stub</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Messaging.Fakes.ShimGenericMessage`1">
+            <summary>GalaSoft.MvvmLight.Messaging.GenericMessage`1 的填充码类型</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimGenericMessage`1.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimGenericMessage`1.#ctor(GalaSoft.MvvmLight.Messaging.GenericMessage{`0})">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimGenericMessage`1.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimGenericMessage`1.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimGenericMessage`1.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimGenericMessage`1.ConstructorObjectObjectT0">
+            <summary>设置 GenericMessage`1.GenericMessage`1(Object sender, Object target, !0 content) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimGenericMessage`1.ConstructorObjectT0">
+            <summary>设置 GenericMessage`1.GenericMessage`1(Object sender, !0 content) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimGenericMessage`1.ConstructorT0">
+            <summary>设置 GenericMessage`1.GenericMessage`1(!0 content) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimGenericMessage`1.ContentGet">
+            <summary>设置 GenericMessage`1.get_Content() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimGenericMessage`1.ContentSetT0">
+            <summary>设置 GenericMessage`1.set_Content(!0 value) 的 填充码</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Messaging.Fakes.ShimGenericMessage`1.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimGenericMessage`1.AllInstances.ContentGet">
+            <summary>设置 GenericMessage`1.get_Content() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimGenericMessage`1.AllInstances.ContentSetT0">
+            <summary>设置 GenericMessage`1.set_Content(!0 value) 的 填充码</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessageBase">
+            <summary>GalaSoft.MvvmLight.Messaging.MessageBase 的填充码类型</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessageBase.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessageBase.#ctor(GalaSoft.MvvmLight.Messaging.MessageBase)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessageBase.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessageBase.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessageBase.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessageBase.Constructor">
+            <summary>设置 MessageBase.MessageBase() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessageBase.ConstructorObject">
+            <summary>设置 MessageBase.MessageBase(Object sender) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessageBase.ConstructorObjectObject">
+            <summary>设置 MessageBase.MessageBase(Object sender, Object target) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessageBase.SenderGet">
+            <summary>设置 MessageBase.get_Sender() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessageBase.SenderSetObject">
+            <summary>设置 MessageBase.set_Sender(Object value) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessageBase.TargetGet">
+            <summary>设置 MessageBase.get_Target() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessageBase.TargetSetObject">
+            <summary>设置 MessageBase.set_Target(Object value) 的 填充码</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessageBase.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessageBase.AllInstances.SenderGet">
+            <summary>设置 MessageBase.get_Sender() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessageBase.AllInstances.SenderSetObject">
+            <summary>设置 MessageBase.set_Sender(Object value) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessageBase.AllInstances.TargetGet">
+            <summary>设置 MessageBase.get_Target() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessageBase.AllInstances.TargetSetObject">
+            <summary>设置 MessageBase.set_Target(Object value) 的 填充码</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessenger">
+            <summary>GalaSoft.MvvmLight.Messaging.Messenger 的填充码类型</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessenger.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessenger.#ctor(GalaSoft.MvvmLight.Messaging.Messenger)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessenger.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessenger.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessenger.Bind(GalaSoft.MvvmLight.Messaging.IMessenger)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessenger.RegisterOf1ObjectActionOfM0Boolean``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.Object,System.Action{``0},System.Boolean})">
+            <summary>设置 Messenger.Register(Object recipient, Action`1&lt;!!0&gt; action, Boolean keepTargetAlive) 的 填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessenger.RegisterOf1ObjectBooleanActionOfM0Boolean``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.Object,System.Boolean,System.Action{``0},System.Boolean})">
+            <summary>设置 Messenger.Register(Object recipient, Boolean receiveDerivedMessagesToo, Action`1&lt;!!0&gt; action, Boolean keepTargetAlive) 的 填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessenger.RegisterOf1ObjectObjectActionOfM0Boolean``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.Object,System.Object,System.Action{``0},System.Boolean})">
+            <summary>设置 Messenger.Register(Object recipient, Object token, Action`1&lt;!!0&gt; action, Boolean keepTargetAlive) 的 填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessenger.RegisterOf1ObjectObjectBooleanActionOfM0Boolean``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.Object,System.Object,System.Boolean,System.Action{``0},System.Boolean})">
+            <summary>设置 Messenger.Register(Object recipient, Object token, Boolean receiveDerivedMessagesToo, Action`1&lt;!!0&gt; action, Boolean keepTargetAlive) 的 填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessenger.SendOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{``0})">
+            <summary>设置 Messenger.Send(!!0 message) 的 填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessenger.SendOf1M0Object``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{``0,System.Object})">
+            <summary>设置 Messenger.Send(!!0 message, Object token) 的 填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessenger.SendOf2M0``2(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{``0})">
+            <summary>设置 Messenger.Send(!!0 message) 的 填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessenger.SendToTargetOrTypeOf1M0TypeObject``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{``0,System.Type,System.Object})">
+            <summary>设置 Messenger.SendToTargetOrType(!!0 message, Type messageTargetType, Object token) 的 填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessenger.UnregisterOf1Object``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.Object})">
+            <summary>设置 Messenger.Unregister(Object recipient) 的 填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessenger.UnregisterOf1ObjectActionOfM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.Object,System.Action{``0}})">
+            <summary>设置 Messenger.Unregister(Object recipient, Action`1&lt;!!0&gt; action) 的 填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessenger.UnregisterOf1ObjectObject``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.Object,System.Object})">
+            <summary>设置 Messenger.Unregister(Object recipient, Object token) 的 填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessenger.UnregisterOf1ObjectObjectActionOfM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.Object,System.Object,System.Action{``0}})">
+            <summary>设置 Messenger.Unregister(Object recipient, Object token, Action`1&lt;!!0&gt; action) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessenger.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessenger.Cleanup">
+            <summary>设置 Messenger.Cleanup() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessenger.Constructor">
+            <summary>设置 Messenger.Messenger() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessenger.DefaultGet">
+            <summary>设置 Messenger.get_Default() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessenger.OverrideDefaultIMessenger">
+            <summary>设置 Messenger.OverrideDefault(IMessenger newMessenger) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessenger.RequestCleanup">
+            <summary>设置 Messenger.RequestCleanup() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessenger.Reset">
+            <summary>设置 Messenger.Reset() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessenger.ResetAll">
+            <summary>设置 Messenger.ResetAll() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessenger.StaticConstructor">
+            <summary>设置 Messenger.Messenger() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessenger.UnregisterObject">
+            <summary>设置 Messenger.Unregister(Object recipient) 的 填充码</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessenger.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessenger.AllInstances.RegisterOf1ObjectActionOfM0Boolean``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{GalaSoft.MvvmLight.Messaging.Messenger,System.Object,System.Action{``0},System.Boolean})">
+            <summary>设置 Messenger.Register(Object recipient, Action`1&lt;!!0&gt; action, Boolean keepTargetAlive) 的 填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessenger.AllInstances.RegisterOf1ObjectBooleanActionOfM0Boolean``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{GalaSoft.MvvmLight.Messaging.Messenger,System.Object,System.Boolean,System.Action{``0},System.Boolean})">
+            <summary>设置 Messenger.Register(Object recipient, Boolean receiveDerivedMessagesToo, Action`1&lt;!!0&gt; action, Boolean keepTargetAlive) 的 填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessenger.AllInstances.RegisterOf1ObjectObjectActionOfM0Boolean``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{GalaSoft.MvvmLight.Messaging.Messenger,System.Object,System.Object,System.Action{``0},System.Boolean})">
+            <summary>设置 Messenger.Register(Object recipient, Object token, Action`1&lt;!!0&gt; action, Boolean keepTargetAlive) 的 填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessenger.AllInstances.RegisterOf1ObjectObjectBooleanActionOfM0Boolean``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{GalaSoft.MvvmLight.Messaging.Messenger,System.Object,System.Object,System.Boolean,System.Action{``0},System.Boolean})">
+            <summary>设置 Messenger.Register(Object recipient, Object token, Boolean receiveDerivedMessagesToo, Action`1&lt;!!0&gt; action, Boolean keepTargetAlive) 的 填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessenger.AllInstances.SendOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{GalaSoft.MvvmLight.Messaging.Messenger,``0})">
+            <summary>设置 Messenger.Send(!!0 message) 的 填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessenger.AllInstances.SendOf1M0Object``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{GalaSoft.MvvmLight.Messaging.Messenger,``0,System.Object})">
+            <summary>设置 Messenger.Send(!!0 message, Object token) 的 填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessenger.AllInstances.SendOf2M0``2(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{GalaSoft.MvvmLight.Messaging.Messenger,``0})">
+            <summary>设置 Messenger.Send(!!0 message) 的 填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessenger.AllInstances.SendToTargetOrTypeOf1M0TypeObject``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{GalaSoft.MvvmLight.Messaging.Messenger,``0,System.Type,System.Object})">
+            <summary>设置 Messenger.SendToTargetOrType(!!0 message, Type messageTargetType, Object token) 的 填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessenger.AllInstances.UnregisterOf1Object``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{GalaSoft.MvvmLight.Messaging.Messenger,System.Object})">
+            <summary>设置 Messenger.Unregister(Object recipient) 的 填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessenger.AllInstances.UnregisterOf1ObjectActionOfM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{GalaSoft.MvvmLight.Messaging.Messenger,System.Object,System.Action{``0}})">
+            <summary>设置 Messenger.Unregister(Object recipient, Action`1&lt;!!0&gt; action) 的 填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessenger.AllInstances.UnregisterOf1ObjectObject``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{GalaSoft.MvvmLight.Messaging.Messenger,System.Object,System.Object})">
+            <summary>设置 Messenger.Unregister(Object recipient, Object token) 的 填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessenger.AllInstances.UnregisterOf1ObjectObjectActionOfM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{GalaSoft.MvvmLight.Messaging.Messenger,System.Object,System.Object,System.Action{``0}})">
+            <summary>设置 Messenger.Unregister(Object recipient, Object token, Action`1&lt;!!0&gt; action) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessenger.AllInstances.Cleanup">
+            <summary>设置 Messenger.Cleanup() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessenger.AllInstances.RequestCleanup">
+            <summary>设置 Messenger.RequestCleanup() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessenger.AllInstances.ResetAll">
+            <summary>设置 Messenger.ResetAll() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimMessenger.AllInstances.UnregisterObject">
+            <summary>设置 Messenger.Unregister(Object recipient) 的 填充码</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessage">
+            <summary>GalaSoft.MvvmLight.Messaging.NotificationMessage 的填充码类型</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessage.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessage.#ctor(GalaSoft.MvvmLight.Messaging.NotificationMessage)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessage.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessage.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessage.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessage.ConstructorObjectObjectString">
+            <summary>设置 NotificationMessage.NotificationMessage(Object sender, Object target, String notification) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessage.ConstructorObjectString">
+            <summary>设置 NotificationMessage.NotificationMessage(Object sender, String notification) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessage.ConstructorString">
+            <summary>设置 NotificationMessage.NotificationMessage(String notification) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessage.NotificationGet">
+            <summary>设置 NotificationMessage.get_Notification() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessage.NotificationSetString">
+            <summary>设置 NotificationMessage.set_Notification(String value) 的 填充码</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessage.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessage.AllInstances.NotificationGet">
+            <summary>设置 NotificationMessage.get_Notification() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessage.AllInstances.NotificationSetString">
+            <summary>设置 NotificationMessage.set_Notification(String value) 的 填充码</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessage`1">
+            <summary>GalaSoft.MvvmLight.Messaging.NotificationMessage`1 的填充码类型</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessage`1.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessage`1.#ctor(GalaSoft.MvvmLight.Messaging.NotificationMessage{`0})">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessage`1.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessage`1.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessage`1.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessage`1.ConstructorObjectObjectT0String">
+            <summary>设置 NotificationMessage`1.NotificationMessage`1(Object sender, Object target, !0 content, String notification) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessage`1.ConstructorObjectT0String">
+            <summary>设置 NotificationMessage`1.NotificationMessage`1(Object sender, !0 content, String notification) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessage`1.ConstructorT0String">
+            <summary>设置 NotificationMessage`1.NotificationMessage`1(!0 content, String notification) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessage`1.NotificationGet">
+            <summary>设置 NotificationMessage`1.get_Notification() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessage`1.NotificationSetString">
+            <summary>设置 NotificationMessage`1.set_Notification(String value) 的 填充码</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessage`1.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessage`1.AllInstances.NotificationGet">
+            <summary>设置 NotificationMessage`1.get_Notification() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessage`1.AllInstances.NotificationSetString">
+            <summary>设置 NotificationMessage`1.set_Notification(String value) 的 填充码</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessageAction">
+            <summary>GalaSoft.MvvmLight.Messaging.NotificationMessageAction 的填充码类型</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessageAction.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessageAction.#ctor(GalaSoft.MvvmLight.Messaging.NotificationMessageAction)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessageAction.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessageAction.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessageAction.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessageAction.ConstructorObjectObjectStringAction">
+            <summary>设置 NotificationMessageAction.NotificationMessageAction(Object sender, Object target, String notification, Action callback) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessageAction.ConstructorObjectStringAction">
+            <summary>设置 NotificationMessageAction.NotificationMessageAction(Object sender, String notification, Action callback) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessageAction.ConstructorStringAction">
+            <summary>设置 NotificationMessageAction.NotificationMessageAction(String notification, Action callback) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessageAction.Execute">
+            <summary>设置 NotificationMessageAction.Execute() 的 填充码</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessageAction.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessageAction.AllInstances.Execute">
+            <summary>设置 NotificationMessageAction.Execute() 的 填充码</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessageAction`1">
+            <summary>GalaSoft.MvvmLight.Messaging.NotificationMessageAction`1 的填充码类型</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessageAction`1.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessageAction`1.#ctor(GalaSoft.MvvmLight.Messaging.NotificationMessageAction{`0})">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessageAction`1.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessageAction`1.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessageAction`1.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessageAction`1.ConstructorObjectObjectStringActionOfT0">
+            <summary>设置 NotificationMessageAction`1.NotificationMessageAction`1(Object sender, Object target, String notification, Action`1&lt;!0&gt; callback) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessageAction`1.ConstructorObjectStringActionOfT0">
+            <summary>设置 NotificationMessageAction`1.NotificationMessageAction`1(Object sender, String notification, Action`1&lt;!0&gt; callback) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessageAction`1.ConstructorStringActionOfT0">
+            <summary>设置 NotificationMessageAction`1.NotificationMessageAction`1(String notification, Action`1&lt;!0&gt; callback) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessageAction`1.ExecuteT0">
+            <summary>设置 NotificationMessageAction`1.Execute(!0 parameter) 的 填充码</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessageAction`1.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessageAction`1.AllInstances.ExecuteT0">
+            <summary>设置 NotificationMessageAction`1.Execute(!0 parameter) 的 填充码</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessageWithCallback">
+            <summary>GalaSoft.MvvmLight.Messaging.NotificationMessageWithCallback 的填充码类型</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessageWithCallback.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessageWithCallback.#ctor(GalaSoft.MvvmLight.Messaging.NotificationMessageWithCallback)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessageWithCallback.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessageWithCallback.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessageWithCallback.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessageWithCallback.CheckCallbackDelegate">
+            <summary>设置 NotificationMessageWithCallback.CheckCallback(Delegate callback) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessageWithCallback.ConstructorObjectObjectStringDelegate">
+            <summary>设置 NotificationMessageWithCallback.NotificationMessageWithCallback(Object sender, Object target, String notification, Delegate callback) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessageWithCallback.ConstructorObjectStringDelegate">
+            <summary>设置 NotificationMessageWithCallback.NotificationMessageWithCallback(Object sender, String notification, Delegate callback) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessageWithCallback.ConstructorStringDelegate">
+            <summary>设置 NotificationMessageWithCallback.NotificationMessageWithCallback(String notification, Delegate callback) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessageWithCallback.ExecuteObjectArray">
+            <summary>设置 NotificationMessageWithCallback.Execute(Object[] arguments) 的 填充码</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessageWithCallback.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimNotificationMessageWithCallback.AllInstances.ExecuteObjectArray">
+            <summary>设置 NotificationMessageWithCallback.Execute(Object[] arguments) 的 填充码</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Messaging.Fakes.ShimPropertyChangedMessage`1">
+            <summary>GalaSoft.MvvmLight.Messaging.PropertyChangedMessage`1 的填充码类型</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimPropertyChangedMessage`1.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimPropertyChangedMessage`1.#ctor(GalaSoft.MvvmLight.Messaging.PropertyChangedMessage{`0})">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimPropertyChangedMessage`1.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimPropertyChangedMessage`1.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimPropertyChangedMessage`1.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimPropertyChangedMessage`1.ConstructorObjectObjectT0T0String">
+            <summary>设置 PropertyChangedMessage`1.PropertyChangedMessage`1(Object sender, Object target, !0 oldValue, !0 newValue, String propertyName) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimPropertyChangedMessage`1.ConstructorObjectT0T0String">
+            <summary>设置 PropertyChangedMessage`1.PropertyChangedMessage`1(Object sender, !0 oldValue, !0 newValue, String propertyName) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimPropertyChangedMessage`1.ConstructorT0T0String">
+            <summary>设置 PropertyChangedMessage`1.PropertyChangedMessage`1(!0 oldValue, !0 newValue, String propertyName) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimPropertyChangedMessage`1.NewValueGet">
+            <summary>设置 PropertyChangedMessage`1.get_NewValue() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimPropertyChangedMessage`1.NewValueSetT0">
+            <summary>设置 PropertyChangedMessage`1.set_NewValue(!0 value) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimPropertyChangedMessage`1.OldValueGet">
+            <summary>设置 PropertyChangedMessage`1.get_OldValue() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimPropertyChangedMessage`1.OldValueSetT0">
+            <summary>设置 PropertyChangedMessage`1.set_OldValue(!0 value) 的 填充码</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Messaging.Fakes.ShimPropertyChangedMessage`1.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimPropertyChangedMessage`1.AllInstances.NewValueGet">
+            <summary>设置 PropertyChangedMessage`1.get_NewValue() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimPropertyChangedMessage`1.AllInstances.NewValueSetT0">
+            <summary>设置 PropertyChangedMessage`1.set_NewValue(!0 value) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimPropertyChangedMessage`1.AllInstances.OldValueGet">
+            <summary>设置 PropertyChangedMessage`1.get_OldValue() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimPropertyChangedMessage`1.AllInstances.OldValueSetT0">
+            <summary>设置 PropertyChangedMessage`1.set_OldValue(!0 value) 的 填充码</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Messaging.Fakes.ShimPropertyChangedMessageBase">
+            <summary>GalaSoft.MvvmLight.Messaging.PropertyChangedMessageBase 的填充码类型</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimPropertyChangedMessageBase.#ctor(GalaSoft.MvvmLight.Messaging.PropertyChangedMessageBase)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimPropertyChangedMessageBase.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.ShimPropertyChangedMessageBase.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimPropertyChangedMessageBase.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimPropertyChangedMessageBase.ConstructorObjectObjectString">
+            <summary>设置 PropertyChangedMessageBase.PropertyChangedMessageBase(Object sender, Object target, String propertyName) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimPropertyChangedMessageBase.ConstructorObjectString">
+            <summary>设置 PropertyChangedMessageBase.PropertyChangedMessageBase(Object sender, String propertyName) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimPropertyChangedMessageBase.ConstructorString">
+            <summary>设置 PropertyChangedMessageBase.PropertyChangedMessageBase(String propertyName) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimPropertyChangedMessageBase.PropertyNameGet">
+            <summary>设置 PropertyChangedMessageBase.get_PropertyName() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimPropertyChangedMessageBase.PropertyNameSetString">
+            <summary>设置 PropertyChangedMessageBase.set_PropertyName(String value) 的 填充码</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Messaging.Fakes.ShimPropertyChangedMessageBase.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimPropertyChangedMessageBase.AllInstances.PropertyNameGet">
+            <summary>设置 PropertyChangedMessageBase.get_PropertyName() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.ShimPropertyChangedMessageBase.AllInstances.PropertyNameSetString">
+            <summary>设置 PropertyChangedMessageBase.set_PropertyName(String value) 的 填充码</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Messaging.Fakes.StubGenericMessage`1">
+            <summary>GalaSoft.MvvmLight.Messaging.GenericMessage`1 的存根类型</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubGenericMessage`1.#ctor(`0)">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubGenericMessage`1.#ctor(System.Object,`0)">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubGenericMessage`1.#ctor(System.Object,System.Object,`0)">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubGenericMessage`1.InitializeStub">
+            <summary>初始化 type StubGenericMessage 的新实例</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.StubGenericMessage`1.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.StubGenericMessage`1.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.StubGenericMessage`1.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Messaging.Fakes.StubIMessenger">
+            <summary>GalaSoft.MvvmLight.Messaging.IMessenger 的存根类型</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubIMessenger.#ctor">
+            <summary>初始化 type StubIMessenger 的新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubIMessenger.gsml::GalaSoft#MvvmLight#Messaging#IMessenger#Register``1(System.Object,System.Action{``0},System.Boolean)">
+            <summary>设置 IMessenger.Register(Object recipient, Action`1&lt;!!0&gt; action, Boolean keepTargetAlive) 的 存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubIMessenger.gsml::GalaSoft#MvvmLight#Messaging#IMessenger#Register``1(System.Object,System.Object,System.Action{``0},System.Boolean)">
+            <summary>设置 IMessenger.Register(Object recipient, Object token, Action`1&lt;!!0&gt; action, Boolean keepTargetAlive) 的 存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubIMessenger.gsml::GalaSoft#MvvmLight#Messaging#IMessenger#Register``1(System.Object,System.Boolean,System.Action{``0},System.Boolean)">
+            <summary>设置 IMessenger.Register(Object recipient, Boolean receiveDerivedMessagesToo, Action`1&lt;!!0&gt; action, Boolean keepTargetAlive) 的 存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubIMessenger.gsml::GalaSoft#MvvmLight#Messaging#IMessenger#Register``1(System.Object,System.Object,System.Boolean,System.Action{``0},System.Boolean)">
+            <summary>设置 IMessenger.Register(Object recipient, Object token, Boolean receiveDerivedMessagesToo, Action`1&lt;!!0&gt; action, Boolean keepTargetAlive) 的 存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubIMessenger.gsml::GalaSoft#MvvmLight#Messaging#IMessenger#Send``1(``0)">
+            <summary>设置 IMessenger.Send(!!0 message) 的 存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubIMessenger.gsml::GalaSoft#MvvmLight#Messaging#IMessenger#Send``2(``0)">
+            <summary>设置 IMessenger.Send(!!0 message) 的 存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubIMessenger.gsml::GalaSoft#MvvmLight#Messaging#IMessenger#Send``1(``0,System.Object)">
+            <summary>设置 IMessenger.Send(!!0 message, Object token) 的 存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubIMessenger.gsml::GalaSoft#MvvmLight#Messaging#IMessenger#Unregister(System.Object)">
+            <summary>设置 IMessenger.Unregister(Object recipient) 的 存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubIMessenger.gsml::GalaSoft#MvvmLight#Messaging#IMessenger#Unregister``1(System.Object)">
+            <summary>设置 IMessenger.Unregister(Object recipient) 的 存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubIMessenger.gsml::GalaSoft#MvvmLight#Messaging#IMessenger#Unregister``1(System.Object,System.Object)">
+            <summary>设置 IMessenger.Unregister(Object recipient, Object token) 的 存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubIMessenger.gsml::GalaSoft#MvvmLight#Messaging#IMessenger#Unregister``1(System.Object,System.Action{``0})">
+            <summary>设置 IMessenger.Unregister(Object recipient, Action`1&lt;!!0&gt; action) 的 存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubIMessenger.gsml::GalaSoft#MvvmLight#Messaging#IMessenger#Unregister``1(System.Object,System.Object,System.Action{``0})">
+            <summary>设置 IMessenger.Unregister(Object recipient, Object token, Action`1&lt;!!0&gt; action) 的 存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubIMessenger.RegisterOf1ObjectActionOfM0Boolean``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.Object,System.Action{``0},System.Boolean})">
+            <summary>设置 Register(Object recipient, Action`1&lt;!!0&gt; action, Boolean keepTargetAlive) 的存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubIMessenger.RegisterOf1ObjectBooleanActionOfM0Boolean``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.Object,System.Boolean,System.Action{``0},System.Boolean})">
+            <summary>设置 Register(Object recipient, Boolean receiveDerivedMessagesToo, Action`1&lt;!!0&gt; action, Boolean keepTargetAlive) 的存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubIMessenger.RegisterOf1ObjectObjectActionOfM0Boolean``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.Object,System.Object,System.Action{``0},System.Boolean})">
+            <summary>设置 Register(Object recipient, Object token, Action`1&lt;!!0&gt; action, Boolean keepTargetAlive) 的存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubIMessenger.RegisterOf1ObjectObjectBooleanActionOfM0Boolean``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.Object,System.Object,System.Boolean,System.Action{``0},System.Boolean})">
+            <summary>设置 Register(Object recipient, Object token, Boolean receiveDerivedMessagesToo, Action`1&lt;!!0&gt; action, Boolean keepTargetAlive) 的存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubIMessenger.SendOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{``0})">
+            <summary>设置 Send(!!0 message) 的存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubIMessenger.SendOf1M0Object``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{``0,System.Object})">
+            <summary>设置 Send(!!0 message, Object token) 的存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubIMessenger.SendOf2M0``2(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{``0})">
+            <summary>设置 Send(!!0 message) 的存根</summary>
+        </member>
+        <member name="F:GalaSoft.MvvmLight.Messaging.Fakes.StubIMessenger.UnregisterObject">
+            <summary>设置 IMessenger.Unregister(Object recipient) 的 stub</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubIMessenger.UnregisterOf1Object``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.Object})">
+            <summary>设置 Unregister(Object recipient) 的存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubIMessenger.UnregisterOf1ObjectActionOfM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.Object,System.Action{``0}})">
+            <summary>设置 Unregister(Object recipient, Action`1&lt;!!0&gt; action) 的存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubIMessenger.UnregisterOf1ObjectObject``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.Object,System.Object})">
+            <summary>设置 Unregister(Object recipient, Object token) 的存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubIMessenger.UnregisterOf1ObjectObjectActionOfM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.Object,System.Object,System.Action{``0}})">
+            <summary>设置 Unregister(Object recipient, Object token, Action`1&lt;!!0&gt; action) 的存根</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Messaging.Fakes.StubMessageBase">
+            <summary>GalaSoft.MvvmLight.Messaging.MessageBase 的存根类型</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubMessageBase.#ctor">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubMessageBase.#ctor(System.Object)">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubMessageBase.#ctor(System.Object,System.Object)">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubMessageBase.InitializeStub">
+            <summary>初始化 type StubMessageBase 的新实例</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.StubMessageBase.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.StubMessageBase.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.StubMessageBase.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Messaging.Fakes.StubMessenger">
+            <summary>GalaSoft.MvvmLight.Messaging.Messenger 的存根类型</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubMessenger.#ctor">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubMessenger.InitializeStub">
+            <summary>初始化 type StubMessenger 的新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubMessenger.Register``1(System.Object,System.Action{``0},System.Boolean)">
+            <summary>设置 Messenger.Register(Object recipient, Action`1&lt;!!0&gt; action, Boolean keepTargetAlive) 的 存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubMessenger.Register``1(System.Object,System.Boolean,System.Action{``0},System.Boolean)">
+            <summary>设置 Messenger.Register(Object recipient, Boolean receiveDerivedMessagesToo, Action`1&lt;!!0&gt; action, Boolean keepTargetAlive) 的 存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubMessenger.Register``1(System.Object,System.Object,System.Action{``0},System.Boolean)">
+            <summary>设置 Messenger.Register(Object recipient, Object token, Action`1&lt;!!0&gt; action, Boolean keepTargetAlive) 的 存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubMessenger.Register``1(System.Object,System.Object,System.Boolean,System.Action{``0},System.Boolean)">
+            <summary>设置 Messenger.Register(Object recipient, Object token, Boolean receiveDerivedMessagesToo, Action`1&lt;!!0&gt; action, Boolean keepTargetAlive) 的 存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubMessenger.RegisterOf1ObjectActionOfM0Boolean``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.Object,System.Action{``0},System.Boolean})">
+            <summary>设置 Register(Object recipient, Action`1&lt;!!0&gt; action, Boolean keepTargetAlive) 的存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubMessenger.RegisterOf1ObjectBooleanActionOfM0Boolean``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.Object,System.Boolean,System.Action{``0},System.Boolean})">
+            <summary>设置 Register(Object recipient, Boolean receiveDerivedMessagesToo, Action`1&lt;!!0&gt; action, Boolean keepTargetAlive) 的存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubMessenger.RegisterOf1ObjectObjectActionOfM0Boolean``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.Object,System.Object,System.Action{``0},System.Boolean})">
+            <summary>设置 Register(Object recipient, Object token, Action`1&lt;!!0&gt; action, Boolean keepTargetAlive) 的存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubMessenger.RegisterOf1ObjectObjectBooleanActionOfM0Boolean``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.Object,System.Object,System.Boolean,System.Action{``0},System.Boolean})">
+            <summary>设置 Register(Object recipient, Object token, Boolean receiveDerivedMessagesToo, Action`1&lt;!!0&gt; action, Boolean keepTargetAlive) 的存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubMessenger.Send``1(``0)">
+            <summary>设置 Messenger.Send(!!0 message) 的 存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubMessenger.Send``2(``0)">
+            <summary>设置 Messenger.Send(!!0 message) 的 存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubMessenger.Send``1(``0,System.Object)">
+            <summary>设置 Messenger.Send(!!0 message, Object token) 的 存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubMessenger.SendOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{``0})">
+            <summary>设置 Send(!!0 message) 的存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubMessenger.SendOf1M0Object``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{``0,System.Object})">
+            <summary>设置 Send(!!0 message, Object token) 的存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubMessenger.SendOf2M0``2(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{``0})">
+            <summary>设置 Send(!!0 message) 的存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubMessenger.Unregister(System.Object)">
+            <summary>设置 Messenger.Unregister(Object recipient) 的 存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubMessenger.Unregister``1(System.Object)">
+            <summary>设置 Messenger.Unregister(Object recipient) 的 存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubMessenger.Unregister``1(System.Object,System.Object)">
+            <summary>设置 Messenger.Unregister(Object recipient, Object token) 的 存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubMessenger.Unregister``1(System.Object,System.Action{``0})">
+            <summary>设置 Messenger.Unregister(Object recipient, Action`1&lt;!!0&gt; action) 的 存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubMessenger.Unregister``1(System.Object,System.Object,System.Action{``0})">
+            <summary>设置 Messenger.Unregister(Object recipient, Object token, Action`1&lt;!!0&gt; action) 的 存根</summary>
+        </member>
+        <member name="F:GalaSoft.MvvmLight.Messaging.Fakes.StubMessenger.UnregisterObject">
+            <summary>设置 Messenger.Unregister(Object recipient) 的 stub</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubMessenger.UnregisterOf1Object``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.Object})">
+            <summary>设置 Unregister(Object recipient) 的存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubMessenger.UnregisterOf1ObjectActionOfM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.Object,System.Action{``0}})">
+            <summary>设置 Unregister(Object recipient, Action`1&lt;!!0&gt; action) 的存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubMessenger.UnregisterOf1ObjectObject``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.Object,System.Object})">
+            <summary>设置 Unregister(Object recipient, Object token) 的存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubMessenger.UnregisterOf1ObjectObjectActionOfM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.Object,System.Object,System.Action{``0}})">
+            <summary>设置 Unregister(Object recipient, Object token, Action`1&lt;!!0&gt; action) 的存根</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.StubMessenger.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.StubMessenger.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.StubMessenger.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessage">
+            <summary>GalaSoft.MvvmLight.Messaging.NotificationMessage 的存根类型</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessage.#ctor(System.String)">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessage.#ctor(System.Object,System.String)">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessage.#ctor(System.Object,System.Object,System.String)">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessage.InitializeStub">
+            <summary>初始化 type StubNotificationMessage 的新实例</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessage.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessage.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessage.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessage`1">
+            <summary>GalaSoft.MvvmLight.Messaging.NotificationMessage`1 的存根类型</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessage`1.#ctor(`0,System.String)">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessage`1.#ctor(System.Object,`0,System.String)">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessage`1.#ctor(System.Object,System.Object,`0,System.String)">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessage`1.InitializeStub">
+            <summary>初始化 type StubNotificationMessage 的新实例</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessage`1.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessage`1.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessage`1.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessageAction">
+            <summary>GalaSoft.MvvmLight.Messaging.NotificationMessageAction 的存根类型</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessageAction.#ctor(System.String,System.Action)">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessageAction.#ctor(System.Object,System.String,System.Action)">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessageAction.#ctor(System.Object,System.Object,System.String,System.Action)">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessageAction.Execute(System.Object[])">
+            <summary>设置 NotificationMessageWithCallback.Execute(Object[] arguments) 的 存根</summary>
+        </member>
+        <member name="F:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessageAction.ExecuteObjectArray">
+            <summary>设置 NotificationMessageWithCallback.Execute(Object[] arguments) 的 stub</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessageAction.InitializeStub">
+            <summary>初始化 type StubNotificationMessageAction 的新实例</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessageAction.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessageAction.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessageAction.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessageAction`1">
+            <summary>GalaSoft.MvvmLight.Messaging.NotificationMessageAction`1 的存根类型</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessageAction`1.#ctor(System.String,System.Action{`0})">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessageAction`1.#ctor(System.Object,System.String,System.Action{`0})">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessageAction`1.#ctor(System.Object,System.Object,System.String,System.Action{`0})">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessageAction`1.Execute(System.Object[])">
+            <summary>设置 NotificationMessageWithCallback.Execute(Object[] arguments) 的 存根</summary>
+        </member>
+        <member name="F:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessageAction`1.ExecuteObjectArray">
+            <summary>设置 NotificationMessageWithCallback.Execute(Object[] arguments) 的 stub</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessageAction`1.InitializeStub">
+            <summary>初始化 type StubNotificationMessageAction 的新实例</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessageAction`1.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessageAction`1.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessageAction`1.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessageWithCallback">
+            <summary>GalaSoft.MvvmLight.Messaging.NotificationMessageWithCallback 的存根类型</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessageWithCallback.#ctor(System.String,System.Delegate)">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessageWithCallback.#ctor(System.Object,System.String,System.Delegate)">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessageWithCallback.#ctor(System.Object,System.Object,System.String,System.Delegate)">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessageWithCallback.Execute(System.Object[])">
+            <summary>设置 NotificationMessageWithCallback.Execute(Object[] arguments) 的 存根</summary>
+        </member>
+        <member name="F:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessageWithCallback.ExecuteObjectArray">
+            <summary>设置 NotificationMessageWithCallback.Execute(Object[] arguments) 的 stub</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessageWithCallback.InitializeStub">
+            <summary>初始化 type StubNotificationMessageWithCallback 的新实例</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessageWithCallback.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessageWithCallback.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.StubNotificationMessageWithCallback.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Messaging.Fakes.StubPropertyChangedMessage`1">
+            <summary>GalaSoft.MvvmLight.Messaging.PropertyChangedMessage`1 的存根类型</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubPropertyChangedMessage`1.#ctor(`0,`0,System.String)">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubPropertyChangedMessage`1.#ctor(System.Object,`0,`0,System.String)">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubPropertyChangedMessage`1.#ctor(System.Object,System.Object,`0,`0,System.String)">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubPropertyChangedMessage`1.InitializeStub">
+            <summary>初始化 type StubPropertyChangedMessage 的新实例</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.StubPropertyChangedMessage`1.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.StubPropertyChangedMessage`1.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.StubPropertyChangedMessage`1.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Messaging.Fakes.StubPropertyChangedMessageBase">
+            <summary>GalaSoft.MvvmLight.Messaging.PropertyChangedMessageBase 的存根类型</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubPropertyChangedMessageBase.#ctor(System.String)">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubPropertyChangedMessageBase.#ctor(System.Object,System.String)">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubPropertyChangedMessageBase.#ctor(System.Object,System.Object,System.String)">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Messaging.Fakes.StubPropertyChangedMessageBase.InitializeStub">
+            <summary>初始化 type StubPropertyChangedMessageBase 的新实例</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.StubPropertyChangedMessageBase.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.StubPropertyChangedMessageBase.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Messaging.Fakes.StubPropertyChangedMessageBase.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Threading.Fakes.ShimDispatcherHelper">
+            <summary>GalaSoft.MvvmLight.Threading.DispatcherHelper 的填充码类型</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Threading.Fakes.ShimDispatcherHelper.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Threading.Fakes.ShimDispatcherHelper.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Threading.Fakes.ShimDispatcherHelper.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Threading.Fakes.ShimDispatcherHelper.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Threading.Fakes.ShimDispatcherHelper.CheckBeginInvokeOnUIAction">
+            <summary>设置 DispatcherHelper.CheckBeginInvokeOnUI(Action action) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Threading.Fakes.ShimDispatcherHelper.CheckDispatcher">
+            <summary>设置 DispatcherHelper.CheckDispatcher() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Threading.Fakes.ShimDispatcherHelper.Initialize">
+            <summary>设置 DispatcherHelper.Initialize() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Threading.Fakes.ShimDispatcherHelper.Reset">
+            <summary>设置 DispatcherHelper.Reset() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Threading.Fakes.ShimDispatcherHelper.RunAsyncAction">
+            <summary>设置 DispatcherHelper.RunAsync(Action action) 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Threading.Fakes.ShimDispatcherHelper.UIDispatcherGet">
+            <summary>设置 DispatcherHelper.get_UIDispatcher() 的 填充码</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Threading.Fakes.ShimDispatcherHelper.UIDispatcherSetDispatcher">
+            <summary>设置 DispatcherHelper.set_UIDispatcher(Dispatcher value) 的 填充码</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Views.Fakes.StubIDialogService">
+            <summary>GalaSoft.MvvmLight.Views.IDialogService 的存根类型</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Views.Fakes.StubIDialogService.#ctor">
+            <summary>初始化 type StubIDialogService 的新实例</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Views.Fakes.StubIDialogService.gsml::GalaSoft#MvvmLight#Views#IDialogService#ShowError(System.Exception,System.String,System.String,System.Action)">
+            <summary>设置 IDialogService.ShowError(Exception error, String title, String buttonText, Action afterHideCallback) 的 存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Views.Fakes.StubIDialogService.gsml::GalaSoft#MvvmLight#Views#IDialogService#ShowError(System.String,System.String,System.String,System.Action)">
+            <summary>设置 IDialogService.ShowError(String message, String title, String buttonText, Action afterHideCallback) 的 存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Views.Fakes.StubIDialogService.gsml::GalaSoft#MvvmLight#Views#IDialogService#ShowMessage(System.String,System.String)">
+            <summary>设置 IDialogService.ShowMessage(String message, String title) 的 存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Views.Fakes.StubIDialogService.gsml::GalaSoft#MvvmLight#Views#IDialogService#ShowMessage(System.String,System.String,System.String,System.Action)">
+            <summary>设置 IDialogService.ShowMessage(String message, String title, String buttonText, Action afterHideCallback) 的 存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Views.Fakes.StubIDialogService.gsml::GalaSoft#MvvmLight#Views#IDialogService#ShowMessage(System.String,System.String,System.String,System.String,System.Action{System.Boolean})">
+            <summary>设置 IDialogService.ShowMessage(String message, String title, String buttonConfirmText, String buttonCancelText, Action`1&lt;Boolean&gt; afterHideCallback) 的 存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Views.Fakes.StubIDialogService.gsml::GalaSoft#MvvmLight#Views#IDialogService#ShowMessageBox(System.String,System.String)">
+            <summary>设置 IDialogService.ShowMessageBox(String message, String title) 的 存根</summary>
+        </member>
+        <member name="F:GalaSoft.MvvmLight.Views.Fakes.StubIDialogService.ShowErrorExceptionStringStringAction">
+            <summary>设置 IDialogService.ShowError(Exception error, String title, String buttonText, Action afterHideCallback) 的 stub</summary>
+        </member>
+        <member name="F:GalaSoft.MvvmLight.Views.Fakes.StubIDialogService.ShowErrorStringStringStringAction">
+            <summary>设置 IDialogService.ShowError(String message, String title, String buttonText, Action afterHideCallback) 的 stub</summary>
+        </member>
+        <member name="F:GalaSoft.MvvmLight.Views.Fakes.StubIDialogService.ShowMessageBoxStringString">
+            <summary>设置 IDialogService.ShowMessageBox(String message, String title) 的 stub</summary>
+        </member>
+        <member name="F:GalaSoft.MvvmLight.Views.Fakes.StubIDialogService.ShowMessageStringString">
+            <summary>设置 IDialogService.ShowMessage(String message, String title) 的 stub</summary>
+        </member>
+        <member name="F:GalaSoft.MvvmLight.Views.Fakes.StubIDialogService.ShowMessageStringStringStringAction">
+            <summary>设置 IDialogService.ShowMessage(String message, String title, String buttonText, Action afterHideCallback) 的 stub</summary>
+        </member>
+        <member name="F:GalaSoft.MvvmLight.Views.Fakes.StubIDialogService.ShowMessageStringStringStringStringActionOfBoolean">
+            <summary>设置 IDialogService.ShowMessage(String message, String title, String buttonConfirmText, String buttonCancelText, Action`1&lt;Boolean&gt; afterHideCallback) 的 stub</summary>
+        </member>
+        <member name="T:GalaSoft.MvvmLight.Views.Fakes.StubINavigationService">
+            <summary>GalaSoft.MvvmLight.Views.INavigationService 的存根类型</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Views.Fakes.StubINavigationService.#ctor">
+            <summary>初始化 type StubINavigationService 的新实例</summary>
+        </member>
+        <member name="F:GalaSoft.MvvmLight.Views.Fakes.StubINavigationService.CurrentPageKeyGet">
+            <summary>设置 INavigationService.get_CurrentPageKey() 的 stub</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Views.Fakes.StubINavigationService.gsml::GalaSoft#MvvmLight#Views#INavigationService#GoBack">
+            <summary>设置 INavigationService.GoBack() 的 存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Views.Fakes.StubINavigationService.gsml::GalaSoft#MvvmLight#Views#INavigationService#NavigateTo(System.String)">
+            <summary>设置 INavigationService.NavigateTo(String pageKey) 的 存根</summary>
+        </member>
+        <member name="M:GalaSoft.MvvmLight.Views.Fakes.StubINavigationService.gsml::GalaSoft#MvvmLight#Views#INavigationService#NavigateTo(System.String,System.Object)">
+            <summary>设置 INavigationService.NavigateTo(String pageKey, Object parameter) 的 存根</summary>
+        </member>
+        <member name="F:GalaSoft.MvvmLight.Views.Fakes.StubINavigationService.GoBack">
+            <summary>设置 INavigationService.GoBack() 的 stub</summary>
+        </member>
+        <member name="F:GalaSoft.MvvmLight.Views.Fakes.StubINavigationService.NavigateToString">
+            <summary>设置 INavigationService.NavigateTo(String pageKey) 的 stub</summary>
+        </member>
+        <member name="F:GalaSoft.MvvmLight.Views.Fakes.StubINavigationService.NavigateToStringObject">
+            <summary>设置 INavigationService.NavigateTo(String pageKey, Object parameter) 的 stub</summary>
+        </member>
+        <member name="P:GalaSoft.MvvmLight.Views.Fakes.StubINavigationService.gsml::GalaSoft#MvvmLight#Views#INavigationService#CurrentPageKey">
+            <summary>设置 INavigationService.get_CurrentPageKey() 的 stub</summary>
+        </member>
+        <member name="T:Microsoft.QualityTools.Testing.Fakes.Delegates.GalaSoftMvvmLightDelegates">
+            <summary>包含用于 GalaSoft.MvvmLight 的存根和填充码的自定义委托</summary>
+        </member>
+    </members>
+</doc>

@@ -14,7 +14,7 @@
 
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Ioc;
-
+using Microsoft.Practices.ServiceLocation;
 
 namespace ACMEControl.ViewModel
 {
@@ -29,7 +29,7 @@ namespace ACMEControl.ViewModel
         /// </summary>
         public ViewModelLocator()
         {
-            //ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
+            ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
 
             ////if (ViewModelBase.IsInDesignModeStatic)
             ////{
@@ -49,8 +49,7 @@ namespace ACMEControl.ViewModel
         {
             get
             {
-                //return ServiceLocator.Current.GetInstance<MainViewModel>();
-                return new MainViewModel();
+                return ServiceLocator.Current.GetInstance<MainViewModel>();
             }
         }
         
