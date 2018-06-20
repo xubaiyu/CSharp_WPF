@@ -1,10 +1,20 @@
 ﻿<Window x:Class="CustomListBox.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:control="clr-namespace:ACMEControl.Controls;assembly=ACMEControl"
         Title="MainWindow" Height="350" Width="525">
     <Window.Resources>
         <DataTemplate x:Key="DataTemplate1">
-            <Rectangle  RadiusX="8"  StrokeThickness="2" Opacity="0.5" Fill="Beige" Stroke="Blue" MinHeight="40" MinWidth="80" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
+            <control:LayerRadioButton GroupName="aa" MouseMove="Image_MouseMove" MouseLeave="Image_MouseLeave" Click="Button_Click" 
+                                   Content="{Binding Path=floorName}" IconBrush="#FFBAF1FF" ToolTip="{Binding Path=Tips}" Tag="{Binding Path=floorId}" >
+                <control:LayerRadioButton.IconBrushMask>
+                    <VisualBrush Stretch="None">
+                        <VisualBrush.Visual>
+                            <Path Data="F1M7.5,3.408C5.38,3.408 3.661,5.127 3.661,7.247 3.661,9.368 5.38,11.087 7.5,11.087 9.62,11.087 11.339,9.368 11.339,7.247 11.339,5.127 9.62,3.408 7.5,3.408z M7.5,1.847C10.666,1.847 13.24,4.422 13.24,7.587 13.24,9.228 12.257,11.588 11.134,12.635 11.134,12.635 11.039,12.734 11.039,12.734 9.418,14.606 8.309,16.61 7.573,18.153 6.801,16.441 5.584,14.21 3.771,12.317 2.643,11.214 1.759,9.138 1.759,7.587 1.759,4.422 4.334,1.847 7.5,1.847z" Fill="#FFF50F35" Height="20" Width="15"/>
+                        </VisualBrush.Visual>
+                    </VisualBrush>
+                </control:LayerRadioButton.IconBrushMask>
+            </control:LayerRadioButton>
         </DataTemplate>
         <ControlTemplate x:Key="ListBoxControlTemplate1" TargetType="{x:Type ListBox}">
             <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
