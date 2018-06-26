@@ -1,0 +1,15 @@
+D:\demo_c#\ACMEControl\Fakes\GalaSoft.MvvmLight.Extras.fakes : warning : 无法为 <>f__AnonymousType0`2 生成存根: 类型已密封。
+D:\demo_c#\ACMEControl\Fakes\GalaSoft.MvvmLight.Extras.fakes : warning : 无法为 GalaSoft.MvvmLight.Ioc.PreferredConstructorAttribute 生成存根: 类型已密封。
+D:\demo_c#\ACMEControl\Fakes\GalaSoft.MvvmLight.Extras.fakes : warning : 无法为 GalaSoft.MvvmLight.Helpers.DesignerLibrary 生成存根: 类型已密封。
+D:\demo_c#\ACMEControl\Fakes\GalaSoft.MvvmLight.Extras.fakes : warning : 无法为 GalaSoft.MvvmLight.Helpers.DesignerPlatformLibrary 生成存根: 类型是一个值类型。
+D:\demo_c#\ACMEControl\Fakes\GalaSoft.MvvmLight.Extras.fakes : warning : 无法为 <>f__AnonymousType0`2 生成填充码: 类型不受支持，因为存在内部限制。
+D:\demo_c#\ACMEControl\Fakes\GalaSoft.MvvmLight.Extras.fakes : warning : 无法为 GalaSoft.MvvmLight.Command.EventToCommand+<>c 生成填充码: 类型不受支持，因为存在内部限制。
+D:\demo_c#\ACMEControl\Fakes\GalaSoft.MvvmLight.Extras.fakes : warning : 无法为 GalaSoft.MvvmLight.Command.IEventArgsConverter 生成填充码: 类型是一个接口。
+D:\demo_c#\ACMEControl\Fakes\GalaSoft.MvvmLight.Extras.fakes : warning : 无法为 GalaSoft.MvvmLight.Ioc.ISimpleIoc 生成填充码: 类型是一个接口。
+D:\demo_c#\ACMEControl\Fakes\GalaSoft.MvvmLight.Extras.fakes : warning : 无法为 GalaSoft.MvvmLight.Ioc.SimpleIoc+<>c 生成填充码: 类型不受支持，因为存在内部限制。
+D:\demo_c#\ACMEControl\Fakes\GalaSoft.MvvmLight.Extras.fakes : warning : 无法为 GalaSoft.MvvmLight.Ioc.SimpleIoc+<>c__33`1 生成填充码: 类型不受支持，因为存在内部限制。
+D:\demo_c#\ACMEControl\Fakes\GalaSoft.MvvmLight.Extras.fakes : warning : 无法为 GalaSoft.MvvmLight.Ioc.SimpleIoc+<>c__36`1 生成填充码: 类型不受支持，因为存在内部限制。
+D:\demo_c#\ACMEControl\Fakes\GalaSoft.MvvmLight.Extras.fakes : warning : 无法为 GalaSoft.MvvmLight.Ioc.SimpleIoc+<>c__DisplayClass25_0`1 生成填充码: 类型不受支持，因为存在内部限制。
+D:\demo_c#\ACMEControl\Fakes\GalaSoft.MvvmLight.Extras.fakes : warning : 无法为 GalaSoft.MvvmLight.Ioc.SimpleIoc+<>c__DisplayClass26_0`1 生成填充码: 类型不受支持，因为存在内部限制。
+D:\demo_c#\ACMEControl\Fakes\GalaSoft.MvvmLight.Extras.fakes : warning : 无法为 GalaSoft.MvvmLight.Helpers.DesignerLibrary 生成填充码: 类型对 exported or assembly(GalaSoft.MvvmLight.Extras.Fakes) 不可见。
+D:\demo_c#\ACMEControl\Fakes\GalaSoft.MvvmLight.Extras.fakes : warning : 无法为 GalaSoft.MvvmLight.Helpers.DesignerPlatformLibrary 生成填充码: 类型是一个枚举。
