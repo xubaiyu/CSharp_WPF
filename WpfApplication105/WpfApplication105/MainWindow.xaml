@@ -1,0 +1,37 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication105"
+        xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="WpfApplication105.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <ItemsPanelTemplate x:Key="ItemsPanelTemplate1" >
+            <StackPanel IsItemsHost="True" Background="Gray" Height="345" />
+        </ItemsPanelTemplate>
+
+        <LinearGradientBrush x:Name="myBackground" x:Key="background_brush" EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#Ff3673D9" Offset="0"/>
+            <GradientStop Color="#4F0C0649" Offset="1"/>
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="ButtonBorderBrush" EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF076cc7" Offset="0" />
+            <GradientStop Color="#FF004e95" Offset="1" />
+        </LinearGradientBrush>
+    </Window.Resources>
+    <Grid>
+        <StackPanel HorizontalAlignment="Left" Height="240" Margin="100,50,0,0" VerticalAlignment="Top" Width="205">
+            <TreeView x:Name="treeView" Height="100" ItemsPanel="{DynamicResource ItemsPanelTemplate1}" >
+                <TreeViewItem>
+                    <System:String>abc</System:String>
+                </TreeViewItem>
+            </TreeView>
+        </StackPanel>
+        <Rectangle  Fill="{DynamicResource ButtonBorderBrush}" HorizontalAlignment="Left" Height="100" Margin="380,190,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
+        <Rectangle Fill="{DynamicResource background_brush}" Stroke="Black" Margin="330,50,-18,169"/>
+
+    </Grid>
+</Window>

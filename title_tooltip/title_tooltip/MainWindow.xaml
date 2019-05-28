@@ -3,40 +3,31 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="1000">
     <Window.Resources>
-        <Style x:Key="Simple" TargetType="{x:Type ToolTip}">
-            <Setter Property = "HorizontalOffset" Value="50"/>
-            <Setter Property = "VerticalOffset" Value="50"/>
-            <Setter Property = "Background" Value="Blue"/>
-            <Setter Property = "Foreground" Value="Red"/>
-            <Setter Property = "FontSize" Value="20"/>
-            <Setter Property = "FontWeight" Value="Bold"/>
+        <Style  TargetType="{x:Type ToolTip}">
+            <Setter Property = "HorizontalOffset" Value="0"/>
+            <Setter Property = "VerticalOffset" Value="0"/>
+            <Setter Property = "Background" Value="#8400265F"/>
+            <Setter Property = "Foreground" Value="White"/>
+            <Setter Property = "FontSize" Value="50"/>
+            <Setter Property = "FontWeight" Value="Normal"/>
             <Setter Property ="ContentTemplate">
                 <Setter.Value>
                     <DataTemplate>
-                        <Border x:Name="errorBorder" Background="#CC595959" BorderBrush="#99000000" BorderThickness="1" CornerRadius ="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin ="0" MaxWidth="320">
-                            <Border.Effect>
-                                <DropShadowEffect BlurRadius ="4" ShadowDepth="0"/>
-                            </Border.Effect>
-                            <Grid>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width ="Auto"/>
-                                    <ColumnDefinition Width ="*"/>
-                                </Grid.ColumnDefinitions>
-                                <Border Margin ="16,16,8,16" VerticalAlignment="Top">
-                                    <Path x:Name="path1" Grid.ColumnSpan="1" Data="M9.0789473,12.870737 L10.927632,12.870737 10.927632,14.5 9.0789473,14.5 z M9.0000001,5.9999999 L11,5.9999999 11,7.994543 10.526316,12.308322 9.4802633,12.308322 9.0000001,7.994543 z M9.9647158,1.8074455 C9.5912184,1.7923756 9.2860216,2.1402843 9.2860216,2.1402845 9.2860216,2.1402843 2.5977592,14.8926 2.2227221,15.46075 1.8476844,16.028899 2.5562553,16.218284 2.5562553,16.218284 2.5562553,16.218284 16.2035,16.218284 17.18278,16.218284 18.162063,16.218284 17.870029,15.460751 17.870029,15.460751 17.870029,15.460751 11.056506,2.8352754 10.494117,2.1197443 10.31837,1.8961406 10.134488,1.8142953 9.9647158,1.8074455 z M9.9331295,0.00021409988 C10.317457,0.0076069832 10.762559,0.20740509 11.244278,0.77299643 12.785778,2.5828881 19.97391,16.249695 19.97391,16.249695 19.97391,16.249695 20.318179,17.954408 18.505573,17.985971 16.692966,18.017535 1.5982747,17.985971 1.5982747,17.985971 1.5982747,17.985971 -0.27740097,18.206807 0.03512764,16.028899 0.3476572,13.850991 8.5362361,0.89893103 8.536236,0.8989315 8.5362361,0.89893103 9.0876089,-0.016049385 9.9331295,0.00021409988 z" Height="17" Stretch="Fill" Width="20" Visibility="Visible" Fill ="Red"/>
-                                </Border>
-                                <TextBlock x:Name="textBlock" Text="{TemplateBinding Content }" Margin="0,14,10,14" FontSize="14" Grid.Column ="1" TextWrapping="Wrap" Foreground="Red"/>
-                            </Grid>
+                        <Border x:Name="errorBorder" Background="#8400265F" BorderBrush="#8400265F" BorderThickness="1" CornerRadius ="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin ="0" MaxWidth="1320">
+                        <TextBlock x:Name="textBlock" Text="{TemplateBinding Content }" Margin="0,1,1,1" FontSize="14" TextWrapping="Wrap" Foreground="White"/>
                         </Border>
                     </DataTemplate>
                 </Setter.Value>
             </Setter>
-
         </Style>
        
     </Window.Resources>
     <Grid>
-        <Canvas x:Name="title" Height="350" Width="500" HorizontalAlignment="Center" Background="Red">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200" />
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Canvas Grid.Row="0" x:Name="title" Height="150" Width="500" HorizontalAlignment="Center" Background="Red">
             <Path Data="M377,138 L595.1857,138" Height="8" Stretch="Fill"  Stroke="#E554D8FF" VerticalAlignment="Top" StrokeDashArray="1 1" HorizontalAlignment="Left" Width="453.441" StrokeThickness="2" Canvas.Left="24.392" Canvas.Top="13.918" Visibility="Collapsed"/>
             <Path Data="M377,138 L595.1857,138" Height="8" Stretch="Fill" Stroke="#E554D8FF" VerticalAlignment="Top" StrokeDashArray="1 1" HorizontalAlignment="Left" Width="160.358" StrokeThickness="2" Canvas.Left="24.392" Canvas.Top="9.918"/>
             <Path Data="M377,138 L595.1857,138" Height="8" Stretch="Fill" Stroke="#E554D8FF" VerticalAlignment="Top" StrokeDashArray="1 1" HorizontalAlignment="Left" Width="160.358" StrokeThickness="2" Canvas.Left="24.392" Canvas.Top="5.918"/>
@@ -47,13 +38,9 @@
                 <TextBlock HorizontalAlignment="Left" Height="14.836" Margin="196.852,0,-56,3.164" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="109.667"><Run Language="zh-cn" Text="一标三实居民楼信息" Background="#8400265F" Foreground="White"/></TextBlock>
 
             </Grid>
-            <Canvas.ToolTip>
-                <ToolTip Style="{DynamicResource Simple}">
-                   aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                    
-                </ToolTip>
-            </Canvas.ToolTip>
+           
         </Canvas>
+        <Button Grid.Row="1" Height="20" ToolTip="button"/>
        
     </Grid>
 

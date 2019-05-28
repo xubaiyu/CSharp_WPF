@@ -1,0 +1,21 @@
+﻿<Window x:Class="WpfApplication102.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication102"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid >
+        <Image Source="image041.png" Opacity="1"  >
+            <Image.OpacityMask>
+                <LinearGradientBrush StartPoint="1,0" EndPoint="1,1">
+                    <GradientStop Offset="0" Color="Gray"></GradientStop>
+                    <GradientStop Offset="0.5" Color="Yellow"></GradientStop>
+                    <GradientStop Offset="1" Color="Transparent"></GradientStop>
+                </LinearGradientBrush>
+            </Image.OpacityMask>
+        </Image>
+
+    </Grid>
+</Window>

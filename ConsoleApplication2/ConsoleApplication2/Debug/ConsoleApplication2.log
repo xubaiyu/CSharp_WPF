@@ -1,0 +1,128 @@
+﻿生成启动时间为 2018/8/28 15:58:11。
+     1>项目“D:\demo_c#\ConsoleApplication2\ConsoleApplication2\ConsoleApplication2.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\ConsoleApplication2.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\ConsoleApplication2.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ConsoleApplication2.cpp
+         ConsoleApplication2.cpp
+     1>c:\program files (x86)\microsoft visual studio 12.0\vc\include\functional(506): error C2664: “void std::_Func_class<_Ret,const Foo &,int>::_Set(std::_Func_base<_Ret,const Foo &,int> *)”: 无法将参数 1 从“_Myimpl *”转换为“std::_Func_base<_Ret,const Foo &,int> *”
+                 with
+                 [
+                     _Ret=void
+                 ]
+                 与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\functional(442): 参见对正在编译的函数 模板 实例化“void std::_Func_class<_Ret,const Foo &,int>::_Do_alloc<_Myimpl,_Fret(__thiscall Foo::* const &)(int) const,_Alloc>(_Fty,_Alloc)”的引用
+                 with
+                 [
+                     _Ret=void
+         ,            _Fret=void
+         ,            _Alloc=std::allocator<std::_Func_class<void,const Foo &,int>>
+         ,            _Fty=void (__thiscall Foo::* const &)(int) const
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\functional(442): 参见对正在编译的函数 模板 实例化“void std::_Func_class<_Ret,const Foo &,int>::_Do_alloc<_Myimpl,_Fret(__thiscall Foo::* const &)(int) const,_Alloc>(_Fty,_Alloc)”的引用
+                 with
+                 [
+                     _Ret=void
+         ,            _Fret=void
+         ,            _Alloc=std::allocator<std::_Func_class<void,const Foo &,int>>
+         ,            _Fty=void (__thiscall Foo::* const &)(int) const
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\functional(442): 参见对正在编译的函数 模板 实例化“void std::_Func_class<_Ret,const Foo &,int>::_Reset_alloc<_Fret,Foo,int,std::allocator<std::_Func_class<_Ret,const Foo &,int>>>(_Fret (__thiscall Foo::* const )(int) const,_Alloc)”的引用
+                 with
+                 [
+                     _Ret=void
+         ,            _Fret=void
+         ,            _Alloc=std::allocator<std::_Func_class<void,const Foo &,int>>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\functional(442): 参见对正在编译的函数 模板 实例化“void std::_Func_class<_Ret,const Foo &,int>::_Reset_alloc<_Fret,Foo,int,std::allocator<std::_Func_class<_Ret,const Foo &,int>>>(_Fret (__thiscall Foo::* const )(int) const,_Alloc)”的引用
+                 with
+                 [
+                     _Ret=void
+         ,            _Fret=void
+         ,            _Alloc=std::allocator<std::_Func_class<void,const Foo &,int>>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\functional(671): 参见对正在编译的函数 模板 实例化“void std::_Func_class<_Ret,const Foo &,int>::_Reset<void,Foo,int>(_Fret (__thiscall Foo::* const )(int) const)”的引用
+                 with
+                 [
+                     _Ret=void
+         ,            _Fret=void
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\functional(671): 参见对正在编译的函数 模板 实例化“void std::_Func_class<_Ret,const Foo &,int>::_Reset<void,Foo,int>(_Fret (__thiscall Foo::* const )(int) const)”的引用
+                 with
+                 [
+                     _Ret=void
+         ,            _Fret=void
+                 ]
+                 d:\demo_c#\consoleapplication2\consoleapplication2\consoleapplication2.cpp(43): 参见对正在编译的函数 模板 实例化“std::function<void (const Foo &,int)>::function<void(__thiscall Foo::* )(int) const>(_Fx &&)”的引用
+                 with
+                 [
+                     _Fx=void (__thiscall Foo::* )(int) const
+                 ]
+                 d:\demo_c#\consoleapplication2\consoleapplication2\consoleapplication2.cpp(43): 参见对正在编译的函数 模板 实例化“std::function<void (const Foo &,int)>::function<void(__thiscall Foo::* )(int) const>(_Fx &&)”的引用
+                 with
+                 [
+                     _Fx=void (__thiscall Foo::* )(int) const
+                 ]
+     1>c:\program files (x86)\microsoft visual studio 12.0\vc\include\functional(506): error C2664: “void std::_Func_class<_Ret,const Foo &>::_Set(std::_Func_base<_Ret,const Foo &> *)”: 无法将参数 1 从“_Myimpl *”转换为“std::_Func_base<_Ret,const Foo &> *”
+                 with
+                 [
+                     _Ret=int
+                 ]
+                 与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\functional(416): 参见对正在编译的函数 模板 实例化“void std::_Func_class<_Ret,const Foo &>::_Do_alloc<_Myimpl,_FretFoo::* const &,_Alloc>(_Fty,_Alloc)”的引用
+                 with
+                 [
+                     _Ret=int
+         ,            _Fret=int
+         ,            _Alloc=std::allocator<std::_Func_class<int,const Foo &>>
+         ,            _Fty=int Foo::* const &
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\functional(416): 参见对正在编译的函数 模板 实例化“void std::_Func_class<_Ret,const Foo &>::_Do_alloc<_Myimpl,_FretFoo::* const &,_Alloc>(_Fty,_Alloc)”的引用
+                 with
+                 [
+                     _Ret=int
+         ,            _Fret=int
+         ,            _Alloc=std::allocator<std::_Func_class<int,const Foo &>>
+         ,            _Fty=int Foo::* const &
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\functional(403): 参见对正在编译的函数 模板 实例化“void std::_Func_class<_Ret,const Foo &>::_Reset_alloc<_Fret,Foo,std::allocator<std::_Func_class<_Ret,const Foo &>>>(_Fret Foo::* const ,_Alloc)”的引用
+                 with
+                 [
+                     _Ret=int
+         ,            _Fret=int
+         ,            _Alloc=std::allocator<std::_Func_class<int,const Foo &>>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\functional(403): 参见对正在编译的函数 模板 实例化“void std::_Func_class<_Ret,const Foo &>::_Reset_alloc<_Fret,Foo,std::allocator<std::_Func_class<_Ret,const Foo &>>>(_Fret Foo::* const ,_Alloc)”的引用
+                 with
+                 [
+                     _Ret=int
+         ,            _Fret=int
+         ,            _Alloc=std::allocator<std::_Func_class<int,const Foo &>>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\functional(671): 参见对正在编译的函数 模板 实例化“void std::_Func_class<_Ret,const Foo &>::_Reset<int,Foo>(_Fret Foo::* const )”的引用
+                 with
+                 [
+                     _Ret=int
+         ,            _Fret=int
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\functional(671): 参见对正在编译的函数 模板 实例化“void std::_Func_class<_Ret,const Foo &>::_Reset<int,Foo>(_Fret Foo::* const )”的引用
+                 with
+                 [
+                     _Ret=int
+         ,            _Fret=int
+                 ]
+                 d:\demo_c#\consoleapplication2\consoleapplication2\consoleapplication2.cpp(49): 参见对正在编译的函数 模板 实例化“std::function<int (const Foo &)>::function<intFoo::* >(_Fx &&)”的引用
+                 with
+                 [
+                     _Fx=int Foo::* 
+                 ]
+                 d:\demo_c#\consoleapplication2\consoleapplication2\consoleapplication2.cpp(49): 参见对正在编译的函数 模板 实例化“std::function<int (const Foo &)>::function<intFoo::* >(_Fx &&)”的引用
+                 with
+                 [
+                     _Fx=int Foo::* 
+                 ]
+     1>已完成生成项目“D:\demo_c#\ConsoleApplication2\ConsoleApplication2\ConsoleApplication2.vcxproj”(Rebuild 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:01.38

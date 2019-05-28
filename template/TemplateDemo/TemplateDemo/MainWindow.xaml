@@ -1,0 +1,24 @@
+﻿<Window x:Class="TemplateDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TemplateDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="120"/>
+            <RowDefinition Height="130"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="250"/>
+        </Grid.ColumnDefinitions>
+
+        <Button Background="Red" Content="Button" TextBlock.FontSize="9" Grid.Column="0" Grid.Row="0" Width="100" Height="100"/>
+        <Label Background="Red" Content="word" FontSize="50" Grid.Column="1" Grid.Row="0"  Height="100" />
+        <CheckBox Background="Red" Content="checkBox" Grid.Column="0" Grid.Row="1" Width="100" />
+        <RadioButton Background="Red" Content=" radioButton" Grid.Column="1" Grid.Row="1" Width="100" Height="100"/>
+    </Grid>
+</Window>

@@ -13,8 +13,17 @@
         </ImageBrush>
     </Window.Background>
 
-    <Grid Background="Red">
-        
+    <Grid Background="Red" Opacity="0.4">
+        <Grid.OpacityMask>
+            <LinearGradientBrush  StartPoint="1,0" EndPoint="1,1">
+                <GradientStop Color="Transparent" Offset="0"/>
+                <GradientStop Color="#FFD615B3" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.OpacityMask>
+    </Grid>
+
+    <!--<Grid Background="Red">
+
         <Grid.OpacityMask>
             <LinearGradientBrush StartPoint="1,0" EndPoint="1,1">
                 <GradientStop Offset="0" Color="Red"></GradientStop>
@@ -22,7 +31,8 @@
                 <GradientStop Offset="1" Color="Green"></GradientStop>
             </LinearGradientBrush>
         </Grid.OpacityMask>
-    </Grid>
+    </Grid>-->
+
 
 
 </Window>

@@ -41,5 +41,19 @@
                 <ImageBrush ImageSource="BackgroundImg03.png"/>
             </Path.Fill>
         </Path>
+        <Path x:Name="矩形_18_Copy2" Data="F1M1,1C1,1 38,1 38,1 38,1 38,495 38,495 38,495 1,495 1,495 1,495 1,1 1,1z" Height="120.894"  Width="51.749" Stroke="#FF00E2FF" StrokeThickness="10" Opacity="0.52" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-89.978"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Path.RenderTransform>
+            <Path.Effect>
+                <BlurEffect Radius="12"/>
+            </Path.Effect>
+        </Path>
+        <Rectangle Fill="Red" Width="200" Height="20" />
     </Grid>
 </Window>
