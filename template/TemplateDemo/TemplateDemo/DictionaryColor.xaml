@@ -1,0 +1,6 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:TemplateDemo">
+    <Color x:Key="MainColor">Gray</Color>
+    <SolidColorBrush x:Key="mainColorBrush" Color="#FFF32A2A"/>
+</ResourceDictionary>

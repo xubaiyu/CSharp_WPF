@@ -7,8 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Window.Resources>
-        <Color x:Key="MainColor">Gray</Color>
-        <SolidColorBrush x:Key="mainColorBrush" Color="Blue"/>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+               <ResourceDictionary Source="DictionaryColor.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
@@ -20,9 +23,9 @@
             <ColumnDefinition Width="250"/>
         </Grid.ColumnDefinitions>
 
-        <Button Background="{StaticResource mainColorBrush}" Content="Button" TextBlock.FontSize="9" Grid.Column="0" Grid.Row="0" Width="100" Height="100"/>
-        <Label Background="{StaticResource mainColorBrush}" Content="word" FontSize="50" Grid.Column="1" Grid.Row="0"  Height="100" />
-        <CheckBox Background="{StaticResource mainColorBrush}" Content="checkBox" Grid.Column="0" Grid.Row="1" Width="100" />
+        <Button Background="{DynamicResource mainColorBrush}" Content="Button" TextBlock.FontSize="9" Grid.Column="0" Grid.Row="0" Width="100" Height="100"/>
+        <Label Background="{DynamicResource mainColorBrush}" Content="word" FontSize="50" Grid.Column="1" Grid.Row="0"  Height="100" />
+        <CheckBox Background="{DynamicResource mainColorBrush}" Content="checkBox" Grid.Column="0" Grid.Row="1" Width="100" />
         <RadioButton Foreground="{DynamicResource mainColorBrush}"  Content=" radioButton" Grid.Column="1" Grid.Row="1" Width="100" Height="100"/>
     </Grid>
 </Window>
