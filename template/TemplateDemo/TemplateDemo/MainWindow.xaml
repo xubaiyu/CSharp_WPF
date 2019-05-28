@@ -6,6 +6,10 @@
         xmlns:local="clr-namespace:TemplateDemo"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <Color x:Key="MainColor">Gray</Color>
+        <SolidColorBrush x:Key="mainColorBrush" Color="Blue"/>
+    </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="120"/>
@@ -16,9 +20,9 @@
             <ColumnDefinition Width="250"/>
         </Grid.ColumnDefinitions>
 
-        <Button Background="Red" Content="Button" TextBlock.FontSize="9" Grid.Column="0" Grid.Row="0" Width="100" Height="100"/>
-        <Label Background="Red" Content="word" FontSize="50" Grid.Column="1" Grid.Row="0"  Height="100" />
-        <CheckBox Background="Red" Content="checkBox" Grid.Column="0" Grid.Row="1" Width="100" />
-        <RadioButton Background="Red" Content=" radioButton" Grid.Column="1" Grid.Row="1" Width="100" Height="100"/>
+        <Button Background="{StaticResource mainColorBrush}" Content="Button" TextBlock.FontSize="9" Grid.Column="0" Grid.Row="0" Width="100" Height="100"/>
+        <Label Background="{StaticResource mainColorBrush}" Content="word" FontSize="50" Grid.Column="1" Grid.Row="0"  Height="100" />
+        <CheckBox Background="{StaticResource mainColorBrush}" Content="checkBox" Grid.Column="0" Grid.Row="1" Width="100" />
+        <RadioButton Foreground="{DynamicResource mainColorBrush}"  Content=" radioButton" Grid.Column="1" Grid.Row="1" Width="100" Height="100"/>
     </Grid>
 </Window>
