@@ -1,0 +1,437 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <SolidColorBrush x:Key="SkinColor_MainColor" Color="Red"/>
+    <RadialGradientBrush x:Key="BrushBuleLight" GradientOrigin="0.5,1">
+        <GradientStop Color="Transparent" Offset="1"/>
+        <GradientStop Color="#FF40DFF8" Offset="0"/>
+        <GradientStop Color="Transparent" Offset="0.7"/>
+    </RadialGradientBrush>
+    <LinearGradientBrush x:Key="ButtonBorderBrush" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#FF076cc7" Offset="0" />
+        <GradientStop Color="#FF004e95" Offset="1" />
+    </LinearGradientBrush>
+    <RadialGradientBrush x:Key="HoverShineBrush" >
+        <GradientStop Color="Transparent" Offset="1"/>
+        <GradientStop Color="#FF40DFF8" Offset="0"/>
+    </RadialGradientBrush>
+    <SolidColorBrush x:Key="MainUserControlBottomBrush1" Color="#FF0B68C8" />
+    <BitmapImage x:Key="MainUserControl_right_img" UriSource="/ImageResources;component/Resources/Gray/Images/golden_right-img1.png"/> 
+    <SolidColorBrush x:Key="BottomFontIconColor" Color="#FF0B5EB5" />
+    <LinearGradientBrush x:Key="RecordBackgroundA" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#FF729CE2" Offset="0"/>
+        <GradientStop Color="#4F524AA0" Offset="1"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="RecordBackgroundC" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#FF1A54B4" Offset="0"/>
+        <GradientStop Color="#FF1E3BBF" Offset="1"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="CheckButtonBrush" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#FF3D70B5" Offset="0.5"/>
+        <GradientStop Color="#FF0C4CA3" Offset="0.5"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="SelectedBackgroundBrushTree" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#4682B4" Offset="0" />
+        <GradientStop Color="#FF40DFF8" Offset="1" />
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="RecordBackgroundD" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#FF729CE2" Offset="0"/>
+        <GradientStop Color="#4F524AA0" Offset="1"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="mainHeaderBackgroundEx" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#FF2F3336" Offset="0"/>
+        <GradientStop Color="#FF252429" Offset="1"/>
+        <GradientStop Color="#FF252429" Offset="0.37"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="NormalButtonBrush" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#FF7ac1ff" Offset="0" />
+        <GradientStop Color="#FF076cc7" Offset="1" />
+    </LinearGradientBrush>
+
+    <!--TitleUserControl.xaml-->
+    <LinearGradientBrush x:Key="TitleUserControl_right_toolbar_178" EndPoint="-0.538,0.535" StartPoint="1.284,0.537">
+        <GradientStop Color="#0000E2FF" Offset="0"/>
+        <GradientStop Color="#CC00E2FF" Offset="0.996"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="TitleUserControl_right_toolbar_179" EndPoint="1.202,0.43" StartPoint="-0.078,0.432">
+        <GradientStop Color="#0000E2FF" Offset="1"/>
+        <GradientStop Color="#FF00E2FF"/>
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="TitleUserControl_right_toolbar_3" Color="#8400265F"/>
+    <SolidColorBrush x:Key="TitleUserControl_right_toolbar2_semi_circle" Color="#A500E2FF"/>
+    <LinearGradientBrush x:Key="TitleUserControl_botbar_line174" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#0000E2FF" Offset="0"/>
+        <GradientStop Color="#FF00E2FF" Offset="1"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="TitleUserControl_botbar_176" EndPoint="0.499,0.228" StartPoint="0.5,1">
+        <GradientStop Color="#0000E2FF" Offset="1"/>
+        <GradientStop Color="#FF00E2FF" Offset="0.077"/>
+        <GradientStop Color="#FF8BF2FF" Offset="0.002"/>
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="TitleUserControl_left_coner_143" Color="#C600E2FF" Opacity="100"/>
+
+    <!--client/Resources/Gray(Blue)/Buttons.xaml-->
+    <SolidColorBrush x:Key="Buttons_MinMax_Btn" Color="#4200CCFF" Opacity="100"/>
+    <SolidColorBrush x:Key="Buttons_MinMax_Btn1" Color="#FF66FFFF"/>
+    <SolidColorBrush x:Key="Buttons_YT" Color="#4200CCFF" Opacity="100"/>
+    <SolidColorBrush x:Key="Buttons_YT1" Color="#FF66FFFF"/>
+    <SolidColorBrush x:Key="Buttons_DelOkSelect" Color="#5100E0FF"/>
+    <SolidColorBrush x:Key="Buttons_DelOkSelect1" Color="#8400E0FF"/>
+    <SolidColorBrush x:Key="Buttons_DelOkSelect2" Color="White"/>
+    <SolidColorBrush x:Key="Buttons_RemoveButtonstyle" Color="#2886FFFF" Opacity="100"/>
+    <SolidColorBrush x:Key="Buttons_RemoveButtonstyle1" Color="#FF2DE1EA"/>
+    <SolidColorBrush x:Key="Buttons_RemoveButtonstyle2" Color="#8400E0FF" Opacity="100"/>
+    <SolidColorBrush x:Key="Buttons_NewLocus_Btn" Color="#1EA1FFEE" Opacity="100"/>
+    <SolidColorBrush x:Key="Buttons_NewLocus_Btn1" Color="#FF33CCCC"/>
+    <SolidColorBrush x:Key="Buttons_NewLocus_Btn2" Color="#8400E0FF" Opacity="100"/>
+    <SolidColorBrush x:Key="Buttons_RecordButtonStyle" Color="#4400CCFF"/>
+    <SolidColorBrush x:Key="Buttons_RecordButtonStyle1" Color="#FF33FFFF"/>
+    <SolidColorBrush x:Key="Buttons_RecordButtonStyle2" Color="#FF00CCFF"/>
+    <SolidColorBrush x:Key="Buttons_RecordButtonStyle3" Color="#C600CCFF"/>
+
+    <!--ACMEControl/Controls/FloatButton.xaml与FloatCheckBox.xaml-->
+    <RadialGradientBrush x:Key="FloatListBox_path" RadiusY="0.576">
+        <GradientStop Color="#0000E2FF" Offset="0.34"/>
+        <GradientStop Color="#FF00E2FF" Offset="1"/>
+    </RadialGradientBrush>
+
+    <!--ACMEControl/Controls/ToolBarButton.xaml与ToolBarCheckBox.xaml-->
+    <SolidColorBrush x:Key="ToolBarButton_Path" Color="#5100E0FF"/>
+    <SolidColorBrush x:Key="ToolBarButton_Path1" Color="#7500E0FF"/>
+    <SolidColorBrush x:Key="ToolBarButton_Path2" Color="#FF04A1B8"/>
+
+    <!--LeftBarIcon.xaml-->
+    <SolidColorBrush x:Key="LeftBarIcon_BarBackground" Color="#7200E1FF" Opacity="100"/>
+    <LinearGradientBrush x:Key="LeftBarIcon_edge" EndPoint="0.089,0.496" StartPoint="0.65,0.509">
+        <GradientStop Color="#0000E2FF" Offset="1"/>
+        <GradientStop Color="#FF00E2FF"/>
+    </LinearGradientBrush>
+
+    <!--LeftGridUserControl.xaml-->
+    <SolidColorBrush x:Key="LeftGridUserControl_rect1" Color="#7F00265F"/>
+    <SolidColorBrush x:Key="LeftGridUserControl_rect2" Color="#FF00CCFF"/>
+    <SolidColorBrush x:Key="LeftGridUserControl_DeviceShadow1" Color="#FF33CCCC"/>
+    <SolidColorBrush x:Key="LeftGridUserControl_CameraListOpreationTools" Color="#990099CB"/>
+    <SolidColorBrush x:Key="LeftGridUserControl_rect20" Color="#9630ACBF"/>
+    <SolidColorBrush x:Key="LeftGridUserControl_OutShadow" Color="#FFF0F9FB"/>
+    <SolidColorBrush x:Key="LeftGridUserControl_path18" Color="#FF66FFFF"/>
+    <SolidColorBrush x:Key="LeftGridUserControl_path18_1" Color="#4200CCFF" Opacity="100"/>
+    <SolidColorBrush x:Key="LeftGridUserControl_path" Color="#FF73EDFF"/>
+    <SolidColorBrush x:Key="LeftGridUserControl_path_text" Color="#FF73EEFF"/>
+    <SolidColorBrush x:Key="LeftGridUserControl_ComboBoxStyle" Color="#FF03ffea"/>
+    <SolidColorBrush x:Key="LeftGridUserControl_ComboBoxStyle1" Color="#FF17acae"/>
+
+    <!--ACMEControl/ComResourceDictionary/NormalVisualBrush.xaml-->
+    <SolidColorBrush x:Key="NormalVisualBrush_Stroke" Color="#FF00CCCC"/>
+    <SolidColorBrush x:Key="NormalVisualBrush_Fill" Color="#DB00265F" Opacity="1"/>
+    <SolidColorBrush x:Key="NormalVisualBrush_Fill1" Color="#FF006565" Opacity="0"/>
+    <SolidColorBrush x:Key="NormalVisualBrush_Fill2" Color="#FF99FFFF" Opacity="0.4"/>
+    <SolidColorBrush x:Key="NormalVisualBrush_Fill3" Color="#FF99FFFF" Opacity="0.25882352941176473"/>
+    <SolidColorBrush x:Key="NormalVisualBrush_Fill4" Color="#FF65FFFF" Opacity="0.45098039215686275"/>
+    <SolidColorBrush x:Key="NormalVisualBrush_Fill5" Color="#FF33FFFF"/>
+
+    <!--ACMEControl/ComResourceDictionary/HoverVisualBrush.xaml-->
+    <SolidColorBrush x:Key="HoverVisualBrush_Fill" Color="#FF006565" Opacity="0"/>
+    <SolidColorBrush x:Key="HoverVisualBrush_Fill1" Color="#FF99FFFF" Opacity="0.4"/>
+    <SolidColorBrush x:Key="HoverVisualBrush_Fill2" Color="#FF99FFFF" Opacity="0.25882352941176473"/>
+    <SolidColorBrush x:Key="HoverVisualBrush_Fill3" Color="#FF65FFFF" Opacity="0.45098039215686275"/>
+
+    <!--ACMEControl/VectorResources/CameraTreeButtonResources 左侧工具栏设备树相关-->
+    <SolidColorBrush x:Key="CameraTreeButtonResources_Fill" Color="Cyan"/>
+    <!--ACMEControl/Controls/CameraTreeButton.xaml-->
+    <SolidColorBrush x:Key="CameraTreeButton_Background" Color="Cyan"/>
+    <!--ACMEControl/Style/TreeViewItemStyle.xaml-->
+    <SolidColorBrush x:Key="TreeViewItemStyle_IsSelected_Background" Color="#9900E2FF"/>
+
+    <!--Client/CustomeControl/DataStatisticsAndPresentation/DataStatisticUserControl.xaml 区域信息窗口-->
+    <SolidColorBrush x:Key="DataStatisticUserControl_Fill" Color="#8400265F" Opacity="100"/>
+
+    <!--Client.View.InformationDisplayFilterUserControlView.xaml 搜索窗口-->
+    <SolidColorBrush x:Key="InformationDisplayFilterUserControlView_Fill" Color="#8400265F"/>
+    <SolidColorBrush x:Key="InformationDisplayFilterUserControlView_Fill1" Color="#E525F8F3"/>
+    <SolidColorBrush x:Key="InformationDisplayFilterUserControlView_Fill2" Color="#842D98C5"/>
+    <SolidColorBrush x:Key="InformationDisplayFilterUserControlView_Fill3" Color="#E50C2283"/>
+    <SolidColorBrush x:Key="InformationDisplayFilterUserControlView_Stroke" Color="#FF7CEEFF"/>
+    <LinearGradientBrush x:Key="InformationDisplayFilterUserControlView_Fill5" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#FF9CF7EF" Offset="0.463"/>
+        <GradientStop Color="#FF22C6D6" Offset="1"/>
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="InformationDisplayFilterUserControlView_Stroke1" Color="#FF1C3295"/>
+    <SolidColorBrush x:Key="InformationDisplayFilterUserControlView_btnStyle_Fill" Color="#4F24EDF3"/>
+    <SolidColorBrush x:Key="InformationDisplayFilterUserControlView_btnStyle_Stroke" Color="#FF2AE3EC"/>
+    <SolidColorBrush x:Key="InformationDisplayFilterUserControlView_btnStyle_Fill1" Color="#E525F8F3"/>
+    <SolidColorBrush x:Key="InformationDisplayFilterUserControlView_TrianglePath_Fill" Color="#4C8DC9DE"/>
+    <SolidColorBrush x:Key="InformationDisplayFilterUserControlView_cursorAndGridBackgroundStyle_background" Color="Blue"/>
+    <LinearGradientBrush x:Key="InformationDisplayFilterUserControlView_Fill6" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#FF31DAFF" Offset="0"/>
+        <GradientStop Offset="1"/>
+    </LinearGradientBrush>
+    <RadialGradientBrush x:Key="InformationDisplayFilterUserControlView_inforMationListBoxItemStyle_Fill">
+        <GradientStop Color="Transparent" Offset="1"/>
+        <GradientStop Color="#FF40DFF8" Offset="0"/>
+        <GradientStop Color="Transparent" Offset="0.765"/>
+    </RadialGradientBrush>
+    <SolidColorBrush x:Key="InformationDisplayFilterUserControlView_Fill7" Color="#E554D8FF"/>
+    
+    <!--Client/Resources/Blue/TextBoxes.xaml-->
+    <SolidColorBrush x:Key="TextBoxes_HoverRay_Background" Color="#FF00F9FF"/>
+    
+    <!--ACMEControl/Controls/BaseWnd.xaml-->
+    <SolidColorBrush x:Key="BaseWnd_Background" Color="#8400265F"/>
+    <RadialGradientBrush x:Key="BaseWnd_NoClientBackground" GradientOrigin="0.5,0.797" RadiusX="1.16" RadiusY="2.586">
+        <GradientStop Color="Black"/>
+        <GradientStop Color="#00000000" Offset="0.567"/>
+    </RadialGradientBrush>
+    <!--ACMEControl/Style/SystemMinButtonStyle.xaml-->
+    <SolidColorBrush x:Key="BaseWnd_RightTopButton_Background" Color="#009AC0"/>
+
+    <!--ACMEControl/Style/FuiButtonStyle.xaml-->
+    <SolidColorBrush x:Key="FuiButtonStyle_Fill" Color="#4400CCFF"/>
+    <SolidColorBrush x:Key="FuiButtonStyle_Stroke" Color="#FF33CCFF"/>
+    <SolidColorBrush x:Key="FuiButtonStyle_Foreground" Color="#FF88FFFF"/>
+
+    <!--Client/UserControls/InvokeWpfControl/Realtime.xaml-->
+    <SolidColorBrush x:Key="Realtime_layer_Fill" Color="#8400265F"/>
+    <RadialGradientBrush x:Key="Realtime_layer_Fill1">
+        <GradientStop Color="#99124374" Offset="0.465"/>
+        <GradientStop Offset="1"/>
+    </RadialGradientBrush>
+    <SolidColorBrush x:Key="Realtime_colorIcon_Fill" Color="#FF33BFDB"/>
+    
+    <!--ACMEControl/Controls/LayerToggleButton.xaml-->
+    <SolidColorBrush x:Key="LayerToggleButton_Stroke" Color="#FF009999"/>
+    <SolidColorBrush x:Key="LayerToggleButton_Fill" Color="#0F00CCFF"/>
+    <SolidColorBrush x:Key="LayerToggleButton_Fill1" Color="#4400CCFF"/>
+    <SolidColorBrush x:Key="LayerToggleButton_Background" Color="#FF2DC5DF"/>
+
+    <!--ACMEControl/Controls/LayerCheckBox.xaml-->
+    <SolidColorBrush x:Key="LayerCheckBox_Fill" Color="#1E00CCFF"/>
+    <SolidColorBrush x:Key="LayerCheckBox_Fill1" Color="#7F00CCFF"/>
+    <SolidColorBrush x:Key="LayerCheckBox_Fill2" Color="#FF00CCFF"/>
+    <SolidColorBrush x:Key="LayerCheckBox_Fill3" Color="#3A00CCFF"/>
+    <SolidColorBrush x:Key="LayerCheckBox_Stroke" Color="#FF33FFFF"/>
+
+    <!--ACMEControl/Controls/LayerRadioButton.xaml-->
+    <SolidColorBrush x:Key="LayerRadioButton_Stroke" Color="#FF009999"/>
+    <SolidColorBrush x:Key="LayerRadioButton_Fill" Color="#0F00CCFF"/>
+    <SolidColorBrush x:Key="LayerRadioButton_Fill1" Color="#4400CCFF"/>
+    <SolidColorBrush x:Key="LayerRadioButton_Foreground" Color="#FF2DC5DF"/>
+
+    <!--Client/UserControls/CompassUsrCtrl.xaml 左上角罗盘-->
+    <SolidColorBrush x:Key="CompassUsrCtrl_Fill" Color="#FF0066FF"/>
+    <SolidColorBrush x:Key="CompassUsrCtrl_Fill1" Color="#FF0033FF"/>
+    
+    <!--Client/TVWall.xaml 电视墙窗口-->
+    <LinearGradientBrush x:Key="TVWall_TVWallList_FuiListBoxItemStyle_Fill" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#0C3673D9" Offset="0"/>
+        <GradientStop Color="#4F0CB2F7" Offset="1"/>
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="TVWall_TVWallList_FuiListBoxItemStyle_Fill1" Color="#6600FFFF"/>
+    <SolidColorBrush x:Key="TVWall_TVWallList_FuiListBoxItemStyle_Fill2" Color="#C000CCFF"/>
+    <SolidColorBrush x:Key="TVWall_TVWall_BorderStyle_Fill" Color="#A000265F"/> 
+    <SolidColorBrush x:Key="TVWall_Fill" Color="#A000265F"/>
+    <SolidColorBrush x:Key="TVWall_LeftGrid_Background" Color="#9E00265F"/>
+
+    <!--MultilevelMenuItem.xaml-->
+    <!--<SolidColorBrush x:Key="MultilevelMenuItem_Background" Color="#aa00265f"/>-->
+    <LinearGradientBrush x:Key="MultilevelMenuItem_Background" StartPoint="0,0" EndPoint="1,1" Opacity="0.8">
+        <GradientStop Color="#ff3e5e99" Offset="0"/>
+        <GradientStop Color="#aa00265f" Offset="1"/>
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="MultilevelMenuItem_Background1" Color="#ff3e5e99"/>
+
+    <!--client/Resources/Blue/OverlapContextMenu.xaml-->
+    <SolidColorBrush x:Key="OverlapContextMenu_CameraRightMenu_Fill" Color="#8400265F"/>
+    <SolidColorBrush x:Key="OverlapContextMenu_CameraRightMenu_Background" Color="#6D003FFF"/>
+
+    <!--Client/View/OverlapObjectDetailView.xaml-->
+    <SolidColorBrush x:Key="OverlapObjectDetailView_Background" Color="#4400CCFF"/>
+    <SolidColorBrush x:Key="OverlapObjectDetailView_Background1" Color="#C600CCFF"/>
+    <SolidColorBrush x:Key="OverlapObjectDetailView_Background2" Color="#8400265F"/>
+    <SolidColorBrush x:Key="OverlapObjectDetailView_BorderBrush" Color="#FF33FFFF"/>
+    <SolidColorBrush x:Key="OverlapObjectDetailView_Stroke" Color="#FF00CCFF"/> 
+    <LinearGradientBrush x:Key="OverlapObjectDetailView_Fill" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#0C3673D9" Offset="0"/>
+        <GradientStop Color="#4F0CB2F7" Offset="1"/>
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="OverlapObjectDetailView_Background3" Color="Transparent"/>
+
+    <!--ACMEControl/Controls/DetailedInfoWin.xaml 详细信息窗口与CaptureInfView.xaml抓拍详细信息窗口-->
+    <SolidColorBrush x:Key="DetailedInfoWin_Fill" Color="#A000265F"/>
+    <LinearGradientBrush x:Key="DetailedInfoWin_Fill1" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Offset="0"/>
+        <GradientStop Offset="1"/>
+        <GradientStop Color="#FF00E2FF" Offset="0.5"/>
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="DetailedInfoWin_Fill2" Color="#9900265F"/>
+    <LinearGradientBrush x:Key="DetailedInfoWin_Fill3" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#0000E2FF" Offset="0"/>
+        <GradientStop Color="#0000E2FF" Offset="1"/>
+        <GradientStop Color="#9E00E2FF" Offset="0.535"/>
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="DetailedInfoWin_Fill4" Color="#8400265F"/>
+
+    <!--VideoCloud 视频云图界面相关--> 
+    <SolidColorBrush x:Key="VideoCloudWin_Background" Color="#FF00265F"/>
+    <SolidColorBrush x:Key="VideoCloudWin_Background1" Color="#5E00CCFF"/>
+    <SolidColorBrush x:Key="VideoCloudWin_Background2" Color="#FF066EB3"/>
+    <SolidColorBrush x:Key="VideoCloudWin_BorderBrush" Color="#FF33CCFF"/>
+    <!--VideoCloud/View/MapVideoPoiInViewPanel.xaml-->
+    <SolidColorBrush x:Key="MapVideoPoiInViewPanel_Background" Color="#884B7DDD" Opacity="0.75"/>
+
+    <!--ACMEControl/Style/FuiComboBoxStyle.xaml-->
+    <SolidColorBrush x:Key="FuiComboBoxStyle_Background" Color="#FF066EB3"/>
+    <SolidColorBrush x:Key="FuiComboBoxStyle_Fill" Color="#03ffea"/>
+
+    <!--ACMEControl/Controls/Tooltip.xaml-->
+    <SolidColorBrush x:Key="Tooltip_Background" Color="#9E00265F"/>
+    
+    <!--Client/CustomeControl/SplitScreenUserControl.xaml-->
+    <Color x:Key="SplitScreenUserControl_Border" A="1" R="0" G="204" B="255"/>
+
+    <!--UserList.xaml-->
+    <SolidColorBrush x:Key="UserList_Background" Color="#9E00265F"/> 
+    <SolidColorBrush x:Key="UserList_Background1" Color="#A000265F"/>
+    <SolidColorBrush x:Key="UserList_Background2" Color="#6600FFFF"/>
+    <SolidColorBrush x:Key="UserList_Background3" Color="#C000CCFF"/>
+    <LinearGradientBrush x:Key="UserList_Fill" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#0C3673D9" Offset="0"/>
+        <GradientStop Color="#4F0CB2F7" Offset="1"/>
+    </LinearGradientBrush>
+
+    <!--FuiScrollBarStyle.xaml-->
+    <SolidColorBrush x:Key="FuiScrollBarStyle_Fill" Color="#FF01A3D3"/>
+
+    <!--InformationResearch.xaml-->
+    <SolidColorBrush x:Key="InformationResearch_Fill" Color="#FF142B93"/>
+    
+    <SolidColorBrush x:Key="InformationResearch_Background" Color="#4400CCFF"/>
+    <SolidColorBrush x:Key="InformationResearch_Background1" Color="#C600CCFF"/>
+    <SolidColorBrush x:Key="InformationResearch_BorderBrush" Color="#FF33FFFF"/>
+    <SolidColorBrush x:Key="InformationResearch_BorderBrush1" Color="#FF00CCFF"/>
+    <LinearGradientBrush x:Key="RecordBackgroundBB" EndPoint="1,0.5" StartPoint="0,0.5">
+        <GradientStop Color="#FF142B93" Offset="0"/>
+        <GradientStop Color="#FFBAE8E6" Offset="0.5"/>
+        <GradientStop Color="#FF142B93" Offset="1"/>
+    </LinearGradientBrush>
+    
+    <LinearGradientBrush x:Key="RecordBackgroundAA" EndPoint="1,0.5" StartPoint="0,0.5">
+        <GradientStop Color="#FF142B93" Offset="0"/>
+        <GradientStop Offset="0.85" Color="#FF7171DE"/>
+
+        <GradientStop Color="#FF142B93" Offset="1"/>
+        <GradientStop Color="#FF7171DE" Offset="0.15"/>
+
+    </LinearGradientBrush>
+
+    <!--Menus.xaml-->
+    <SolidColorBrush x:Key="Menus_TabHeadItemSub_Border" Color="#FF1313F3"/>
+    <SolidColorBrush x:Key="Menus_TabControl_Background" Color="#FF142B93"/>
+    
+    <!--Blue(Gray)/CheckBoxes.xaml-->
+    <SolidColorBrush x:Key="CheckBoxes_CheckBoxStyle_Record" Color="#FF33CCFF"/>
+    <SolidColorBrush x:Key="CheckBoxes_CheckBoxStyle_Record1" Color="#4400CCFF"/>
+
+    <!--Blue(Gray)/Expanders.xaml-->
+    <SolidColorBrush x:Key="Expanders_TabControlStyle1_Background" Color="#FF142B93"/>
+
+    <!--InformationResearchPlay.xaml-->
+    <SolidColorBrush x:Key="InformationResearchPlay_Fill" Color="#FF142B93"/>
+    
+    <!--Blue/Windows.xaml-->
+    <SolidColorBrush x:Key="Windows_Fill" Color="#FF142B93"/>
+
+    <!--PlayList.xaml-->
+    <LinearGradientBrush x:Key="PlayList_Background" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#FF103EB8" Offset="1"/>
+        <GradientStop Color="#FFE4E4E4"/>
+    </LinearGradientBrush>
+
+    <!--ACMEControl/Controls/MenuPopupBox.xaml与ToolBarPopupBox.xaml-->
+    <SolidColorBrush x:Key="MenuPopupBox_Fill" Color="#513EF1E9"/>
+    <SolidColorBrush x:Key="MenuPopupBox_Background" Color="#5105D8F7"/>
+    <SolidColorBrush x:Key="MenuPopupBox_Background1" Color="#4700E2FF"/>
+    <SolidColorBrush x:Key="MenuPopupBox_Background2" Color="#990040FF"/>
+
+    <!--FaceRecognitionView.xaml人脸识别窗口-->
+    <LinearGradientBrush x:Key="FaceRecognitionView_Fill" EndPoint="0.805,0.517" StartPoint="0.163,0.499" Opacity="0.4">
+        <GradientStop Color="#FF0091FF" Offset="0.225"/>
+        <GradientStop Color="White" Offset="0.806"/>
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="FaceRecognitionView_Fill1" Color="#FF33FFFF" Opacity="0.611764705882353"/> 
+    <SolidColorBrush x:Key="FaceRecognitionView_Fill2" Color="#FF65FFFF"/>
+    <SolidColorBrush x:Key="FaceRecognitionView_Fill3" Color="#8400265F"/> 
+
+    <!--CaptureView.xaml-->
+    <SolidColorBrush x:Key="CaptureView_Background" Color="#8400265F"/>
+
+    <!--SingleScreenPlayWindowView.xaml 人脸告警实时视频播放窗口--> 
+    <SolidColorBrush x:Key="SingleScreenPlayWindowView_BorderBrush" Color="#B218F0DC"/>
+    <SolidColorBrush x:Key="SingleScreenPlayWindowView_Background" Color="#7F00ABFB"/>
+
+    <!--Slider.xaml-->
+    <BitmapImage x:Key="Slider_ThumbControlTemplate1_normal" UriSource="/ImageResources;component/Resources/Blue/Images/slider-dot-normal.png"/>
+    <BitmapImage x:Key="Slider_ThumbControlTemplate1_hover" UriSource="/ImageResources;component/Resources/Blue/Images/slider-dot-hover.png"/>
+    <BitmapImage x:Key="Slider_ThumbControlTemplate1_press" UriSource="/ImageResources;component/Resources/Blue/Images/slider-dot-pressed.png"/>
+
+    <!--ResidentialBuildingInfoView.xaml-->
+    <SolidColorBrush x:Key="ResidentialBuildingInfoView_Background" Color="#8400265F"/>
+    <SolidColorBrush x:Key="ResidentialBuildingInfoView_Background1" Color="#FF1FA7C9"/>
+    <SolidColorBrush x:Key="ResidentialBuildingInfoView_Background2" Color="#4400CCFF"/> 
+    <SolidColorBrush x:Key="ResidentialBuildingInfoView_Background3" Color="#CC00E2FF"/>
+    <SolidColorBrush x:Key="ResidentialBuildingInfoView_Background4" Color="#4C33FFFF"/>
+    <SolidColorBrush x:Key="ResidentialBuildingInfoView_Stroke" Color="#E554D8FF"/>
+    <SolidColorBrush x:Key="ResidentialBuildingInfoView_Fill" Color="#FF33FFFF"/>
+    <LinearGradientBrush x:Key="ResidentialBuildingInfoView_TabItemHotBackground" EndPoint="0,1" StartPoint="0,0">
+        <GradientStop Color="#EAF6FD" Offset="0.15"/>
+        <GradientStop Color="#D9F0FC" Offset=".5"/>
+        <GradientStop Color="#BEE6FD" Offset=".5"/>
+        <GradientStop Color="#A7D9F5" Offset="1"/>
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="ResidentialBuildingInfoView_TabItemHotBorderBrush" Color="#3C7FB1"/>
+
+    <!--GlassDataGridStyle.xaml-->
+    <SolidColorBrush x:Key="GlassDataGridStyle_BorderBrush" Color="#FF688CAF"/>
+
+    <!--CamSearchWindowView.xaml-->
+    <SolidColorBrush x:Key="CamSearchWindowView_BorderBrush" Color="#03ffea"/>
+    <SolidColorBrush x:Key="CamSearchWindowView_Fill" Color="#8400265F"/>
+    <LinearGradientBrush x:Key="CamSearchWindowView_Fill1" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#3306377E" Offset="0"/>
+        <GradientStop Color="#19113F81" Offset="1"/>
+    </LinearGradientBrush>
+
+    <!--FuiDatePickerStyle.xaml-->
+    <SolidColorBrush x:Key="FuiDatePickerStyle_Background" Color="#5E00CCFF"/>
+    <SolidColorBrush x:Key="FuiDatePickerStyle_Background1" Color="#FF1685f1"/>
+    <SolidColorBrush x:Key="FuiDatePickerStyle_Background2" Color="#FF066EB3"/>
+
+    <!--FuiTextBoxStyle.xaml-->
+    <SolidColorBrush x:Key="FuiTextBoxStyle_Background" Color="#9E00265F"/>
+
+    <!--FuiListBoxChkStyle.xaml-->
+    <LinearGradientBrush x:Key="FuiListBoxChkStyle_Fill" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#0C3673D9" Offset="0"/>
+        <GradientStop Color="#4F0CB2F7" Offset="1"/>
+    </LinearGradientBrush>
+
+    <!--SecuritySummarySaveView.xaml-->
+    <SolidColorBrush x:Key="SecuritySummarySaveView_Background" Color="#FF066EB3"/>
+
+    <!--RealtimeSingle.xaml-->
+    <SolidColorBrush x:Key="RealtimeSingle_BorderBrush" Color="#B218F0DC"/>
+    <SolidColorBrush x:Key="RealtimeSingle_Background" Color="#7F00ABFB"/>
+
+    <!--BatchVideoPlayView.xaml-->
+    <SolidColorBrush x:Key="BatchVideoPlayView_Fill" Color="#8400265F"/>
+    <RadialGradientBrush x:Key="BatchVideoPlayView_Fill1">
+        <GradientStop Color="#99124374" Offset="0.465"/>
+        <GradientStop Offset="1"/>
+    </RadialGradientBrush>
+    <SolidColorBrush x:Key="BatchVideoPlayView_Fill2" Color="#FF33BFDB"/>
+
+    <!--FloatToolAddModeList.xaml-->
+    <SolidColorBrush x:Key="FloatToolAddModeList_Stroke" Color="#FF66FFFF"/>
+    <SolidColorBrush x:Key="FloatToolAddModeList_Fill" Color="#A000265F"/>
+
+</ResourceDictionary>
